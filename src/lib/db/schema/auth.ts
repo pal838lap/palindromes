@@ -1,4 +1,5 @@
 import {
+  boolean,
   integer,
   pgTable,
   primaryKey,
@@ -16,6 +17,7 @@ export const users = pgTable('user', {
   email: text('email').unique(),
   emailVerified: timestamp('emailVerified', { mode: 'date' }),
   image: text('image'),
+  isAdmin: boolean('isAdmin').default(false).notNull(),
 })
 
 // Accounts table - OAuth provider accounts

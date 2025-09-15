@@ -8,6 +8,13 @@
       "when": 1757921227554,
       "tag": "0000_rainy_frank_castle",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1757928256712,
+      "tag": "0001_quick_betty_brant",
+      "breakpoints": true
     }
   ]
 }
