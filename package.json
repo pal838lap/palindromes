@@ -11,6 +11,7 @@
     "type-check": "tsc --noEmit",
     "clean": "rm -rf .next out dist build",
     "preview": "npm run build && npm run start",
+    "build:migrate": "npm run db:migrate && npm run build",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
