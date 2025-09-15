@@ -13,14 +13,6 @@ This is a palindrome detection and analysis application built with Next.js, Type
   - Available scripts and commands
   - Environment variables required
 
-### 2. Always Update PROGRESS.md
-- **MUST** update `/PROGRESS.md` when:
-  - Completing any task or feature
-  - Moving between development phases
-  - Checking off completed items
-  - Adding new issues or blockers
-  - Making significant progress on any phase
-
 ### 3. Documentation Structure
 - **`setupGuides/`** - User setup guides (auth, database, PWA, etc.)
 - **`docs/`** - Implementation documentation for developers/AI
