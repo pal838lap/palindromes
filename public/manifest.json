@@ -1,7 +1,7 @@
 {
-  "name": "Guys' NextJS template",
-  "short_name": "GuyTemplate",
-  "description": "A comprehensive, production-ready Next.js template with TypeScript, modern UI components, and enterprise-grade tooling.",
+  "name": "Palindromes",
+  "short_name": "Palindromes",
+  "description": "A palindrome detection and analysis application built with Next.js and TypeScript.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

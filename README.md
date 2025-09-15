@@ -1,10 +1,10 @@
-# Next.js Golden Template 🚀
+# Palindromes �
 
-A comprehensive, production-ready Next.js template for building full-stack progressive web apps with TypeScript, modern UI components, and enterprise-grade tooling.
+A palindrome detection and analysis application built with Next.js, TypeScript, and modern web technologies.
 
 ## 🎯 Purpose
 
-This template eliminates repetitive setup work by providing a pre-configured, production-ready foundation for Next.js applications. Use it to bootstrap new projects instantly with best practices baked in.
+This application provides tools for detecting, analyzing, and exploring palindromes - words, phrases, or sequences that read the same forwards and backwards.
 
 ## 🛠️ Tech Stack
 
@@ -149,17 +149,17 @@ This template includes a fully type-safe API client that eliminates hardcoded AP
 ```typescript
 // Define once in api-client.types.ts
 export const API_ENDPOINTS = {
-  stats: {
-    dashboard: {
+  users: {
+    profile: {
       method: 'GET' as const,
-      path: '/api/stats' as const,
-      response: {} as { totalUsers: number }
+      path: '/api/users/profile' as const,
+      response: {} as { id: string; name: string; email: string }
     }
   }
 } as const
 
 // Use everywhere with full type safety
-const { data } = useDashboardStats() // data.totalUsers is properly typed!
+const { data } = useUserProfile() // data.id, data.name, data.email are properly typed!
 ```
 
 📖 **[Complete API Client Guide](./docs/api-client-guide.md)** - Detailed documentation on how to add new APIs and use the type-safe client.

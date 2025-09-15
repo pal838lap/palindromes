@@ -13,7 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { ThemeToggle } from "@/components/layout/theme-toggle"
-import { Menu, Home, LayoutDashboard, LogIn, LogOut, User } from "lucide-react"
+import { Menu, Home, LogIn, LogOut, User } from "lucide-react"
 
 const navigationItems = [
   {
@@ -21,12 +21,6 @@ const navigationItems = [
     href: "/",
     icon: Home,
     public: true,
-  },
-  {
-    title: "Dashboard",
-    href: "/dashboard",
-    icon: LayoutDashboard,
-    protected: true,
   },
 ]
 
@@ -61,9 +55,6 @@ export function MobileNav() {
           {/* Navigation Links */}
           <nav className="space-y-2">
             {navigationItems.map((item) => {
-              // Show public items to everyone, protected items only to authenticated users
-              if (item.protected && !session?.user) return null
-              
               const Icon = item.icon
               
               return (

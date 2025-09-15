@@ -1,8 +1,7 @@
 // Type-safe API client for frontend requests
 // This client handles HTTP requests to our Next.js API routes
 
-import { API_ENDPOINTS, ApiError } from './api-client.types'
-import { DashboardStats } from './api.types'
+import { ApiError } from './api-client.types'
 
 // Type-safe API client class
 export class ApiClient {
@@ -39,15 +38,7 @@ export class ApiClient {
     return response.json()
   }
 
-  // Stats endpoints
-  stats = {
-    getDashboard: () => 
-      this.request<DashboardStats>(
-        API_ENDPOINTS.stats.dashboard.path
-      ),
-  }
-
-  // Add more endpoint groups here
+  // Add endpoint groups here as you create them
   // users = {
   //   getProfile: () => 
   //     this.request<ApiEndpoints['users']['profile']['response']>(

@@ -24,13 +24,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Golden Template",
-  description: "A comprehensive, production-ready Next.js template with TypeScript, modern UI components, and enterprise-grade tooling.",
+  title: "Palindromes",
+  description: "A palindrome detection and analysis application built with Next.js and TypeScript.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "NextJS Template",
+    title: "Palindromes",
   },
 };
 

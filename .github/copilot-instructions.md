@@ -1,7 +1,7 @@
-# Copilot Instructions for Next.js Golden Template
+# Copilot Instructions for Palindromes App
 
 ## Project Overview
-This is a comprehensive Next.js template project designed to be a production-ready foundation for full-stack progressive web applications. Always reference the project's README.md for the complete tech stack, features, and setup instructions.
+This is a palindrome detection and analysis application built with Next.js, TypeScript, and modern web technologies. Always reference the project's README.md for the complete tech stack, features, and setup instructions.
 
 ## Key Requirements
 
@@ -83,6 +83,6 @@ When adding a new page to the application:
 6. **Test Responsive** - Verify the page works correctly on both mobile hamburger menu and desktop navigation
 
 ## Important Notes
-- This template emphasizes developer experience and production readiness
+- This application focuses on palindrome detection and analysis
 - Always consider the overall architecture when making changes
 - Maintain consistency with established patterns and conventions

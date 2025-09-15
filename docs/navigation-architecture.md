@@ -24,13 +24,13 @@ Mobile-first responsive navigation with hamburger menu for mobile and clean desk
 ```typescript
 const navigationItems = [
   { title: "Home", href: "/", icon: Home, public: true },
-  { title: "Dashboard", href: "/dashboard", icon: LayoutDashboard, protected: true },
+  // Add more pages here as needed
 ]
 ```
 
 ## Adding New Pages
 1. Add item to `navigationItems` array in both nav components
-2. Set `public: true` or `protected: true`
+2. Set `public: true` for public pages or `protected: true` for authenticated-only pages
 3. Import appropriate Lucide icon
 
 ## Breakpoints

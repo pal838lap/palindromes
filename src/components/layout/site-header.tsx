@@ -9,7 +9,7 @@ interface SiteHeaderProps {
 export function SiteHeader({ 
   pageTitle
 }: SiteHeaderProps) {
-  const appName = "Guy's Template";
+  const appName = "Palindromes";
   
   return (
     <header className="border-b">

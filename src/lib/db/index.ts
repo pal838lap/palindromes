@@ -1,9 +1,8 @@
 import { drizzle } from 'drizzle-orm/postgres-js'
-import { count, eq } from 'drizzle-orm'
+import { eq } from 'drizzle-orm'
 import postgres from 'postgres'
 import { env } from '../env'
 import * as schema from './schema'
-import type { DashboardStats } from '../api/api.types'
 
 // Create the connection
 const connectionString = env.DATABASE_URL
@@ -28,26 +27,6 @@ export * from './schema'
 
 // Database operations using Drizzle ORM
 export const dbOperations = {
-  // Get dashboard statistics
-  async getStats(): Promise<DashboardStats> {
-    try {
-      // Count total users
-      const [{ totalUsers }] = await db
-        .select({ totalUsers: count() })
-        .from(schema.users)
-      
-      return {
-        totalUsers,
-      }
-    } catch (error) {
-      console.error('Database error:', error)
-      // Return fallback data
-      return {
-        totalUsers: 0,
-      }
-    }
-  },
-
   // Get user by ID
   async getUserById(id: string) {
     try {

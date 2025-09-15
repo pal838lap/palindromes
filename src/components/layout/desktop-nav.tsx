@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react"
 import { Button } from "@/components/ui/button"
 import { UserNav } from "@/components/auth/user-nav"
 import { ThemeToggle } from "@/components/layout/theme-toggle"
-import { Home, LayoutDashboard } from "lucide-react"
+import { Home } from "lucide-react"
 
 const navigationItems = [
   {
@@ -13,12 +13,6 @@ const navigationItems = [
     href: "/",
     icon: Home,
     public: true,
-  },
-  {
-    title: "Dashboard",
-    href: "/dashboard",
-    icon: LayoutDashboard,
-    protected: true,
   },
 ]
 
@@ -30,9 +24,6 @@ export function DesktopNav() {
       {/* Navigation Links */}
       <nav className="flex items-center gap-2">
         {navigationItems.map((item) => {
-          // Show public items to everyone, protected items only to authenticated users
-          if (item.protected && !session?.user) return null
-          
           return (
             <Link key={item.href} href={item.href}>
               <Button variant="ghost" size="sm">

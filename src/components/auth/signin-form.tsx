@@ -78,7 +78,7 @@ export function SignInForm() {
           <Button
             variant="outline"
             className="w-full"
-            onClick={() => signIn("github", { callbackUrl: "/dashboard" })}
+            onClick={() => signIn("github", { callbackUrl: "/" })}
           >
             <Github className="w-4 h-4 mr-2" />
             Continue with GitHub
@@ -89,7 +89,7 @@ export function SignInForm() {
           <Button
             variant="outline"
             className="w-full"
-            onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
+            onClick={() => signIn("google", { callbackUrl: "/" })}
           >
             <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24">
               <path
