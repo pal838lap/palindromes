@@ -1,0 +1,5 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#000000"/>
+  <path d="M256 100L356 200H356L256 300L156 200H156L256 100Z" fill="#ffffff"/>
+  <text x="256" y="400" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" font-weight="bold">NEXT</text>
+</svg>
