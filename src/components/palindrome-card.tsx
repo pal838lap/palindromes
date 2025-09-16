@@ -14,7 +14,8 @@ import {
   Car, 
   Palette, 
   Tag, 
-  User
+  User,
+  Package
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import type { PalindromeWithDetails } from '@/lib/db/schema'
@@ -133,27 +134,30 @@ export function PalindromeCard({
 
           {/* Vehicle Details */}
           <div className="space-y-2">
-            {/* Brand and Year */}
-            {(palindrome.brand || palindrome.year) && (
+            {/* Brand */}
+            {palindrome.brand && (
               <div className="flex items-center gap-2">
                 <Car className="h-4 w-4 text-muted-foreground" />
-                <span className="text-muted-foreground">Vehicle:</span>
-                <span className="font-medium">
-                  {palindrome.brand?.name}
-                  {palindrome.brand?.name && palindrome.year && ' '}
-                  {palindrome.year}
-                </span>
+                <span className="text-muted-foreground">Brand:</span>
+                <span className="font-medium">{palindrome.brand.name}</span>
               </div>
             )}
-
+            {/* Year */}
+            {palindrome.year && (
+              <div className="flex items-center gap-2">
+                <Calendar className="h-4 w-4 text-muted-foreground" />
+                <span className="text-muted-foreground">Year:</span>
+                <span className="font-medium">{palindrome.year}</span>
+              </div>
+            )}
             {/* Model */}
             {palindrome.model && (
-              <div className="flex items-center gap-2 ml-6">
+              <div className="flex items-center gap-2">
+                <Package className="h-4 w-4 text-muted-foreground" />
                 <span className="text-muted-foreground">Model:</span>
                 <span className="font-medium">{palindrome.model}</span>
               </div>
             )}
-
             {/* Color */}
             {palindrome.color && (
               <div className="flex items-center gap-2">
