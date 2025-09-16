@@ -15,6 +15,14 @@ export type Palindrome = {
 	createdAt: string
 	updatedAt: string
 }
+
+export type UserProfile = {
+	id: string
+	name: string
+	avatar?: string | null
+	createdAt: string
+	updatedAt: string
+}
 // export type UserProfile = {
 //   id: string
 //   name: string

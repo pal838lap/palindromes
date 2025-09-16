@@ -16,6 +16,20 @@ export const API_ENDPOINTS = {
       method: 'GET' as const,
       path: (id: string) => `/api/palindromes/${id}` as const,
       response: {} as import('./api.types').Palindrome,
+    },
+    assignUser: {
+      method: 'PATCH' as const,
+      path: (id: string) => `/api/palindromes/${id}` as const,
+      // Accepts { userProfileId: string | null }
+      body: {} as { userProfileId: string | null },
+      response: {} as import('./api.types').Palindrome,
+    }
+  },
+  userProfiles: {
+    list: {
+      method: 'GET' as const,
+      path: '/api/user-profiles' as const,
+      response: {} as import('./api.types').UserProfile[],
     }
   }
 } as const

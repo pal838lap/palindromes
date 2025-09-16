@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { usePalindrome } from '@/hooks/use-palindrome'
 import { Input } from '@/components/ui/input'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { PalindromeAssignUser } from '@/components/admin/palindrome-assign-user'
 
 export function PalindromeSearch() {
   const [value, setValue] = useState('')
@@ -29,16 +30,19 @@ export function PalindromeSearch() {
           <p className="text-sm">No result.</p>
         )}
         {data && (
-          <div className="text-sm space-y-1 border rounded-md p-3">
-            <div><span className="font-medium">ID:</span> {data.id}</div>
-            {data.model && <div><span className="font-medium">Model:</span> {data.model}</div>}
-            {data.color && <div><span className="font-medium">Color:</span> {data.color}</div>}
-            {data.foundAt && <div><span className="font-medium">Found:</span> {new Date(data.foundAt).toLocaleString()}</div>}
-            {data.picture && (
-              <div>
-                <a href={data.picture} target="_blank" rel="noreferrer" className="text-primary underline">View picture</a>
-              </div>
-            )}
+          <div className="space-y-4">
+            <div className="text-sm space-y-1 border rounded-md p-3">
+              <div><span className="font-medium">ID:</span> {data.id}</div>
+              {data.model && <div><span className="font-medium">Model:</span> {data.model}</div>}
+              {data.color && <div><span className="font-medium">Color:</span> {data.color}</div>}
+              {data.foundAt && <div><span className="font-medium">Found:</span> {new Date(data.foundAt).toLocaleString()}</div>}
+              {data.picture && (
+                <div>
+                  <a href={data.picture} target="_blank" rel="noreferrer" className="text-primary underline">View picture</a>
+                </div>
+              )}
+            </div>
+            <PalindromeAssignUser palindromeId={data.id} currentUserProfileId={data.userProfileId} />
           </div>
         )}
       </CardContent>

@@ -50,6 +50,21 @@ export class ApiClient {
       this.request<typeof API_ENDPOINTS.palindromes.getById.response>(
         API_ENDPOINTS.palindromes.getById.path(id)
       ),
+    assignUser: (id: string, userProfileId: string | null) =>
+      this.request<typeof API_ENDPOINTS.palindromes.assignUser.response>(
+        API_ENDPOINTS.palindromes.assignUser.path(id),
+        {
+          method: API_ENDPOINTS.palindromes.assignUser.method,
+          body: JSON.stringify({ userProfileId }),
+        }
+      ),
+  }
+
+  userProfiles = {
+    list: () =>
+      this.request<typeof API_ENDPOINTS.userProfiles.list.response>(
+        API_ENDPOINTS.userProfiles.list.path
+      ),
   }
 }
 
