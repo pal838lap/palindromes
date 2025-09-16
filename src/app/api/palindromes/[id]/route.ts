@@ -39,7 +39,9 @@ export async function PATCH(
   } catch {
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 })
   }
-  const userProfileId = body.userProfileId ?? null
+  // Treat empty string or undefined as null (unassign)
+  const rawUserProfileId = body.userProfileId
+  const userProfileId = (rawUserProfileId === '' || rawUserProfileId == null) ? null : rawUserProfileId
   try {
     // Update record
     const [updated] = await db
