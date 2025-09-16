@@ -21,6 +21,20 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      // Local Supabase storage (development)
+      {
+        protocol: 'http',
+        hostname: '127.0.0.1',
+        port: '54321',
+        pathname: '/storage/v1/object/public/palindromes/**',
+      },
+      // Add your Supabase project domain here once known (replace PROJECT_REF)
+      // {
+      //   protocol: 'https',
+      //   hostname: 'PROJECT_REF.supabase.co',
+      //   port: '',
+      //   pathname: '/storage/v1/object/public/palindromes/**',
+      // },
     ],
   },
 
