@@ -1,13 +1,13 @@
 {
   "totalPalindromes": 9400,
-  "pending": 7179,
-  "found": 531,
-  "notFound": 898,
+  "pending": 6878,
+  "found": 625,
+  "notFound": 1011,
   "errors": 0,
   "retryNeeded": 0,
-  "offRoad": 792,
-  "addedToDatabase": 1323,
-  "lastUpdated": "2025-09-16T11:58:30.116Z",
+  "offRoad": 886,
+  "addedToDatabase": 1511,
+  "lastUpdated": "2025-09-16T12:35:36.506Z",
   "palindromes": {
     "1000001": {
       "plateNumber": "1000001",
@@ -38510,2712 +38510,5524 @@
     },
     "3221223": {
       "plateNumber": "3221223",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:58:42.127Z",
+      "lastAttempt": "2025-09-16T11:58:41.848Z",
+      "data": {
+        "plateNumber": "3221223",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3222223": {
       "plateNumber": "3222223",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:58:41.915Z",
+      "lastAttempt": "2025-09-16T11:58:41.915Z",
+      "data": {
+        "plateNumber": "3222223",
+        "found": false
+      }
     },
     "3223223": {
       "plateNumber": "3223223",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:58:42.178Z",
+      "lastAttempt": "2025-09-16T11:58:41.974Z",
+      "data": {
+        "plateNumber": "3223223",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3224223": {
       "plateNumber": "3224223",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:58:42.243Z",
+      "lastAttempt": "2025-09-16T11:58:42.044Z",
+      "data": {
+        "plateNumber": "3224223",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3225223": {
       "plateNumber": "3225223",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:59:23.188Z",
+      "lastAttempt": "2025-09-16T11:59:22.927Z",
+      "data": {
+        "plateNumber": "3225223",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3226223": {
       "plateNumber": "3226223",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:59:23.240Z",
+      "lastAttempt": "2025-09-16T11:59:22.990Z",
+      "data": {
+        "plateNumber": "3226223",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3227223": {
       "plateNumber": "3227223",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:59:23.292Z",
+      "lastAttempt": "2025-09-16T11:59:23.065Z",
+      "data": {
+        "plateNumber": "3227223",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3228223": {
       "plateNumber": "3228223",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:59:23.126Z",
+      "lastAttempt": "2025-09-16T11:59:23.126Z",
+      "data": {
+        "plateNumber": "3228223",
+        "found": false
+      }
     },
     "3229223": {
       "plateNumber": "3229223",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:59:43.156Z",
+      "lastAttempt": "2025-09-16T11:59:42.813Z",
+      "data": {
+        "plateNumber": "3229223",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3230323": {
       "plateNumber": "3230323",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:59:42.878Z",
+      "lastAttempt": "2025-09-16T11:59:42.878Z",
+      "data": {
+        "plateNumber": "3230323",
+        "found": false
+      }
     },
     "3231323": {
       "plateNumber": "3231323",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:59:43.217Z",
+      "lastAttempt": "2025-09-16T11:59:42.945Z",
+      "data": {
+        "plateNumber": "3231323",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3232323": {
       "plateNumber": "3232323",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T11:59:43.272Z",
+      "lastAttempt": "2025-09-16T11:59:43.010Z",
+      "data": {
+        "plateNumber": "3232323",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3233323": {
       "plateNumber": "3233323",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:00.169Z",
+      "lastAttempt": "2025-09-16T11:59:59.886Z",
+      "data": {
+        "plateNumber": "3233323",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3234323": {
       "plateNumber": "3234323",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:00.227Z",
+      "lastAttempt": "2025-09-16T11:59:59.973Z",
+      "data": {
+        "plateNumber": "3234323",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3235323": {
       "plateNumber": "3235323",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:00.294Z",
+      "lastAttempt": "2025-09-16T12:00:00.040Z",
+      "data": {
+        "plateNumber": "3235323",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3236323": {
       "plateNumber": "3236323",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:00.341Z",
+      "lastAttempt": "2025-09-16T12:00:00.110Z",
+      "data": {
+        "plateNumber": "3236323",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3237323": {
       "plateNumber": "3237323",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:18.280Z",
+      "lastAttempt": "2025-09-16T12:00:18.280Z",
+      "data": {
+        "plateNumber": "3237323",
+        "found": false
+      }
     },
     "3238323": {
       "plateNumber": "3238323",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:18.551Z",
+      "lastAttempt": "2025-09-16T12:00:18.361Z",
+      "data": {
+        "plateNumber": "3238323",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3239323": {
       "plateNumber": "3239323",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:18.606Z",
+      "lastAttempt": "2025-09-16T12:00:18.434Z",
+      "data": {
+        "plateNumber": "3239323",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3240423": {
       "plateNumber": "3240423",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:18.653Z",
+      "lastAttempt": "2025-09-16T12:00:18.499Z",
+      "data": {
+        "plateNumber": "3240423",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3241423": {
       "plateNumber": "3241423",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:32.056Z",
+      "lastAttempt": "2025-09-16T12:00:31.827Z",
+      "data": {
+        "plateNumber": "3241423",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3242423": {
       "plateNumber": "3242423",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:32.114Z",
+      "lastAttempt": "2025-09-16T12:00:31.906Z",
+      "data": {
+        "plateNumber": "3242423",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3243423": {
       "plateNumber": "3243423",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:32.164Z",
+      "lastAttempt": "2025-09-16T12:00:31.955Z",
+      "data": {
+        "plateNumber": "3243423",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3244423": {
       "plateNumber": "3244423",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:32.001Z",
+      "lastAttempt": "2025-09-16T12:00:32.001Z",
+      "data": {
+        "plateNumber": "3244423",
+        "found": false
+      }
     },
     "3245423": {
       "plateNumber": "3245423",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:46.727Z",
+      "lastAttempt": "2025-09-16T12:00:46.537Z",
+      "data": {
+        "plateNumber": "3245423",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3246423": {
       "plateNumber": "3246423",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:46.771Z",
+      "lastAttempt": "2025-09-16T12:00:46.588Z",
+      "data": {
+        "plateNumber": "3246423",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3247423": {
       "plateNumber": "3247423",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:46.878Z",
+      "lastAttempt": "2025-09-16T12:00:46.631Z",
+      "data": {
+        "plateNumber": "3247423",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3248423": {
       "plateNumber": "3248423",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:46.935Z",
+      "lastAttempt": "2025-09-16T12:00:46.677Z",
+      "data": {
+        "plateNumber": "3248423",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3249423": {
       "plateNumber": "3249423",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:58.419Z",
+      "lastAttempt": "2025-09-16T12:00:58.153Z",
+      "data": {
+        "plateNumber": "3249423",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3250523": {
       "plateNumber": "3250523",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:58.265Z",
+      "lastAttempt": "2025-09-16T12:00:58.265Z",
+      "data": {
+        "plateNumber": "3250523",
+        "found": false
+      }
     },
     "3251523": {
       "plateNumber": "3251523",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:58.473Z",
+      "lastAttempt": "2025-09-16T12:00:58.316Z",
+      "data": {
+        "plateNumber": "3251523",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3252523": {
       "plateNumber": "3252523",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:00:58.527Z",
+      "lastAttempt": "2025-09-16T12:00:58.363Z",
+      "data": {
+        "plateNumber": "3252523",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3253523": {
       "plateNumber": "3253523",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:14.102Z",
+      "lastAttempt": "2025-09-16T12:01:13.767Z",
+      "data": {
+        "plateNumber": "3253523",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3254523": {
       "plateNumber": "3254523",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:13.893Z",
+      "lastAttempt": "2025-09-16T12:01:13.893Z",
+      "data": {
+        "plateNumber": "3254523",
+        "found": false
+      }
     },
     "3255523": {
       "plateNumber": "3255523",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:14.152Z",
+      "lastAttempt": "2025-09-16T12:01:13.943Z",
+      "data": {
+        "plateNumber": "3255523",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3256523": {
       "plateNumber": "3256523",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:13.995Z",
+      "lastAttempt": "2025-09-16T12:01:13.995Z",
+      "data": {
+        "plateNumber": "3256523",
+        "found": false
+      }
     },
     "3257523": {
       "plateNumber": "3257523",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:34.460Z",
+      "lastAttempt": "2025-09-16T12:01:34.259Z",
+      "data": {
+        "plateNumber": "3257523",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3258523": {
       "plateNumber": "3258523",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:34.515Z",
+      "lastAttempt": "2025-09-16T12:01:34.318Z",
+      "data": {
+        "plateNumber": "3258523",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3259523": {
       "plateNumber": "3259523",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:34.559Z",
+      "lastAttempt": "2025-09-16T12:01:34.366Z",
+      "data": {
+        "plateNumber": "3259523",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3260623": {
       "plateNumber": "3260623",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:34.603Z",
+      "lastAttempt": "2025-09-16T12:01:34.415Z",
+      "data": {
+        "plateNumber": "3260623",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3261623": {
       "plateNumber": "3261623",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:52.440Z",
+      "lastAttempt": "2025-09-16T12:01:52.153Z",
+      "data": {
+        "plateNumber": "3261623",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3262623": {
       "plateNumber": "3262623",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:52.493Z",
+      "lastAttempt": "2025-09-16T12:01:52.206Z",
+      "data": {
+        "plateNumber": "3262623",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3263623": {
       "plateNumber": "3263623",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:52.544Z",
+      "lastAttempt": "2025-09-16T12:01:52.257Z",
+      "data": {
+        "plateNumber": "3263623",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3264623": {
       "plateNumber": "3264623",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:01:52.589Z",
+      "lastAttempt": "2025-09-16T12:01:52.317Z",
+      "data": {
+        "plateNumber": "3264623",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3265623": {
       "plateNumber": "3265623",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:03.828Z",
+      "lastAttempt": "2025-09-16T12:02:03.828Z",
+      "data": {
+        "plateNumber": "3265623",
+        "found": false
+      }
     },
     "3266623": {
       "plateNumber": "3266623",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:04.039Z",
+      "lastAttempt": "2025-09-16T12:02:03.882Z",
+      "data": {
+        "plateNumber": "3266623",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3267623": {
       "plateNumber": "3267623",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:04.137Z",
+      "lastAttempt": "2025-09-16T12:02:03.933Z",
+      "data": {
+        "plateNumber": "3267623",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3268623": {
       "plateNumber": "3268623",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:04.222Z",
+      "lastAttempt": "2025-09-16T12:02:03.984Z",
+      "data": {
+        "plateNumber": "3268623",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3269623": {
       "plateNumber": "3269623",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:26.706Z",
+      "lastAttempt": "2025-09-16T12:02:26.465Z",
+      "data": {
+        "plateNumber": "3269623",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3270723": {
       "plateNumber": "3270723",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:26.753Z",
+      "lastAttempt": "2025-09-16T12:02:26.528Z",
+      "data": {
+        "plateNumber": "3270723",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3271723": {
       "plateNumber": "3271723",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:26.799Z",
+      "lastAttempt": "2025-09-16T12:02:26.579Z",
+      "data": {
+        "plateNumber": "3271723",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3272723": {
       "plateNumber": "3272723",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:26.864Z",
+      "lastAttempt": "2025-09-16T12:02:26.652Z",
+      "data": {
+        "plateNumber": "3272723",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3273723": {
       "plateNumber": "3273723",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:45.272Z",
+      "lastAttempt": "2025-09-16T12:02:45.041Z",
+      "data": {
+        "plateNumber": "3273723",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3274723": {
       "plateNumber": "3274723",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:45.317Z",
+      "lastAttempt": "2025-09-16T12:02:45.108Z",
+      "data": {
+        "plateNumber": "3274723",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3275723": {
       "plateNumber": "3275723",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:45.366Z",
+      "lastAttempt": "2025-09-16T12:02:45.159Z",
+      "data": {
+        "plateNumber": "3275723",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3276723": {
       "plateNumber": "3276723",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:45.414Z",
+      "lastAttempt": "2025-09-16T12:02:45.218Z",
+      "data": {
+        "plateNumber": "3276723",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3277723": {
       "plateNumber": "3277723",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:57.744Z",
+      "lastAttempt": "2025-09-16T12:02:57.499Z",
+      "data": {
+        "plateNumber": "3277723",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3278723": {
       "plateNumber": "3278723",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:57.794Z",
+      "lastAttempt": "2025-09-16T12:02:57.567Z",
+      "data": {
+        "plateNumber": "3278723",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3279723": {
       "plateNumber": "3279723",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:57.843Z",
+      "lastAttempt": "2025-09-16T12:02:57.621Z",
+      "data": {
+        "plateNumber": "3279723",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3280823": {
       "plateNumber": "3280823",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:02:57.891Z",
+      "lastAttempt": "2025-09-16T12:02:57.690Z",
+      "data": {
+        "plateNumber": "3280823",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3281823": {
       "plateNumber": "3281823",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:14.429Z",
+      "lastAttempt": "2025-09-16T12:03:14.222Z",
+      "data": {
+        "plateNumber": "3281823",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3282823": {
       "plateNumber": "3282823",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:14.475Z",
+      "lastAttempt": "2025-09-16T12:03:14.290Z",
+      "data": {
+        "plateNumber": "3282823",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3283823": {
       "plateNumber": "3283823",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:14.523Z",
+      "lastAttempt": "2025-09-16T12:03:14.336Z",
+      "data": {
+        "plateNumber": "3283823",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3284823": {
       "plateNumber": "3284823",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:14.567Z",
+      "lastAttempt": "2025-09-16T12:03:14.380Z",
+      "data": {
+        "plateNumber": "3284823",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3285823": {
       "plateNumber": "3285823",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:24.063Z",
+      "lastAttempt": "2025-09-16T12:03:23.707Z",
+      "data": {
+        "plateNumber": "3285823",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3286823": {
       "plateNumber": "3286823",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:24.113Z",
+      "lastAttempt": "2025-09-16T12:03:23.837Z",
+      "data": {
+        "plateNumber": "3286823",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3287823": {
       "plateNumber": "3287823",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:23.897Z",
+      "lastAttempt": "2025-09-16T12:03:23.897Z",
+      "data": {
+        "plateNumber": "3287823",
+        "found": false
+      }
     },
     "3288823": {
       "plateNumber": "3288823",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:24.167Z",
+      "lastAttempt": "2025-09-16T12:03:23.947Z",
+      "data": {
+        "plateNumber": "3288823",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3289823": {
       "plateNumber": "3289823",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:36.516Z",
+      "lastAttempt": "2025-09-16T12:03:36.283Z",
+      "data": {
+        "plateNumber": "3289823",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סובארו",
+        "model": "IMPREZA TUR NEW",
+        "color": "כחול",
+        "year": 2003,
+        "engineVolume": 1994,
+        "fuelType": "בנזין",
+        "chassisNumber": "JF1GDALD33G045277",
+        "vehicleType": "סדאן",
+        "productionCountry": "יפן",
+        "weight": 1850,
+        "seats": 5
+      }
     },
     "3290923": {
       "plateNumber": "3290923",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:36.562Z",
+      "lastAttempt": "2025-09-16T12:03:36.361Z",
+      "data": {
+        "plateNumber": "3290923",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3291923": {
       "plateNumber": "3291923",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:36.406Z",
+      "lastAttempt": "2025-09-16T12:03:36.406Z",
+      "data": {
+        "plateNumber": "3291923",
+        "found": false
+      }
     },
     "3292923": {
       "plateNumber": "3292923",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:03:36.611Z",
+      "lastAttempt": "2025-09-16T12:03:36.452Z",
+      "data": {
+        "plateNumber": "3292923",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3293923": {
       "plateNumber": "3293923",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:03.176Z",
+      "lastAttempt": "2025-09-16T12:04:02.865Z",
+      "data": {
+        "plateNumber": "3293923",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3294923": {
       "plateNumber": "3294923",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:03.247Z",
+      "lastAttempt": "2025-09-16T12:04:02.993Z",
+      "data": {
+        "plateNumber": "3294923",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סובארו",
+        "model": "IMPREZA NEW",
+        "color": "כסף",
+        "year": 2004,
+        "engineVolume": 1597,
+        "fuelType": "בנזין",
+        "chassisNumber": "JF1GD4LR94G442423",
+        "vehicleType": "סדאן",
+        "productionCountry": "יפן",
+        "weight": 1660,
+        "seats": 5
+      }
     },
     "3295923": {
       "plateNumber": "3295923",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:03.296Z",
+      "lastAttempt": "2025-09-16T12:04:03.051Z",
+      "data": {
+        "plateNumber": "3295923",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3296923": {
       "plateNumber": "3296923",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:03.346Z",
+      "lastAttempt": "2025-09-16T12:04:03.114Z",
+      "data": {
+        "plateNumber": "3296923",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3297923": {
       "plateNumber": "3297923",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:25.593Z",
+      "lastAttempt": "2025-09-16T12:04:25.317Z",
+      "data": {
+        "plateNumber": "3297923",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3298923": {
       "plateNumber": "3298923",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:25.643Z",
+      "lastAttempt": "2025-09-16T12:04:25.435Z",
+      "data": {
+        "plateNumber": "3298923",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3299923": {
       "plateNumber": "3299923",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:25.695Z",
+      "lastAttempt": "2025-09-16T12:04:25.485Z",
+      "data": {
+        "plateNumber": "3299923",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3300033": {
       "plateNumber": "3300033",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:25.768Z",
+      "lastAttempt": "2025-09-16T12:04:25.533Z",
+      "data": {
+        "plateNumber": "3300033",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "INFINITI Q70",
+        "color": "שחור מטלי",
+        "year": 2016,
+        "engineVolume": 3696,
+        "fuelType": "בנזין",
+        "chassisNumber": "JN1*BBBY51*U0710021",
+        "registrationDate": "04/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "יפן",
+        "weight": 2310,
+        "seats": 5
+      }
     },
     "3301033": {
       "plateNumber": "3301033",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:37.412Z",
+      "lastAttempt": "2025-09-16T12:04:37.157Z",
+      "data": {
+        "plateNumber": "3301033",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "KADJAR",
+        "color": "שחור מטלי",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*RFE004*G0099384",
+        "registrationDate": "08/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "ספרד",
+        "weight": 1943,
+        "seats": 5
+      }
     },
     "3302033": {
       "plateNumber": "3302033",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:37.468Z",
+      "lastAttempt": "2025-09-16T12:04:37.225Z",
+      "data": {
+        "plateNumber": "3302033",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3303033": {
       "plateNumber": "3303033",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:37.573Z",
+      "lastAttempt": "2025-09-16T12:04:37.275Z",
+      "data": {
+        "plateNumber": "3303033",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "SJN*FEAJ11*U1404732",
+        "registrationDate": "04/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 1880,
+        "seats": 5
+      }
     },
     "3304033": {
       "plateNumber": "3304033",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:04:37.627Z",
+      "lastAttempt": "2025-09-16T12:04:37.350Z",
+      "data": {
+        "plateNumber": "3304033",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "SANDERO",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 898,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*5SDA1C*G0087109",
+        "registrationDate": "04/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "רומניה",
+        "weight": 1550,
+        "seats": 5
+      }
     },
     "3305033": {
       "plateNumber": "3305033",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:05:15.657Z",
+      "lastAttempt": "2025-09-16T12:05:15.382Z",
+      "data": {
+        "plateNumber": "3305033",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "SANDERO",
+        "color": "אדום מטל",
+        "year": 2016,
+        "engineVolume": 898,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*5SDA1C*G0087108",
+        "registrationDate": "03/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "רומניה",
+        "weight": 1550,
+        "seats": 5
+      }
     },
     "3306033": {
       "plateNumber": "3306033",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:05:15.726Z",
+      "lastAttempt": "2025-09-16T12:05:15.467Z",
+      "data": {
+        "plateNumber": "3306033",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "JUKE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1598,
+        "fuelType": "בנזין",
+        "chassisNumber": "SJN*FBAF15*U7103824",
+        "registrationDate": "03/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "בריטניה",
+        "weight": 1680,
+        "seats": 5
+      }
     },
     "3307033": {
       "plateNumber": "3307033",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:05:15.799Z",
+      "lastAttempt": "2025-09-16T12:05:15.518Z",
+      "data": {
+        "plateNumber": "3307033",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3308033": {
       "plateNumber": "3308033",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:05:15.883Z",
+      "lastAttempt": "2025-09-16T12:05:15.576Z",
+      "data": {
+        "plateNumber": "3308033",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "X-TRAIL",
+        "color": "אפור מטל",
+        "year": 2016,
+        "engineVolume": 1598,
+        "fuelType": "דיזל",
+        "chassisNumber": "JN1*JCAT32*U0024542",
+        "registrationDate": "04/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "יפן",
+        "weight": 2310,
+        "seats": 7
+      }
     },
     "3309033": {
       "plateNumber": "3309033",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 2,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:22:55.214Z",
+      "lastAttempt": "2025-09-16T12:22:55.000Z",
+      "data": {
+        "plateNumber": "3309033",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "SANDERO",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 898,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*5SDA1C*G0087094",
+        "registrationDate": "04/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "רומניה",
+        "weight": 1550,
+        "seats": 5
+      }
     },
     "3310133": {
       "plateNumber": "3310133",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 2,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:22:55.049Z",
+      "lastAttempt": "2025-09-16T12:22:55.049Z",
+      "data": {
+        "plateNumber": "3310133",
+        "found": false
+      }
     },
     "3311133": {
       "plateNumber": "3311133",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:06:19.066Z",
+      "lastAttempt": "2025-09-16T12:06:18.937Z",
+      "data": {
+        "plateNumber": "3311133",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "אפור מטל",
+        "year": 2017,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "SJN*FEAJ11*U1893710",
+        "registrationDate": "01/2017",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 1880,
+        "seats": 5
+      }
     },
     "3312133": {
       "plateNumber": "3312133",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 2,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:07:20.368Z",
+      "lastAttempt": "2025-09-16T12:07:20.207Z",
+      "data": {
+        "plateNumber": "3312133",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0088635",
+        "registrationDate": "04/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3313133": {
       "plateNumber": "3313133",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 2,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:08:21.594Z",
+      "lastAttempt": "2025-09-16T12:08:21.475Z",
+      "data": {
+        "plateNumber": "3313133",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3314133": {
       "plateNumber": "3314133",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 2,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:22:55.265Z",
+      "lastAttempt": "2025-09-16T12:22:55.093Z",
+      "data": {
+        "plateNumber": "3314133",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0088651",
+        "registrationDate": "04/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3315133": {
       "plateNumber": "3315133",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:13:22.421Z",
+      "lastAttempt": "2025-09-16T12:13:22.191Z",
+      "data": {
+        "plateNumber": "3315133",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "SJN*FEAJ11*U1404988",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 1880,
+        "seats": 5
+      }
     },
     "3316133": {
       "plateNumber": "3316133",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:09:22.888Z",
+      "lastAttempt": "2025-09-16T12:09:22.675Z",
+      "data": {
+        "plateNumber": "3316133",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0089490",
+        "registrationDate": "05/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3317133": {
       "plateNumber": "3317133",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 2,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:10:24.117Z",
+      "lastAttempt": "2025-09-16T12:10:23.992Z",
+      "data": {
+        "plateNumber": "3317133",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3318133": {
       "plateNumber": "3318133",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 2,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:13:22.470Z",
+      "lastAttempt": "2025-09-16T12:13:22.242Z",
+      "data": {
+        "plateNumber": "3318133",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3319133": {
       "plateNumber": "3319133",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:13:22.522Z",
+      "lastAttempt": "2025-09-16T12:13:22.289Z",
+      "data": {
+        "plateNumber": "3319133",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0088676",
+        "registrationDate": "04/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3320233": {
       "plateNumber": "3320233",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:13:22.569Z",
+      "lastAttempt": "2025-09-16T12:13:22.334Z",
+      "data": {
+        "plateNumber": "3320233",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "LODGY",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*JSDDY5*G0089123",
+        "registrationDate": "04/2016",
+        "vehicleType": "MPV",
+        "productionCountry": "מרוקו",
+        "weight": 1875,
+        "seats": 7
+      }
     },
     "3321233": {
       "plateNumber": "3321233",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:14:56.810Z",
+      "lastAttempt": "2025-09-16T12:14:56.565Z",
+      "data": {
+        "plateNumber": "3321233",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "MICRA",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1198,
+        "fuelType": "בנזין",
+        "chassisNumber": "MDH*FBUK13*U0312851",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "הודו",
+        "weight": 1425,
+        "seats": 5
+      }
     },
     "3322233": {
       "plateNumber": "3322233",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:14:56.851Z",
+      "lastAttempt": "2025-09-16T12:14:56.627Z",
+      "data": {
+        "plateNumber": "3322233",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3323233": {
       "plateNumber": "3323233",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:14:56.898Z",
+      "lastAttempt": "2025-09-16T12:14:56.680Z",
+      "data": {
+        "plateNumber": "3323233",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "X-TRAIL",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1598,
+        "fuelType": "דיזל",
+        "chassisNumber": "JN1*JCAT32*U0028559",
+        "registrationDate": "04/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "יפן",
+        "weight": 2310,
+        "seats": 7
+      }
     },
     "3324233": {
       "plateNumber": "3324233",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:14:56.939Z",
+      "lastAttempt": "2025-09-16T12:14:56.728Z",
+      "data": {
+        "plateNumber": "3324233",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3325233": {
       "plateNumber": "3325233",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:22:55.314Z",
+      "lastAttempt": "2025-09-16T12:22:55.134Z",
+      "data": {
+        "plateNumber": "3325233",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "SANDERO",
+        "color": "שחור מטלי",
+        "year": 2016,
+        "engineVolume": 898,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*5SDA1A*G0087589",
+        "registrationDate": "04/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "רומניה",
+        "weight": 1535,
+        "seats": 5
+      }
     },
     "3326233": {
       "plateNumber": "3326233",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:04.727Z",
+      "lastAttempt": "2025-09-16T12:23:04.518Z",
+      "data": {
+        "plateNumber": "3326233",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "שחור מטלי",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0088447",
+        "registrationDate": "04/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3327233": {
       "plateNumber": "3327233",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:04.780Z",
+      "lastAttempt": "2025-09-16T12:23:04.579Z",
+      "data": {
+        "plateNumber": "3327233",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "DOKKER",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "UU1*0SDCJ5*F0079064",
+        "registrationDate": "04/2016",
+        "vehicleType": "קומבי",
+        "productionCountry": "מרוקו",
+        "weight": 1838,
+        "seats": 5
+      }
     },
     "3328233": {
       "plateNumber": "3328233",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:04.830Z",
+      "lastAttempt": "2025-09-16T12:23:04.626Z",
+      "data": {
+        "plateNumber": "3328233",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "MICRA",
+        "color": "אפור כהה מטלי",
+        "year": 2016,
+        "engineVolume": 1198,
+        "fuelType": "בנזין",
+        "chassisNumber": "MDH*FBUK13*U0870481",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "הודו",
+        "weight": 1425,
+        "seats": 5
+      }
     },
     "3329233": {
       "plateNumber": "3329233",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:04.902Z",
+      "lastAttempt": "2025-09-16T12:23:04.670Z",
+      "data": {
+        "plateNumber": "3329233",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0088669",
+        "registrationDate": "05/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3330333": {
       "plateNumber": "3330333",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:16.345Z",
+      "lastAttempt": "2025-09-16T12:23:16.134Z",
+      "data": {
+        "plateNumber": "3330333",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "MICRA",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1198,
+        "fuelType": "בנזין",
+        "chassisNumber": "MDH*FBUK13*U0835372",
+        "registrationDate": "01/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "הודו",
+        "weight": 1425,
+        "seats": 5
+      }
     },
     "3331333": {
       "plateNumber": "3331333",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:16.400Z",
+      "lastAttempt": "2025-09-16T12:23:16.193Z",
+      "data": {
+        "plateNumber": "3331333",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "X-TRAIL",
+        "color": "שנהב לבן",
+        "year": 2019,
+        "engineVolume": 1995,
+        "fuelType": "דיזל",
+        "chassisNumber": "JN1JFNT32U0105420",
+        "registrationDate": "03/2019",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "יפן",
+        "weight": 2400,
+        "seats": 7
+      }
     },
     "3332333": {
       "plateNumber": "3332333",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:16.463Z",
+      "lastAttempt": "2025-09-16T12:23:16.236Z",
+      "data": {
+        "plateNumber": "3332333",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו צרפת",
+        "model": "MCF4VE",
+        "year": 2016,
+        "engineVolume": 2299,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*MCF4VE*G0090803",
+        "registrationDate": "08/2016",
+        "productionCountry": "צרפת",
+        "weight": 3510
+      }
     },
     "3333333": {
       "plateNumber": "3333333",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:16.508Z",
+      "lastAttempt": "2025-09-16T12:23:16.281Z",
+      "data": {
+        "plateNumber": "3333333",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3334333": {
       "plateNumber": "3334333",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:28.068Z",
+      "lastAttempt": "2025-09-16T12:23:27.860Z",
+      "data": {
+        "plateNumber": "3334333",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "ZOE",
+        "color": "שנהב לבן",
+        "year": 2017,
+        "fuelType": "חשמל",
+        "chassisNumber": "VF1*AGVYB5*G0006125",
+        "registrationDate": "01/2017",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "צרפת",
+        "weight": 1913,
+        "seats": 5
+      }
     },
     "3335333": {
       "plateNumber": "3335333",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:28.120Z",
+      "lastAttempt": "2025-09-16T12:23:27.921Z",
+      "data": {
+        "plateNumber": "3335333",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו צרפת",
+        "model": "7000CM",
+        "year": 2017,
+        "engineVolume": 2299,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*MC0007*G0008114",
+        "registrationDate": "01/2017",
+        "productionCountry": "צרפת",
+        "weight": 3510
+      }
     },
     "3336333": {
       "plateNumber": "3336333",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:28.176Z",
+      "lastAttempt": "2025-09-16T12:23:27.971Z",
+      "data": {
+        "plateNumber": "3336333",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "GT-R",
+        "color": "כסף מטלי",
+        "year": 2018,
+        "engineVolume": 3799,
+        "fuelType": "בנזין",
+        "chassisNumber": "JN1GANR35U0190055",
+        "registrationDate": "04/2018",
+        "vehicleType": "קופה",
+        "productionCountry": "יפן",
+        "weight": 2200,
+        "seats": 4
+      }
     },
     "3337333": {
       "plateNumber": "3337333",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:28.236Z",
+      "lastAttempt": "2025-09-16T12:23:28.015Z",
+      "data": {
+        "plateNumber": "3337333",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "KADJAR",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*RFE008*G0091806",
+        "registrationDate": "07/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "ספרד",
+        "weight": 1943,
+        "seats": 5
+      }
     },
     "3338333": {
       "plateNumber": "3338333",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:46.099Z",
+      "lastAttempt": "2025-09-16T12:23:45.893Z",
+      "data": {
+        "plateNumber": "3338333",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3339333": {
       "plateNumber": "3339333",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:46.158Z",
+      "lastAttempt": "2025-09-16T12:23:45.958Z",
+      "data": {
+        "plateNumber": "3339333",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "אפור מטל",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "SJN*FEAJ11*U1769911",
+        "registrationDate": "09/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 1880,
+        "seats": 5
+      }
     },
     "3340433": {
       "plateNumber": "3340433",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:46.211Z",
+      "lastAttempt": "2025-09-16T12:23:46.007Z",
+      "data": {
+        "plateNumber": "3340433",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0089399",
+        "registrationDate": "05/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3341433": {
       "plateNumber": "3341433",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:46.265Z",
+      "lastAttempt": "2025-09-16T12:23:46.050Z",
+      "data": {
+        "plateNumber": "3341433",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0089375",
+        "registrationDate": "05/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3342433": {
       "plateNumber": "3342433",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:56.218Z",
+      "lastAttempt": "2025-09-16T12:23:56.009Z",
+      "data": {
+        "plateNumber": "3342433",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "כסף מטלי",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0088751",
+        "registrationDate": "04/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3343433": {
       "plateNumber": "3343433",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:56.274Z",
+      "lastAttempt": "2025-09-16T12:23:56.071Z",
+      "data": {
+        "plateNumber": "3343433",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "אפור כהה מטלי",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0088812",
+        "registrationDate": "04/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3344433": {
       "plateNumber": "3344433",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:56.333Z",
+      "lastAttempt": "2025-09-16T12:23:56.120Z",
+      "data": {
+        "plateNumber": "3344433",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "GT-R",
+        "color": "שנהב לבן",
+        "year": 2017,
+        "engineVolume": 3799,
+        "fuelType": "בנזין",
+        "chassisNumber": "JN1*GANR35*U0180355",
+        "registrationDate": "02/2017",
+        "vehicleType": "קופה",
+        "productionCountry": "יפן",
+        "weight": 2200,
+        "seats": 4
+      }
     },
     "3345433": {
       "plateNumber": "3345433",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:23:56.400Z",
+      "lastAttempt": "2025-09-16T12:23:56.163Z",
+      "data": {
+        "plateNumber": "3345433",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3346433": {
       "plateNumber": "3346433",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:11.476Z",
+      "lastAttempt": "2025-09-16T12:24:11.257Z",
+      "data": {
+        "plateNumber": "3346433",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "DUSTER",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*HSDCW6*G0089088",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "רומניה",
+        "weight": 1751,
+        "seats": 5
+      }
     },
     "3347433": {
       "plateNumber": "3347433",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:11.529Z",
+      "lastAttempt": "2025-09-16T12:24:11.320Z",
+      "data": {
+        "plateNumber": "3347433",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "JUKE",
+        "color": "אפור מטל",
+        "year": 2016,
+        "engineVolume": 1598,
+        "fuelType": "בנזין",
+        "chassisNumber": "SJN*FBAF15*U7228882",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "בריטניה",
+        "weight": 1680,
+        "seats": 5
+      }
     },
     "3348433": {
       "plateNumber": "3348433",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:11.582Z",
+      "lastAttempt": "2025-09-16T12:24:11.374Z",
+      "data": {
+        "plateNumber": "3348433",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "כסף מטלי",
+        "year": 2016,
+        "engineVolume": 1598,
+        "fuelType": "דיזל",
+        "chassisNumber": "SJN*FDAJ11*U1664039",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 2005,
+        "seats": 5
+      }
     },
     "3349433": {
       "plateNumber": "3349433",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:11.632Z",
+      "lastAttempt": "2025-09-16T12:24:11.419Z",
+      "data": {
+        "plateNumber": "3349433",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0089404",
+        "registrationDate": "05/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3350533": {
       "plateNumber": "3350533",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:21.657Z",
+      "lastAttempt": "2025-09-16T12:24:21.452Z",
+      "data": {
+        "plateNumber": "3350533",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3351533": {
       "plateNumber": "3351533",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:21.711Z",
+      "lastAttempt": "2025-09-16T12:24:21.518Z",
+      "data": {
+        "plateNumber": "3351533",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0089493",
+        "registrationDate": "05/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3352533": {
       "plateNumber": "3352533",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:21.764Z",
+      "lastAttempt": "2025-09-16T12:24:21.562Z",
+      "data": {
+        "plateNumber": "3352533",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "SANDERO",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 898,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*5SDA1A*G0088830",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "רומניה",
+        "weight": 1535,
+        "seats": 5
+      }
     },
     "3353533": {
       "plateNumber": "3353533",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:21.817Z",
+      "lastAttempt": "2025-09-16T12:24:21.609Z",
+      "data": {
+        "plateNumber": "3353533",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "קרם",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0088765",
+        "registrationDate": "04/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3354533": {
       "plateNumber": "3354533",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:31.858Z",
+      "lastAttempt": "2025-09-16T12:24:31.643Z",
+      "data": {
+        "plateNumber": "3354533",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "כסף מטלי",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "SJN*FEAJ11*U1430649",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 1880,
+        "seats": 5
+      }
     },
     "3355533": {
       "plateNumber": "3355533",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:31.910Z",
+      "lastAttempt": "2025-09-16T12:24:31.704Z",
+      "data": {
+        "plateNumber": "3355533",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "MAXIMA",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 3498,
+        "fuelType": "בנזין",
+        "chassisNumber": "1N4*AA6AP0*GC441237",
+        "registrationDate": "08/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "ארהב\"",
+        "weight": 2105,
+        "seats": 5
+      }
     },
     "3356533": {
       "plateNumber": "3356533",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:31.961Z",
+      "lastAttempt": "2025-09-16T12:24:31.754Z",
+      "data": {
+        "plateNumber": "3356533",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "MEGANE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*KZ490J*G0091228",
+        "registrationDate": "05/2016",
+        "vehicleType": "סטיישן",
+        "productionCountry": "ספרד",
+        "weight": 1904,
+        "seats": 5
+      }
     },
     "3357533": {
       "plateNumber": "3357533",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:32.003Z",
+      "lastAttempt": "2025-09-16T12:24:31.799Z",
+      "data": {
+        "plateNumber": "3357533",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3358533": {
       "plateNumber": "3358533",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:47.520Z",
+      "lastAttempt": "2025-09-16T12:24:47.314Z",
+      "data": {
+        "plateNumber": "3358533",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "MEGANE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*KZ490J*G0091182",
+        "registrationDate": "05/2016",
+        "vehicleType": "סטיישן",
+        "productionCountry": "ספרד",
+        "weight": 1904,
+        "seats": 5
+      }
     },
     "3359533": {
       "plateNumber": "3359533",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:47.573Z",
+      "lastAttempt": "2025-09-16T12:24:47.376Z",
+      "data": {
+        "plateNumber": "3359533",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "SANDERO",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 898,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*5SDA1A*G0088847",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "רומניה",
+        "weight": 1535,
+        "seats": 5
+      }
     },
     "3360633": {
       "plateNumber": "3360633",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:47.623Z",
+      "lastAttempt": "2025-09-16T12:24:47.420Z",
+      "data": {
+        "plateNumber": "3360633",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "SANDERO",
+        "color": "אדום מטל",
+        "year": 2016,
+        "engineVolume": 898,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*5SDA1A*G0088854",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "רומניה",
+        "weight": 1535,
+        "seats": 5
+      }
     },
     "3361633": {
       "plateNumber": "3361633",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:47.761Z",
+      "lastAttempt": "2025-09-16T12:24:47.466Z",
+      "data": {
+        "plateNumber": "3361633",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1598,
+        "fuelType": "דיזל",
+        "chassisNumber": "SJN*FDAJ11*U1665851",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 2005,
+        "seats": 5
+      }
     },
     "3362633": {
       "plateNumber": "3362633",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:58.688Z",
+      "lastAttempt": "2025-09-16T12:24:58.473Z",
+      "data": {
+        "plateNumber": "3362633",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3363633": {
       "plateNumber": "3363633",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:58.745Z",
+      "lastAttempt": "2025-09-16T12:24:58.538Z",
+      "data": {
+        "plateNumber": "3363633",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "אפור כהה מטלי",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0088396",
+        "registrationDate": "05/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3364633": {
       "plateNumber": "3364633",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:58.804Z",
+      "lastAttempt": "2025-09-16T12:24:58.582Z",
+      "data": {
+        "plateNumber": "3364633",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "DUSTER",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*HSDCUN*F0084394",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "רומניה",
+        "weight": 1870,
+        "seats": 5
+      }
     },
     "3365633": {
       "plateNumber": "3365633",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:24:58.861Z",
+      "lastAttempt": "2025-09-16T12:24:58.627Z",
+      "data": {
+        "plateNumber": "3365633",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "SJN*FEAJ11*U1608739",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 1880,
+        "seats": 5
+      }
     },
     "3366633": {
       "plateNumber": "3366633",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:14.981Z",
+      "lastAttempt": "2025-09-16T12:25:14.763Z",
+      "data": {
+        "plateNumber": "3366633",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "MAXIMA",
+        "color": "שנהב לבן",
+        "year": 2015,
+        "engineVolume": 3498,
+        "fuelType": "בנזין",
+        "chassisNumber": "1N4*AA5AP1*EC489028",
+        "registrationDate": "07/2015",
+        "vehicleType": "סדאן",
+        "productionCountry": "ארהב\"",
+        "weight": 2131,
+        "seats": 5
+      }
     },
     "3367633": {
       "plateNumber": "3367633",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:15.035Z",
+      "lastAttempt": "2025-09-16T12:25:14.824Z",
+      "data": {
+        "plateNumber": "3367633",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "SANDERO",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 898,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*5SDA1A*G0088819",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "רומניה",
+        "weight": 1535,
+        "seats": 5
+      }
     },
     "3368633": {
       "plateNumber": "3368633",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:15.085Z",
+      "lastAttempt": "2025-09-16T12:25:14.873Z",
+      "data": {
+        "plateNumber": "3368633",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "אפור מטל",
+        "year": 2016,
+        "engineVolume": 1598,
+        "fuelType": "דיזל",
+        "chassisNumber": "SJN*FDAJ11*U1665931",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 2005,
+        "seats": 5
+      }
     },
     "3369633": {
       "plateNumber": "3369633",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:15.128Z",
+      "lastAttempt": "2025-09-16T12:25:14.917Z",
+      "data": {
+        "plateNumber": "3369633",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3370733": {
       "plateNumber": "3370733",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:23.561Z",
+      "lastAttempt": "2025-09-16T12:25:23.331Z",
+      "data": {
+        "plateNumber": "3370733",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "MAXIMA",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 3498,
+        "fuelType": "בנזין",
+        "chassisNumber": "1N4*AA6AP2*GC442860",
+        "registrationDate": "08/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "ארהב\"",
+        "weight": 2105,
+        "seats": 5
+      }
     },
     "3371733": {
       "plateNumber": "3371733",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:23.611Z",
+      "lastAttempt": "2025-09-16T12:25:23.401Z",
+      "data": {
+        "plateNumber": "3371733",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "CLIO",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "VF1*5RBU0D*G0093290",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "טורקיה",
+        "weight": 1664,
+        "seats": 5
+      }
     },
     "3372733": {
       "plateNumber": "3372733",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:23.670Z",
+      "lastAttempt": "2025-09-16T12:25:23.447Z",
+      "data": {
+        "plateNumber": "3372733",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "MEGANE",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*KZ490J*G0091189",
+        "registrationDate": "05/2016",
+        "vehicleType": "סטיישן",
+        "productionCountry": "ספרד",
+        "weight": 1904,
+        "seats": 5
+      }
     },
     "3373733": {
       "plateNumber": "3373733",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:23.732Z",
+      "lastAttempt": "2025-09-16T12:25:23.492Z",
+      "data": {
+        "plateNumber": "3373733",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "X-TRAIL",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1598,
+        "fuelType": "דיזל",
+        "chassisNumber": "JN1*JCAT32*U0031040",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "יפן",
+        "weight": 2310,
+        "seats": 7
+      }
     },
     "3374733": {
       "plateNumber": "3374733",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:37.623Z",
+      "lastAttempt": "2025-09-16T12:25:37.386Z",
+      "data": {
+        "plateNumber": "3374733",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "SANDERO",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1149,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*5SDE33*G0095218",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "רומניה",
+        "weight": 1500,
+        "seats": 5
+      }
     },
     "3375733": {
       "plateNumber": "3375733",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:37.675Z",
+      "lastAttempt": "2025-09-16T12:25:37.437Z",
+      "data": {
+        "plateNumber": "3375733",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "MICRA",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1198,
+        "fuelType": "בנזין",
+        "chassisNumber": "MDH*FBUK13*U0312628",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "הודו",
+        "weight": 1425,
+        "seats": 5
+      }
     },
     "3376733": {
       "plateNumber": "3376733",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:37.739Z",
+      "lastAttempt": "2025-09-16T12:25:37.500Z",
+      "data": {
+        "plateNumber": "3376733",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3377733": {
       "plateNumber": "3377733",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:37.797Z",
+      "lastAttempt": "2025-09-16T12:25:37.548Z",
+      "data": {
+        "plateNumber": "3377733",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3378733": {
       "plateNumber": "3378733",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:48.966Z",
+      "lastAttempt": "2025-09-16T12:25:48.690Z",
+      "data": {
+        "plateNumber": "3378733",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3379733": {
       "plateNumber": "3379733",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:49.127Z",
+      "lastAttempt": "2025-09-16T12:25:48.799Z",
+      "data": {
+        "plateNumber": "3379733",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3380833": {
       "plateNumber": "3380833",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:49.204Z",
+      "lastAttempt": "2025-09-16T12:25:48.850Z",
+      "data": {
+        "plateNumber": "3380833",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "SANDERO",
+        "color": "אדום מטל",
+        "year": 2016,
+        "engineVolume": 898,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*5SDA1A*G0089259",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "רומניה",
+        "weight": 1535,
+        "seats": 5
+      }
     },
     "3381833": {
       "plateNumber": "3381833",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:49.280Z",
+      "lastAttempt": "2025-09-16T12:25:48.907Z",
+      "data": {
+        "plateNumber": "3381833",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "אפור כהה מטלי",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0088814",
+        "registrationDate": "05/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3382833": {
       "plateNumber": "3382833",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:58.676Z",
+      "lastAttempt": "2025-09-16T12:25:57.964Z",
+      "data": {
+        "plateNumber": "3382833",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "X-TRAIL",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1598,
+        "fuelType": "דיזל",
+        "chassisNumber": "JN1*JCAT32*U0029379",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "יפן",
+        "weight": 2310,
+        "seats": 7
+      }
     },
     "3383833": {
       "plateNumber": "3383833",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:58.757Z",
+      "lastAttempt": "2025-09-16T12:25:58.348Z",
+      "data": {
+        "plateNumber": "3383833",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "NV200",
+        "color": "כסף מטלי",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VSK*YBAM20*U0126193",
+        "registrationDate": "05/2016",
+        "vehicleType": "ואן/נוסעים",
+        "productionCountry": "ספרד",
+        "weight": 2000,
+        "seats": 5
+      }
     },
     "3384833": {
       "plateNumber": "3384833",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:58.849Z",
+      "lastAttempt": "2025-09-16T12:25:58.472Z",
+      "data": {
+        "plateNumber": "3384833",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "X-TRAIL",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1598,
+        "fuelType": "דיזל",
+        "chassisNumber": "JN1*JCAT32*U0031178",
+        "registrationDate": "06/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "יפן",
+        "weight": 2310,
+        "seats": 7
+      }
     },
     "3385833": {
       "plateNumber": "3385833",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:25:58.908Z",
+      "lastAttempt": "2025-09-16T12:25:58.583Z",
+      "data": {
+        "plateNumber": "3385833",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "SJN*FEAJ11*U1417252",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 1880,
+        "seats": 5
+      }
     },
     "3386833": {
       "plateNumber": "3386833",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:10.892Z",
+      "lastAttempt": "2025-09-16T12:26:10.646Z",
+      "data": {
+        "plateNumber": "3386833",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "MICRA",
+        "color": "שחור מטלי",
+        "year": 2016,
+        "engineVolume": 1198,
+        "fuelType": "בנזין",
+        "chassisNumber": "MDH*FBUK13*U0312995",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "הודו",
+        "weight": 1425,
+        "seats": 5
+      }
     },
     "3387833": {
       "plateNumber": "3387833",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:11.061Z",
+      "lastAttempt": "2025-09-16T12:26:10.717Z",
+      "data": {
+        "plateNumber": "3387833",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3388833": {
       "plateNumber": "3388833",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:11.277Z",
+      "lastAttempt": "2025-09-16T12:26:10.771Z",
+      "data": {
+        "plateNumber": "3388833",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "אפור מטל",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "SJN*FEAJ11*U1606782",
+        "registrationDate": "08/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 1880,
+        "seats": 5
+      }
     },
     "3389833": {
       "plateNumber": "3389833",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:11.343Z",
+      "lastAttempt": "2025-09-16T12:26:10.828Z",
+      "data": {
+        "plateNumber": "3389833",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "X-TRAIL",
+        "color": "שחור מטלי",
+        "year": 2016,
+        "engineVolume": 1598,
+        "fuelType": "דיזל",
+        "chassisNumber": "JN1*JCAT32*U0031256",
+        "registrationDate": "06/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "יפן",
+        "weight": 2310,
+        "seats": 7
+      }
     },
     "3390933": {
       "plateNumber": "3390933",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:25.248Z",
+      "lastAttempt": "2025-09-16T12:26:24.994Z",
+      "data": {
+        "plateNumber": "3390933",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3391933": {
       "plateNumber": "3391933",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:25.299Z",
+      "lastAttempt": "2025-09-16T12:26:25.082Z",
+      "data": {
+        "plateNumber": "3391933",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3392933": {
       "plateNumber": "3392933",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:25.376Z",
+      "lastAttempt": "2025-09-16T12:26:25.139Z",
+      "data": {
+        "plateNumber": "3392933",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "DUSTER",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*HSDCUN*G0088099",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "רומניה",
+        "weight": 1870,
+        "seats": 5
+      }
     },
     "3393933": {
       "plateNumber": "3393933",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:25.464Z",
+      "lastAttempt": "2025-09-16T12:26:25.198Z",
+      "data": {
+        "plateNumber": "3393933",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "QASHQAI",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "SJN*FEAJ11*U1630240",
+        "registrationDate": "05/2016",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "בריטניה",
+        "weight": 1880,
+        "seats": 5
+      }
     },
     "3394933": {
       "plateNumber": "3394933",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:34.836Z",
+      "lastAttempt": "2025-09-16T12:26:34.611Z",
+      "data": {
+        "plateNumber": "3394933",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "NV200",
+        "color": "רב גווני",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VSK*YBAM20*U0126123",
+        "registrationDate": "06/2016",
+        "vehicleType": "ואן/נוסעים",
+        "productionCountry": "ספרד",
+        "weight": 2000,
+        "seats": 5
+      }
     },
     "3395933": {
       "plateNumber": "3395933",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:34.892Z",
+      "lastAttempt": "2025-09-16T12:26:34.681Z",
+      "data": {
+        "plateNumber": "3395933",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דאציה",
+        "model": "SANDERO",
+        "color": "שנהב לבן",
+        "year": 2016,
+        "engineVolume": 898,
+        "fuelType": "בנזין",
+        "chassisNumber": "UU1*5SDA1A*G0089291",
+        "registrationDate": "05/2016",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "רומניה",
+        "weight": 1535,
+        "seats": 5
+      }
     },
     "3396933": {
       "plateNumber": "3396933",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:34.944Z",
+      "lastAttempt": "2025-09-16T12:26:34.728Z",
+      "data": {
+        "plateNumber": "3396933",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "רנו",
+        "model": "FLUENCE",
+        "color": "בז מטאלי",
+        "year": 2016,
+        "engineVolume": 1461,
+        "fuelType": "דיזל",
+        "chassisNumber": "VF1*LZVU0J*G0088722",
+        "registrationDate": "05/2016",
+        "vehicleType": "סדאן",
+        "productionCountry": "טורקיה",
+        "weight": 1799,
+        "seats": 5
+      }
     },
     "3397933": {
       "plateNumber": "3397933",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:34.991Z",
+      "lastAttempt": "2025-09-16T12:26:34.774Z",
+      "data": {
+        "plateNumber": "3397933",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3398933": {
       "plateNumber": "3398933",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:51.985Z",
+      "lastAttempt": "2025-09-16T12:26:51.743Z",
+      "data": {
+        "plateNumber": "3398933",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3399933": {
       "plateNumber": "3399933",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:52.054Z",
+      "lastAttempt": "2025-09-16T12:26:51.832Z",
+      "data": {
+        "plateNumber": "3399933",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "ניסאן",
+        "model": "INFINITI Q60",
+        "color": "אפור מטל",
+        "year": 2017,
+        "engineVolume": 1991,
+        "fuelType": "בנזין",
+        "chassisNumber": "JN1*GCAV37*U0100632",
+        "registrationDate": "10/2017",
+        "vehicleType": "קופה",
+        "productionCountry": "יפן",
+        "weight": 2140,
+        "seats": 4
+      }
     },
     "3400043": {
       "plateNumber": "3400043",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:51.878Z",
+      "lastAttempt": "2025-09-16T12:26:51.878Z",
+      "data": {
+        "plateNumber": "3400043",
+        "found": false
+      }
     },
     "3401043": {
       "plateNumber": "3401043",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:26:51.925Z",
+      "lastAttempt": "2025-09-16T12:26:51.925Z",
+      "data": {
+        "plateNumber": "3401043",
+        "found": false
+      }
     },
     "3402043": {
       "plateNumber": "3402043",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:03.407Z",
+      "lastAttempt": "2025-09-16T12:27:03.407Z",
+      "data": {
+        "plateNumber": "3402043",
+        "found": false
+      }
     },
     "3403043": {
       "plateNumber": "3403043",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:03.546Z",
+      "lastAttempt": "2025-09-16T12:27:03.546Z",
+      "data": {
+        "plateNumber": "3403043",
+        "found": false
+      }
     },
     "3404043": {
       "plateNumber": "3404043",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:03.610Z",
+      "lastAttempt": "2025-09-16T12:27:03.610Z",
+      "data": {
+        "plateNumber": "3404043",
+        "found": false
+      }
     },
     "3405043": {
       "plateNumber": "3405043",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:03.668Z",
+      "lastAttempt": "2025-09-16T12:27:03.668Z",
+      "data": {
+        "plateNumber": "3405043",
+        "found": false
+      }
     },
     "3406043": {
       "plateNumber": "3406043",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:13.381Z",
+      "lastAttempt": "2025-09-16T12:27:13.381Z",
+      "data": {
+        "plateNumber": "3406043",
+        "found": false
+      }
     },
     "3407043": {
       "plateNumber": "3407043",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:13.482Z",
+      "lastAttempt": "2025-09-16T12:27:13.482Z",
+      "data": {
+        "plateNumber": "3407043",
+        "found": false
+      }
     },
     "3408043": {
       "plateNumber": "3408043",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:13.534Z",
+      "lastAttempt": "2025-09-16T12:27:13.534Z",
+      "data": {
+        "plateNumber": "3408043",
+        "found": false
+      }
     },
     "3409043": {
       "plateNumber": "3409043",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:13.580Z",
+      "lastAttempt": "2025-09-16T12:27:13.580Z",
+      "data": {
+        "plateNumber": "3409043",
+        "found": false
+      }
     },
     "3410143": {
       "plateNumber": "3410143",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:32.741Z",
+      "lastAttempt": "2025-09-16T12:27:32.741Z",
+      "data": {
+        "plateNumber": "3410143",
+        "found": false
+      }
     },
     "3411143": {
       "plateNumber": "3411143",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:32.825Z",
+      "lastAttempt": "2025-09-16T12:27:32.825Z",
+      "data": {
+        "plateNumber": "3411143",
+        "found": false
+      }
     },
     "3412143": {
       "plateNumber": "3412143",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:32.881Z",
+      "lastAttempt": "2025-09-16T12:27:32.881Z",
+      "data": {
+        "plateNumber": "3412143",
+        "found": false
+      }
     },
     "3413143": {
       "plateNumber": "3413143",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:32.926Z",
+      "lastAttempt": "2025-09-16T12:27:32.926Z",
+      "data": {
+        "plateNumber": "3413143",
+        "found": false
+      }
     },
     "3414143": {
       "plateNumber": "3414143",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:58.706Z",
+      "lastAttempt": "2025-09-16T12:27:58.706Z",
+      "data": {
+        "plateNumber": "3414143",
+        "found": false
+      }
     },
     "3415143": {
       "plateNumber": "3415143",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:58.787Z",
+      "lastAttempt": "2025-09-16T12:27:58.787Z",
+      "data": {
+        "plateNumber": "3415143",
+        "found": false
+      }
     },
     "3416143": {
       "plateNumber": "3416143",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:58.843Z",
+      "lastAttempt": "2025-09-16T12:27:58.843Z",
+      "data": {
+        "plateNumber": "3416143",
+        "found": false
+      }
     },
     "3417143": {
       "plateNumber": "3417143",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:27:58.886Z",
+      "lastAttempt": "2025-09-16T12:27:58.886Z",
+      "data": {
+        "plateNumber": "3417143",
+        "found": false
+      }
     },
     "3418143": {
       "plateNumber": "3418143",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:14.925Z",
+      "lastAttempt": "2025-09-16T12:28:14.925Z",
+      "data": {
+        "plateNumber": "3418143",
+        "found": false
+      }
     },
     "3419143": {
       "plateNumber": "3419143",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:15.036Z",
+      "lastAttempt": "2025-09-16T12:28:15.036Z",
+      "data": {
+        "plateNumber": "3419143",
+        "found": false
+      }
     },
     "3420243": {
       "plateNumber": "3420243",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:15.091Z",
+      "lastAttempt": "2025-09-16T12:28:15.091Z",
+      "data": {
+        "plateNumber": "3420243",
+        "found": false
+      }
     },
     "3421243": {
       "plateNumber": "3421243",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:15.134Z",
+      "lastAttempt": "2025-09-16T12:28:15.134Z",
+      "data": {
+        "plateNumber": "3421243",
+        "found": false
+      }
     },
     "3422243": {
       "plateNumber": "3422243",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:31.168Z",
+      "lastAttempt": "2025-09-16T12:28:31.168Z",
+      "data": {
+        "plateNumber": "3422243",
+        "found": false
+      }
     },
     "3423243": {
       "plateNumber": "3423243",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:31.280Z",
+      "lastAttempt": "2025-09-16T12:28:31.280Z",
+      "data": {
+        "plateNumber": "3423243",
+        "found": false
+      }
     },
     "3424243": {
       "plateNumber": "3424243",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:31.341Z",
+      "lastAttempt": "2025-09-16T12:28:31.341Z",
+      "data": {
+        "plateNumber": "3424243",
+        "found": false
+      }
     },
     "3425243": {
       "plateNumber": "3425243",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:31.390Z",
+      "lastAttempt": "2025-09-16T12:28:31.390Z",
+      "data": {
+        "plateNumber": "3425243",
+        "found": false
+      }
     },
     "3426243": {
       "plateNumber": "3426243",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:50.012Z",
+      "lastAttempt": "2025-09-16T12:28:50.012Z",
+      "data": {
+        "plateNumber": "3426243",
+        "found": false
+      }
     },
     "3427243": {
       "plateNumber": "3427243",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:50.135Z",
+      "lastAttempt": "2025-09-16T12:28:50.135Z",
+      "data": {
+        "plateNumber": "3427243",
+        "found": false
+      }
     },
     "3428243": {
       "plateNumber": "3428243",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:50.186Z",
+      "lastAttempt": "2025-09-16T12:28:50.186Z",
+      "data": {
+        "plateNumber": "3428243",
+        "found": false
+      }
     },
     "3429243": {
       "plateNumber": "3429243",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:28:50.235Z",
+      "lastAttempt": "2025-09-16T12:28:50.235Z",
+      "data": {
+        "plateNumber": "3429243",
+        "found": false
+      }
     },
     "3430343": {
       "plateNumber": "3430343",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:02.698Z",
+      "lastAttempt": "2025-09-16T12:29:02.698Z",
+      "data": {
+        "plateNumber": "3430343",
+        "found": false
+      }
     },
     "3431343": {
       "plateNumber": "3431343",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:02.758Z",
+      "lastAttempt": "2025-09-16T12:29:02.758Z",
+      "data": {
+        "plateNumber": "3431343",
+        "found": false
+      }
     },
     "3432343": {
       "plateNumber": "3432343",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:02.802Z",
+      "lastAttempt": "2025-09-16T12:29:02.802Z",
+      "data": {
+        "plateNumber": "3432343",
+        "found": false
+      }
     },
     "3433343": {
       "plateNumber": "3433343",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:02.851Z",
+      "lastAttempt": "2025-09-16T12:29:02.851Z",
+      "data": {
+        "plateNumber": "3433343",
+        "found": false
+      }
     },
     "3434343": {
       "plateNumber": "3434343",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:15.717Z",
+      "lastAttempt": "2025-09-16T12:29:15.717Z",
+      "data": {
+        "plateNumber": "3434343",
+        "found": false
+      }
     },
     "3435343": {
       "plateNumber": "3435343",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:15.786Z",
+      "lastAttempt": "2025-09-16T12:29:15.786Z",
+      "data": {
+        "plateNumber": "3435343",
+        "found": false
+      }
     },
     "3436343": {
       "plateNumber": "3436343",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:15.834Z",
+      "lastAttempt": "2025-09-16T12:29:15.834Z",
+      "data": {
+        "plateNumber": "3436343",
+        "found": false
+      }
     },
     "3437343": {
       "plateNumber": "3437343",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:15.882Z",
+      "lastAttempt": "2025-09-16T12:29:15.882Z",
+      "data": {
+        "plateNumber": "3437343",
+        "found": false
+      }
     },
     "3438343": {
       "plateNumber": "3438343",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:27.108Z",
+      "lastAttempt": "2025-09-16T12:29:27.108Z",
+      "data": {
+        "plateNumber": "3438343",
+        "found": false
+      }
     },
     "3439343": {
       "plateNumber": "3439343",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:27.178Z",
+      "lastAttempt": "2025-09-16T12:29:27.178Z",
+      "data": {
+        "plateNumber": "3439343",
+        "found": false
+      }
     },
     "3440443": {
       "plateNumber": "3440443",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:27.232Z",
+      "lastAttempt": "2025-09-16T12:29:27.232Z",
+      "data": {
+        "plateNumber": "3440443",
+        "found": false
+      }
     },
     "3441443": {
       "plateNumber": "3441443",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:27.290Z",
+      "lastAttempt": "2025-09-16T12:29:27.290Z",
+      "data": {
+        "plateNumber": "3441443",
+        "found": false
+      }
     },
     "3442443": {
       "plateNumber": "3442443",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:54.829Z",
+      "lastAttempt": "2025-09-16T12:29:54.829Z",
+      "data": {
+        "plateNumber": "3442443",
+        "found": false
+      }
     },
     "3443443": {
       "plateNumber": "3443443",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:54.905Z",
+      "lastAttempt": "2025-09-16T12:29:54.905Z",
+      "data": {
+        "plateNumber": "3443443",
+        "found": false
+      }
     },
     "3444443": {
       "plateNumber": "3444443",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:55.036Z",
+      "lastAttempt": "2025-09-16T12:29:55.036Z",
+      "data": {
+        "plateNumber": "3444443",
+        "found": false
+      }
     },
     "3445443": {
       "plateNumber": "3445443",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:29:55.107Z",
+      "lastAttempt": "2025-09-16T12:29:55.107Z",
+      "data": {
+        "plateNumber": "3445443",
+        "found": false
+      }
     },
     "3446443": {
       "plateNumber": "3446443",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:17.355Z",
+      "lastAttempt": "2025-09-16T12:30:17.355Z",
+      "data": {
+        "plateNumber": "3446443",
+        "found": false
+      }
     },
     "3447443": {
       "plateNumber": "3447443",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:17.422Z",
+      "lastAttempt": "2025-09-16T12:30:17.422Z",
+      "data": {
+        "plateNumber": "3447443",
+        "found": false
+      }
     },
     "3448443": {
       "plateNumber": "3448443",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:17.475Z",
+      "lastAttempt": "2025-09-16T12:30:17.475Z",
+      "data": {
+        "plateNumber": "3448443",
+        "found": false
+      }
     },
     "3449443": {
       "plateNumber": "3449443",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:17.538Z",
+      "lastAttempt": "2025-09-16T12:30:17.538Z",
+      "data": {
+        "plateNumber": "3449443",
+        "found": false
+      }
     },
     "3450543": {
       "plateNumber": "3450543",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:31.797Z",
+      "lastAttempt": "2025-09-16T12:30:31.797Z",
+      "data": {
+        "plateNumber": "3450543",
+        "found": false
+      }
     },
     "3451543": {
       "plateNumber": "3451543",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:31.871Z",
+      "lastAttempt": "2025-09-16T12:30:31.871Z",
+      "data": {
+        "plateNumber": "3451543",
+        "found": false
+      }
     },
     "3452543": {
       "plateNumber": "3452543",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:31.918Z",
+      "lastAttempt": "2025-09-16T12:30:31.918Z",
+      "data": {
+        "plateNumber": "3452543",
+        "found": false
+      }
     },
     "3453543": {
       "plateNumber": "3453543",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:31.967Z",
+      "lastAttempt": "2025-09-16T12:30:31.967Z",
+      "data": {
+        "plateNumber": "3453543",
+        "found": false
+      }
     },
     "3454543": {
       "plateNumber": "3454543",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:43.014Z",
+      "lastAttempt": "2025-09-16T12:30:43.014Z",
+      "data": {
+        "plateNumber": "3454543",
+        "found": false
+      }
     },
     "3455543": {
       "plateNumber": "3455543",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:43.209Z",
+      "lastAttempt": "2025-09-16T12:30:43.209Z",
+      "data": {
+        "plateNumber": "3455543",
+        "found": false
+      }
     },
     "3456543": {
       "plateNumber": "3456543",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:43.282Z",
+      "lastAttempt": "2025-09-16T12:30:43.282Z",
+      "data": {
+        "plateNumber": "3456543",
+        "found": false
+      }
     },
     "3457543": {
       "plateNumber": "3457543",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:43.377Z",
+      "lastAttempt": "2025-09-16T12:30:43.377Z",
+      "data": {
+        "plateNumber": "3457543",
+        "found": false
+      }
     },
     "3458543": {
       "plateNumber": "3458543",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:58.010Z",
+      "lastAttempt": "2025-09-16T12:30:58.010Z",
+      "data": {
+        "plateNumber": "3458543",
+        "found": false
+      }
     },
     "3459543": {
       "plateNumber": "3459543",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:58.140Z",
+      "lastAttempt": "2025-09-16T12:30:58.140Z",
+      "data": {
+        "plateNumber": "3459543",
+        "found": false
+      }
     },
     "3460643": {
       "plateNumber": "3460643",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:58.194Z",
+      "lastAttempt": "2025-09-16T12:30:58.194Z",
+      "data": {
+        "plateNumber": "3460643",
+        "found": false
+      }
     },
     "3461643": {
       "plateNumber": "3461643",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:30:58.243Z",
+      "lastAttempt": "2025-09-16T12:30:58.243Z",
+      "data": {
+        "plateNumber": "3461643",
+        "found": false
+      }
     },
     "3462643": {
       "plateNumber": "3462643",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:09.583Z",
+      "lastAttempt": "2025-09-16T12:31:09.583Z",
+      "data": {
+        "plateNumber": "3462643",
+        "found": false
+      }
     },
     "3463643": {
       "plateNumber": "3463643",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:09.672Z",
+      "lastAttempt": "2025-09-16T12:31:09.672Z",
+      "data": {
+        "plateNumber": "3463643",
+        "found": false
+      }
     },
     "3464643": {
       "plateNumber": "3464643",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:09.736Z",
+      "lastAttempt": "2025-09-16T12:31:09.736Z",
+      "data": {
+        "plateNumber": "3464643",
+        "found": false
+      }
     },
     "3465643": {
       "plateNumber": "3465643",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:09.789Z",
+      "lastAttempt": "2025-09-16T12:31:09.789Z",
+      "data": {
+        "plateNumber": "3465643",
+        "found": false
+      }
     },
     "3466643": {
       "plateNumber": "3466643",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:27.810Z",
+      "lastAttempt": "2025-09-16T12:31:27.810Z",
+      "data": {
+        "plateNumber": "3466643",
+        "found": false
+      }
     },
     "3467643": {
       "plateNumber": "3467643",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:27.932Z",
+      "lastAttempt": "2025-09-16T12:31:27.932Z",
+      "data": {
+        "plateNumber": "3467643",
+        "found": false
+      }
     },
     "3468643": {
       "plateNumber": "3468643",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:27.983Z",
+      "lastAttempt": "2025-09-16T12:31:27.983Z",
+      "data": {
+        "plateNumber": "3468643",
+        "found": false
+      }
     },
     "3469643": {
       "plateNumber": "3469643",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:28.027Z",
+      "lastAttempt": "2025-09-16T12:31:28.027Z",
+      "data": {
+        "plateNumber": "3469643",
+        "found": false
+      }
     },
     "3470743": {
       "plateNumber": "3470743",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:40.608Z",
+      "lastAttempt": "2025-09-16T12:31:40.608Z",
+      "data": {
+        "plateNumber": "3470743",
+        "found": false
+      }
     },
     "3471743": {
       "plateNumber": "3471743",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:40.740Z",
+      "lastAttempt": "2025-09-16T12:31:40.740Z",
+      "data": {
+        "plateNumber": "3471743",
+        "found": false
+      }
     },
     "3472743": {
       "plateNumber": "3472743",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:40.795Z",
+      "lastAttempt": "2025-09-16T12:31:40.795Z",
+      "data": {
+        "plateNumber": "3472743",
+        "found": false
+      }
     },
     "3473743": {
       "plateNumber": "3473743",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:40.847Z",
+      "lastAttempt": "2025-09-16T12:31:40.847Z",
+      "data": {
+        "plateNumber": "3473743",
+        "found": false
+      }
     },
     "3474743": {
       "plateNumber": "3474743",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:50.994Z",
+      "lastAttempt": "2025-09-16T12:31:50.994Z",
+      "data": {
+        "plateNumber": "3474743",
+        "found": false
+      }
     },
     "3475743": {
       "plateNumber": "3475743",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:51.091Z",
+      "lastAttempt": "2025-09-16T12:31:51.091Z",
+      "data": {
+        "plateNumber": "3475743",
+        "found": false
+      }
     },
     "3476743": {
       "plateNumber": "3476743",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:51.151Z",
+      "lastAttempt": "2025-09-16T12:31:51.151Z",
+      "data": {
+        "plateNumber": "3476743",
+        "found": false
+      }
     },
     "3477743": {
       "plateNumber": "3477743",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:31:51.202Z",
+      "lastAttempt": "2025-09-16T12:31:51.202Z",
+      "data": {
+        "plateNumber": "3477743",
+        "found": false
+      }
     },
     "3478743": {
       "plateNumber": "3478743",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:32:25.462Z",
+      "lastAttempt": "2025-09-16T12:32:25.462Z",
+      "data": {
+        "plateNumber": "3478743",
+        "found": false
+      }
     },
     "3479743": {
       "plateNumber": "3479743",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:32:25.566Z",
+      "lastAttempt": "2025-09-16T12:32:25.566Z",
+      "data": {
+        "plateNumber": "3479743",
+        "found": false
+      }
     },
     "3480843": {
       "plateNumber": "3480843",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:32:25.639Z",
+      "lastAttempt": "2025-09-16T12:32:25.639Z",
+      "data": {
+        "plateNumber": "3480843",
+        "found": false
+      }
     },
     "3481843": {
       "plateNumber": "3481843",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:32:25.693Z",
+      "lastAttempt": "2025-09-16T12:32:25.693Z",
+      "data": {
+        "plateNumber": "3481843",
+        "found": false
+      }
     },
     "3482843": {
       "plateNumber": "3482843",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:32:57.000Z",
+      "lastAttempt": "2025-09-16T12:32:57.000Z",
+      "data": {
+        "plateNumber": "3482843",
+        "found": false
+      }
     },
     "3483843": {
       "plateNumber": "3483843",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:32:57.100Z",
+      "lastAttempt": "2025-09-16T12:32:57.100Z",
+      "data": {
+        "plateNumber": "3483843",
+        "found": false
+      }
     },
     "3484843": {
       "plateNumber": "3484843",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:32:57.167Z",
+      "lastAttempt": "2025-09-16T12:32:57.167Z",
+      "data": {
+        "plateNumber": "3484843",
+        "found": false
+      }
     },
     "3485843": {
       "plateNumber": "3485843",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:32:57.217Z",
+      "lastAttempt": "2025-09-16T12:32:57.217Z",
+      "data": {
+        "plateNumber": "3485843",
+        "found": false
+      }
     },
     "3486843": {
       "plateNumber": "3486843",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:08.590Z",
+      "lastAttempt": "2025-09-16T12:33:08.590Z",
+      "data": {
+        "plateNumber": "3486843",
+        "found": false
+      }
     },
     "3487843": {
       "plateNumber": "3487843",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:08.666Z",
+      "lastAttempt": "2025-09-16T12:33:08.666Z",
+      "data": {
+        "plateNumber": "3487843",
+        "found": false
+      }
     },
     "3488843": {
       "plateNumber": "3488843",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:08.732Z",
+      "lastAttempt": "2025-09-16T12:33:08.732Z",
+      "data": {
+        "plateNumber": "3488843",
+        "found": false
+      }
     },
     "3489843": {
       "plateNumber": "3489843",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:08.784Z",
+      "lastAttempt": "2025-09-16T12:33:08.784Z",
+      "data": {
+        "plateNumber": "3489843",
+        "found": false
+      }
     },
     "3490943": {
       "plateNumber": "3490943",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:23.611Z",
+      "lastAttempt": "2025-09-16T12:33:23.611Z",
+      "data": {
+        "plateNumber": "3490943",
+        "found": false
+      }
     },
     "3491943": {
       "plateNumber": "3491943",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:23.725Z",
+      "lastAttempt": "2025-09-16T12:33:23.725Z",
+      "data": {
+        "plateNumber": "3491943",
+        "found": false
+      }
     },
     "3492943": {
       "plateNumber": "3492943",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:23.776Z",
+      "lastAttempt": "2025-09-16T12:33:23.776Z",
+      "data": {
+        "plateNumber": "3492943",
+        "found": false
+      }
     },
     "3493943": {
       "plateNumber": "3493943",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:23.820Z",
+      "lastAttempt": "2025-09-16T12:33:23.820Z",
+      "data": {
+        "plateNumber": "3493943",
+        "found": false
+      }
     },
     "3494943": {
       "plateNumber": "3494943",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:40.965Z",
+      "lastAttempt": "2025-09-16T12:33:40.965Z",
+      "data": {
+        "plateNumber": "3494943",
+        "found": false
+      }
     },
     "3495943": {
       "plateNumber": "3495943",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:41.063Z",
+      "lastAttempt": "2025-09-16T12:33:41.063Z",
+      "data": {
+        "plateNumber": "3495943",
+        "found": false
+      }
     },
     "3496943": {
       "plateNumber": "3496943",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:41.111Z",
+      "lastAttempt": "2025-09-16T12:33:41.111Z",
+      "data": {
+        "plateNumber": "3496943",
+        "found": false
+      }
     },
     "3497943": {
       "plateNumber": "3497943",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:41.157Z",
+      "lastAttempt": "2025-09-16T12:33:41.157Z",
+      "data": {
+        "plateNumber": "3497943",
+        "found": false
+      }
     },
     "3498943": {
       "plateNumber": "3498943",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:54.164Z",
+      "lastAttempt": "2025-09-16T12:33:54.164Z",
+      "data": {
+        "plateNumber": "3498943",
+        "found": false
+      }
     },
     "3499943": {
       "plateNumber": "3499943",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:54.263Z",
+      "lastAttempt": "2025-09-16T12:33:54.263Z",
+      "data": {
+        "plateNumber": "3499943",
+        "found": false
+      }
     },
     "3500053": {
       "plateNumber": "3500053",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:54.428Z",
+      "lastAttempt": "2025-09-16T12:33:54.318Z",
+      "data": {
+        "plateNumber": "3500053",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "אאודי",
+        "model": "S8",
+        "color": "אפור",
+        "year": 2014,
+        "engineVolume": 3993,
+        "fuelType": "בנזין",
+        "chassisNumber": "WAUZZZ4H7EN014793",
+        "registrationDate": "05/2014",
+        "vehicleType": "סדאן",
+        "productionCountry": "גרמניה",
+        "weight": 2590,
+        "seats": 5
+      }
     },
     "3501053": {
       "plateNumber": "3501053",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:33:54.555Z",
+      "lastAttempt": "2025-09-16T12:33:54.368Z",
+      "data": {
+        "plateNumber": "3501053",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סיאט",
+        "model": "IBIZA",
+        "color": "שחור מטלי",
+        "year": 2014,
+        "engineVolume": 1390,
+        "fuelType": "בנזין",
+        "chassisNumber": "VSSZZZ6JZER108373",
+        "registrationDate": "05/2014",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "ספרד",
+        "weight": 1526,
+        "seats": 5
+      }
     },
     "3502053": {
       "plateNumber": "3502053",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:34:09.165Z",
+      "lastAttempt": "2025-09-16T12:34:08.861Z",
+      "data": {
+        "plateNumber": "3502053",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3503053": {
       "plateNumber": "3503053",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:34:09.223Z",
+      "lastAttempt": "2025-09-16T12:34:08.991Z",
+      "data": {
+        "plateNumber": "3503053",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סיאט",
+        "model": "MII",
+        "color": "שנהב לבן",
+        "year": 2014,
+        "engineVolume": 999,
+        "fuelType": "בנזין",
+        "chassisNumber": "VSSZZZAAZED302824",
+        "registrationDate": "05/2014",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "סלובקיה",
+        "weight": 1290,
+        "seats": 4
+      }
     },
     "3504053": {
       "plateNumber": "3504053",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:34:09.290Z",
+      "lastAttempt": "2025-09-16T12:34:09.047Z",
+      "data": {
+        "plateNumber": "3504053",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סקודה",
+        "model": "YETI",
+        "color": "אפור מטל",
+        "year": 2014,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMBJF95L8E6036971",
+        "registrationDate": "05/2014",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "צ'כיה",
+        "weight": 1910,
+        "seats": 5
+      }
     },
     "3505053": {
       "plateNumber": "3505053",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:34:09.098Z",
+      "lastAttempt": "2025-09-16T12:34:09.098Z",
+      "data": {
+        "plateNumber": "3505053",
+        "found": false
+      }
     },
     "3506053": {
       "plateNumber": "3506053",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:34:20.356Z",
+      "lastAttempt": "2025-09-16T12:34:20.125Z",
+      "data": {
+        "plateNumber": "3506053",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3507053": {
       "plateNumber": "3507053",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:34:20.415Z",
+      "lastAttempt": "2025-09-16T12:34:20.204Z",
+      "data": {
+        "plateNumber": "3507053",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סקודה",
+        "model": "OCTAVIA",
+        "color": "אפור",
+        "year": 2014,
+        "engineVolume": 1984,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMBAE7NE8E0203180",
+        "registrationDate": "05/2014",
+        "vehicleType": "סדאן",
+        "productionCountry": "צ'כיה",
+        "weight": 1912,
+        "seats": 5
+      }
     },
     "3508053": {
       "plateNumber": "3508053",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:34:20.471Z",
+      "lastAttempt": "2025-09-16T12:34:20.253Z",
+      "data": {
+        "plateNumber": "3508053",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "פולקסווגן",
+        "model": "GOLF",
+        "color": "שנהב לבן",
+        "year": 2014,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "WVWZZZAUZEW320445",
+        "registrationDate": "05/2014",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "גרמניה",
+        "weight": 1730,
+        "seats": 5
+      }
     },
     "3509053": {
       "plateNumber": "3509053",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:34:20.526Z",
+      "lastAttempt": "2025-09-16T12:34:20.303Z",
+      "data": {
+        "plateNumber": "3509053",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "פולקסווגן",
+        "model": "JETTA",
+        "color": "שנהב לבן",
+        "year": 2014,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "WVWZZZ16ZEM020633",
+        "registrationDate": "05/2014",
+        "vehicleType": "סדאן",
+        "productionCountry": "מקסיקה",
+        "weight": 1820,
+        "seats": 5
+      }
     },
     "3510153": {
       "plateNumber": "3510153",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:01.799Z",
+      "lastAttempt": "2025-09-16T12:35:01.460Z",
+      "data": {
+        "plateNumber": "3510153",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סיאט",
+        "model": "TOLEDO",
+        "color": "בז",
+        "year": 2014,
+        "engineVolume": 1390,
+        "fuelType": "בנזין",
+        "chassisNumber": "VSSZZZNHZE1007749",
+        "registrationDate": "05/2014",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "צ'כיה",
+        "weight": 1690,
+        "seats": 5
+      }
     },
     "3511153": {
       "plateNumber": "3511153",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:01.866Z",
+      "lastAttempt": "2025-09-16T12:35:01.607Z",
+      "data": {
+        "plateNumber": "3511153",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "פולקסווגן",
+        "model": "PASSAT",
+        "color": "כחול מטל",
+        "year": 2014,
+        "engineVolume": 1798,
+        "fuelType": "בנזין",
+        "chassisNumber": "WVWZZZ3CZEE155729",
+        "registrationDate": "05/2014",
+        "vehicleType": "סדאן",
+        "productionCountry": "גרמניה",
+        "weight": 2050,
+        "seats": 5
+      }
     },
     "3512153": {
       "plateNumber": "3512153",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:01.928Z",
+      "lastAttempt": "2025-09-16T12:35:01.658Z",
+      "data": {
+        "plateNumber": "3512153",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סקודה",
+        "model": "YETI",
+        "color": "שנהב לבן",
+        "year": 2014,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMBJF75L8E6037879",
+        "registrationDate": "05/2014",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "צ'כיה",
+        "weight": 1910,
+        "seats": 5
+      }
     },
     "3513153": {
       "plateNumber": "3513153",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:01.995Z",
+      "lastAttempt": "2025-09-16T12:35:01.715Z",
+      "data": {
+        "plateNumber": "3513153",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סיאט",
+        "model": "LEON",
+        "color": "שן פיל",
+        "year": 2014,
+        "engineVolume": 1798,
+        "fuelType": "בנזין",
+        "chassisNumber": "VSSZZZ5FZER112226",
+        "registrationDate": "05/2014",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "ספרד",
+        "weight": 1810,
+        "seats": 5
+      }
     },
     "3514153": {
       "plateNumber": "3514153",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:19.779Z",
+      "lastAttempt": "2025-09-16T12:35:19.550Z",
+      "data": {
+        "plateNumber": "3514153",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3515153": {
       "plateNumber": "3515153",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:19.833Z",
+      "lastAttempt": "2025-09-16T12:35:19.623Z",
+      "data": {
+        "plateNumber": "3515153",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סקודה",
+        "model": "OCTAVIA",
+        "color": "שחור מטלי",
+        "year": 2014,
+        "engineVolume": 1395,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMBAC7NE8E0181445",
+        "registrationDate": "05/2014",
+        "vehicleType": "סדאן",
+        "productionCountry": "צ'כיה",
+        "weight": 1820,
+        "seats": 5
+      }
     },
     "3516153": {
       "plateNumber": "3516153",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:19.889Z",
+      "lastAttempt": "2025-09-16T12:35:19.675Z",
+      "data": {
+        "plateNumber": "3516153",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סקודה",
+        "model": "OCTAVIA",
+        "color": "אפור מטל",
+        "year": 2014,
+        "engineVolume": 1197,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMBAB7NE5E0180224",
+        "registrationDate": "05/2014",
+        "vehicleType": "סדאן",
+        "productionCountry": "צ'כיה",
+        "weight": 1805,
+        "seats": 5
+      }
     },
     "3517153": {
       "plateNumber": "3517153",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:19.942Z",
+      "lastAttempt": "2025-09-16T12:35:19.723Z",
+      "data": {
+        "plateNumber": "3517153",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סקודה",
+        "model": "OCTAVIA",
+        "color": "חום",
+        "year": 2014,
+        "engineVolume": 1395,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMBAC7NE3E0177514",
+        "registrationDate": "05/2014",
+        "vehicleType": "סדאן",
+        "productionCountry": "צ'כיה",
+        "weight": 1820,
+        "seats": 5
+      }
     },
     "3518153": {
       "plateNumber": "3518153",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:36.254Z",
+      "lastAttempt": "2025-09-16T12:35:35.875Z",
+      "data": {
+        "plateNumber": "3518153",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3519153": {
       "plateNumber": "3519153",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:36.330Z",
+      "lastAttempt": "2025-09-16T12:35:36.033Z",
+      "data": {
+        "plateNumber": "3519153",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סיאט",
+        "model": "TOLEDO",
+        "color": "כחול פנינה",
+        "year": 2014,
+        "engineVolume": 1390,
+        "fuelType": "בנזין",
+        "chassisNumber": "VSSZZZNHZE1007774",
+        "registrationDate": "05/2014",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "צ'כיה",
+        "weight": 1690,
+        "seats": 5
+      }
     },
     "3520253": {
       "plateNumber": "3520253",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:36.399Z",
+      "lastAttempt": "2025-09-16T12:35:36.084Z",
+      "data": {
+        "plateNumber": "3520253",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "3521253": {
       "plateNumber": "3521253",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T12:35:36.504Z",
+      "lastAttempt": "2025-09-16T12:35:36.148Z",
+      "data": {
+        "plateNumber": "3521253",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סיאט",
+        "model": "LEON",
+        "color": "ירקרק בהיר",
+        "year": 2014,
+        "engineVolume": 1395,
+        "fuelType": "בנזין",
+        "chassisNumber": "VSSZZZ5FZER113637",
+        "registrationDate": "05/2014",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "ספרד",
+        "weight": 1700,
+        "seats": 5
+      }
     },
     "3522253": {
       "plateNumber": "3522253",

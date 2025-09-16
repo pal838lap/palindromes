@@ -2,7 +2,6 @@
 import { 
   Card, 
   CardContent, 
-  CardDescription, 
   CardFooter, 
   CardHeader, 
   CardTitle 
@@ -20,7 +19,7 @@ import {
   X,
   Undo2
 } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useRef, useCallback } from 'react'
 import { cn } from '@/lib/utils'
 import type { PalindromeWithDetails } from '@/lib/db/schema'
 import { LicensePlate } from '@/components/license-plate'
@@ -51,6 +50,12 @@ export function PalindromeCard({
   const [localPreview, setLocalPreview] = useState<string | null>(null)
   const [pendingFile, setPendingFile] = useState<File | null>(null)
   const [pendingRemove, setPendingRemove] = useState(false)
+  const fileInputRef = useRef<HTMLInputElement | null>(null)
+
+  const triggerFileDialog = useCallback(() => {
+    if (mode !== 'edit') return
+    fileInputRef.current?.click()
+  }, [mode])
 
   function handleFileSelect(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0]
@@ -112,7 +117,33 @@ export function PalindromeCard({
 
       <CardContent className="space-y-4">
         {/* Picture (view or edit) */}
-        <div className="relative aspect-video w-full overflow-hidden rounded-lg border flex items-center justify-center bg-muted">
+        <div
+          className={cn(
+            "relative aspect-video w-full overflow-hidden rounded-lg border flex items-center justify-center bg-muted",
+            mode === 'edit' && 'cursor-pointer'
+          )}
+          onClick={(e) => {
+            // Prevent clicks on remove/undo buttons from opening dialog
+            if ((e.target as HTMLElement).closest('[data-no-upload]')) return
+            triggerFileDialog()
+          }}
+          role={mode === 'edit' ? 'button' : undefined}
+          aria-label={mode === 'edit' ? 'Upload or replace image' : undefined}
+          tabIndex={mode === 'edit' ? 0 : -1}
+          onKeyDown={(e) => {
+            if (mode === 'edit' && (e.key === 'Enter' || e.key === ' ')) {
+              e.preventDefault();
+              triggerFileDialog();
+            }
+          }}
+        >
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="image/*"
+            className="hidden"
+            onChange={handleFileSelect}
+          />
           {pendingRemove ? (
             <div className="text-xs text-muted-foreground">(Will remove)</div>
           ) : localPreview ? (
@@ -136,30 +167,35 @@ export function PalindromeCard({
             </div>
           )}
           {mode === 'edit' && (
-            <div className="absolute top-2 right-2 flex gap-2">
-              <label className="cursor-pointer bg-white/80 dark:bg-black/60 hover:bg-white text-xs px-2 py-1 rounded shadow">
-                +
-                <input type="file" accept="image/*" className="hidden" onChange={handleFileSelect} />
-              </label>
+            <>
               {(palindrome.picture || localPreview) && !pendingRemove && (
-                <button
-                  onClick={markRemove}
-                  className="bg-red-500/80 hover:bg-red-600 text-white text-xs px-2 py-1 rounded shadow flex items-center gap-1"
-                >
-                  <X className="h-3 w-3" />
-                  Remove
-                </button>
+                <div className="absolute top-2 right-2 flex gap-2" data-no-upload>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); markRemove() }}
+                    className="bg-red-500/80 hover:bg-red-600 text-white text-xs px-2 py-1 rounded shadow flex items-center gap-1"
+                    data-no-upload
+                  >
+                    <X className="h-3 w-3" />
+                    Remove
+                  </button>
+                </div>
               )}
               {pendingRemove && (
-                <button
-                  onClick={undoRemove}
-                  className="bg-amber-500/80 hover:bg-amber-600 text-white text-xs px-2 py-1 rounded shadow flex items-center gap-1"
-                >
-                  <Undo2 className="h-3 w-3" />
-                  Undo
-                </button>
+                <div className="absolute top-2 right-2" data-no-upload>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); undoRemove() }}
+                    className="bg-amber-500/80 hover:bg-amber-600 text-white text-xs px-2 py-1 rounded shadow flex items-center gap-1"
+                    data-no-upload
+                  >
+                    <Undo2 className="h-3 w-3" />
+                    Undo
+                  </button>
+                </div>
               )}
-            </div>
+              <div className="absolute bottom-1 right-2 text-[10px] px-1.5 py-0.5 rounded bg-black/50 text-white font-medium pointer-events-none select-none">
+                Click to {palindrome.picture || localPreview ? 'replace' : 'upload'}
+              </div>
+            </>
           )}
         </div>
         {/* Inline save/cancel removed; parent handles persistence */}

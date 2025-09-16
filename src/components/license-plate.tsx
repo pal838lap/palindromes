@@ -7,13 +7,35 @@ interface LicensePlateProps {
   className?: string
   country?: 'IL'
   size?: 'sm' | 'md' | 'lg'
+  /**
+   * If true, forces showing the raw value (no hyphen formatting) even if length matches.
+   */
+  disableFormat?: boolean
+}
+
+/**
+ * Format a numeric license plate id according to Israeli patterns:
+ * 7 digits: XX-YYY-XX
+ * 8 digits: XXX-YY-XXX
+ * Any other length or non purely numeric strings are returned unchanged.
+ */
+export function formatLicensePlateId(raw: string): string {
+  if (!/^\d+$/.test(raw)) return raw
+  if (raw.length === 7) {
+    return `${raw.slice(0,2)}-${raw.slice(2,5)}-${raw.slice(5)}`
+  }
+  if (raw.length === 8) {
+    return `${raw.slice(0,3)}-${raw.slice(3,5)}-${raw.slice(5)}`
+  }
+  return raw
 }
 
 // Simple Israeli-style plate: blue left bar (from svg) + yellow body + bold digits
-export function LicensePlate({ value, className, country = 'IL', size = 'md' }: LicensePlateProps) {
+export function LicensePlate({ value, className, country = 'IL', size = 'md', disableFormat }: LicensePlateProps) {
   const height = size === 'sm' ? 28 : size === 'lg' ? 52 : 40
   const paddingX = size === 'sm' ? 'px-3' : size === 'lg' ? 'px-6' : 'px-4'
   const textSize = size === 'sm' ? 'text-base' : size === 'lg' ? 'text-2xl' : 'text-xl'
+  const display = disableFormat ? value : formatLicensePlateId(value)
   return (
     <div
       className={cn(
@@ -21,6 +43,7 @@ export function LicensePlate({ value, className, country = 'IL', size = 'md' }: 
         className
       )}
       style={{ height }}
+      aria-label={value}
     >
       {country === 'IL' && (
         <div className="relative h-full aspect-[33/56] bg-[#0000f9] flex items-center justify-center">
@@ -36,7 +59,7 @@ export function LicensePlate({ value, className, country = 'IL', size = 'md' }: 
         )}
         style={{ fontFamily: 'ui-monospace, monospace' }}
       >
-        {value}
+        {display}
       </div>
     </div>
   )

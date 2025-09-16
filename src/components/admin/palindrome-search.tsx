@@ -10,11 +10,15 @@ import { useAssignPalindromeUser } from '@/hooks/use-assign-palindrome-user'
 import { useCreateUserProfile } from '@/hooks/use-create-user-profile'
 import { Button } from '@/components/ui/button'
 import { PalindromeCard } from '@/components/palindrome-card'
+import { formatLicensePlateId } from '@/components/license-plate'
 import { useUploadPalindromeImage, useRemovePalindromeImage } from '@/hooks/use-palindrome-image'
 import type { PalindromeWithDetails, UserProfile, Brand } from '@/lib/db/schema'
 
 export function PalindromeSearch() {
+  // Raw (unformatted) input value used for actual querying
   const [value, setValue] = useState('')
+  // Display value with hyphen formatting (controlled separately)
+  const [displayValue, setDisplayValue] = useState('')
   const { data, isLoading, isError, error } = usePalindrome(value.trim() || undefined)
   const queryClient = useQueryClient()
   // Image upload/remove now handled directly inside PalindromeCard edit mode
@@ -89,8 +93,24 @@ export function PalindromeSearch() {
         <div className="space-y-2">
           <Input
             placeholder="Enter palindrome id e.g. 12321"
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
+            value={displayValue}
+            onChange={(e) => {
+              const raw = e.target.value.replace(/[^0-9A-Za-z]/g, '') // allow alphanum, strip separators
+              setValue(raw)
+              // Only format purely numeric strings; keep alphanumerics as-is (no hyphens)
+              const formatted = /^\d+$/.test(raw) ? formatLicensePlateId(raw) : raw
+              setDisplayValue(formatted)
+            }}
+            onBlur={() => {
+              // Re-format on blur in case user pasted something partial
+              if (/^\d+$/.test(value)) {
+                setDisplayValue(formatLicensePlateId(value))
+              }
+            }}
+            onFocus={() => {
+              // Show raw when focusing to allow easy editing
+              setDisplayValue(value)
+            }}
           />
           <p className="text-xs text-muted-foreground">Search runs automatically when you type.</p>
         </div>
