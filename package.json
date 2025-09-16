@@ -15,16 +15,18 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
-    "db:stu#dio": "drizzle-kit studio",
+    "db:studio": "drizzle-kit studio",
     "supabase:start": "supabase start",
     "supabase:stop": "supabase stop",
     "supabase:reset": "supabase db reset",
     "supabase:status": "supabase status",
     "scrape-palindromes": "dotenv -e .env.local tsx src/scripts/scrape-palindromes.ts",
-    "scrape:test": "npm run scrape-palindromes -- --test --batch-size 16 --concurrency 16",
+    "scrape:test": "npm run scrape-palindromes -- --test --batch-size 3 --concurrency 3",
     "scrape:test-fast": "npm run scrape-palindromes -- --test --batch-size 50 --concurrency 10",
     "scrape:status": "npm run scrape-palindromes -- --status",
-    "scrape:init": "npm run scrape-palindromes -- --init-only"
+    "scrape:init": "npm run scrape-palindromes -- --init-only",
+    "scrape:retry": "npm run scrape-palindromes -- --retry-not-found",
+    "scrape:retry-test": "npm run scrape-palindromes -- --retry-not-found --test --batch-size 8 --concurrency 8"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^1.10.0",

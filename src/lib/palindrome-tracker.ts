@@ -101,14 +101,16 @@ export class PalindromeTracker {
    */
   private saveProgress(): void {
     try {
+      console.log(`💾 Saving progress to ${this.filePath}...`);
       const dataToSave = {
         ...this.progress,
         lastUpdated: new Date(),
       };
       
       writeFileSync(this.filePath, JSON.stringify(dataToSave, null, 2), 'utf-8');
+      console.log(`✅ Progress saved successfully. File size: ${JSON.stringify(dataToSave).length} bytes`);
     } catch (error) {
-      console.error('Error saving progress file:', error);
+      console.error('❌ Error saving progress file:', error);
     }
   }
 
@@ -149,36 +151,45 @@ export class PalindromeTracker {
   updatePalindromeStatus(result: ScrapingResult): void {
     const palindrome = this.progress.palindromes[result.plateNumber];
     if (!palindrome) {
-      console.warn(`Palindrome ${result.plateNumber} not found in tracking`);
+      console.warn(`⚠️  Palindrome not found in tracking: ${result.plateNumber}`);
       return;
     }
 
-    palindrome.lastAttempt = result.timestamp;
+    console.log(`📝 Updating palindrome ${result.plateNumber}: current status='${palindrome.status}'`);
+
+    palindrome.lastAttempt = new Date();
     palindrome.attemptCount++;
     palindrome.updatedAt = new Date();
 
     if (result.success && result.data) {
-      if (result.data.found) {
-        if (result.data.isOffRoad) {
-          palindrome.status = 'off_road';
-          palindrome.data = result.data;
-        } else {
-          palindrome.status = 'found';
-          palindrome.data = result.data;
-        }
+      // Persist the full vehicle data so later DB save has access to manufacturer/model/year/etc.
+      palindrome.data = result.data;
+      const { found, isOffRoad } = result.data;
+
+      if (found && !isOffRoad) {
+        palindrome.status = 'found';
+        console.log(`✅ Status updated to 'found' for ${result.plateNumber}`);
+      } else if (isOffRoad) {
+        palindrome.status = 'off_road';
+        console.log(`🚫 Status updated to 'off_road' for ${result.plateNumber}`);
       } else {
+        // Explicitly store that it was not found (still keep minimal data object with found:false)
         palindrome.status = 'not_found';
+        console.log(`❌ Status updated to 'not_found' for ${result.plateNumber}`);
       }
     } else {
+      // Handle errors, capture lastError for debugging / potential inspection
       palindrome.lastError = result.error;
-      
-      if (palindrome.attemptCount >= palindrome.maxRetries) {
-        palindrome.status = 'error';
-      } else {
+      if (result.error?.includes('rate limit') || result.error?.includes('429')) {
         palindrome.status = 'retry_needed';
+        console.log(`⏳ Status updated to 'retry_needed' for ${result.plateNumber} (rate limit)`);
+      } else {
+        palindrome.status = 'error';
+        console.log(`💥 Status updated to 'error' for ${result.plateNumber}: ${result.error}`);
       }
     }
 
+    console.log(`💾 Saving progress after updating ${result.plateNumber} to status='${palindrome.status}'`);
     this.updateCounts();
     this.saveProgress();
   }
@@ -203,15 +214,54 @@ export class PalindromeTracker {
     const toScrape = Object.values(this.progress.palindromes)
       .filter(p => p.status === 'pending' || p.status === 'retry_needed')
       .sort((a, b) => {
-        // Prioritize pending over retry, then by attempt count
-        if (a.status !== b.status) {
-          return a.status === 'pending' ? -1 : 1;
-        }
-        return a.attemptCount - b.attemptCount;
+        // Sort by plate number numerically to start from the beginning
+        return parseInt(a.plateNumber) - parseInt(b.plateNumber);
       })
       .map(p => p.plateNumber);
 
     return limit ? toScrape.slice(0, limit) : toScrape;
+  }
+
+  /**
+   * Get palindromes by specific statuses
+   */
+  getPalindromesByStatus(statuses: string[], limit?: number): string[] {
+    const filtered = Object.values(this.progress.palindromes)
+      .filter(p => statuses.includes(p.status))
+      .sort((a, b) => {
+        // Sort by plate number numerically to start from the beginning
+        return parseInt(a.plateNumber) - parseInt(b.plateNumber);
+      })
+      .map(p => p.plateNumber);
+
+    return limit ? filtered.slice(0, limit) : filtered;
+  }
+
+  /**
+   * Reset palindromes with specific statuses back to pending
+   */
+  resetStatusesToPending(statuses: string[]): number {
+    const now = new Date();
+    let resetCount = 0;
+
+    Object.values(this.progress.palindromes).forEach(palindrome => {
+      if (statuses.includes(palindrome.status)) {
+        palindrome.status = 'pending';
+        palindrome.attemptCount = 0;
+        palindrome.lastAttempt = undefined;
+        palindrome.lastError = undefined;
+        palindrome.updatedAt = now;
+        // Keep data if it exists, but reset addedToDatabase flag for re-processing
+        if (palindrome.data) {
+          palindrome.addedToDatabase = false;
+        }
+        resetCount++;
+      }
+    });
+
+    this.updateCounts();
+    this.saveProgress();
+    return resetCount;
   }
 
   /**

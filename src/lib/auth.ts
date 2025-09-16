@@ -25,9 +25,19 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   ],
   adapter: DrizzleAdapter(db),
   callbacks: {
-    session({ session, user }) {
+    async session({ session, user }) {
       if (user?.id) {
         session.user.id = user.id
+        try {
+          // Minimal admin check: see if a row exists in adminUsers for this user
+            const { adminUsers } = await import('./db/schema/auth')
+            const { db } = await import('./db/index')
+            const { eq } = await import('drizzle-orm')
+            const res = await db.select({ id: adminUsers.id }).from(adminUsers).where(eq(adminUsers.userId, user.id)).limit(1)
+            session.user.isAdmin = res.length > 0
+        } catch (e) {
+          session.user.isAdmin = false
+        }
       }
       return session
     },

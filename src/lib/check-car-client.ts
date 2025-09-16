@@ -135,9 +135,11 @@ export class CheckCarApiClient {
 
     try {
       // Extract data using the structured format: <span class="label">FIELD</span><span class="value">VALUE</span>
-      vehicleData.manufacturer = this.extractValueByLabel($, 'שם היצרן');
-      vehicleData.model = this.extractValueByLabel($, 'כינוי מסחרי');
-      vehicleData.color = this.extractValueByLabel($, 'צבע רכב');
+      // Extract vehicle information using improved selectors
+      vehicleData.manufacturer = this.extractValueByDataName($, 'tozar') || this.extractValueByLabel($, 'שם היצרן') || this.extractValueByLabel($, 'שם התוצר');
+      vehicleData.model = this.extractValueByDataName($, 'kinuy_mishari') || this.extractValueByLabel($, 'כינוי מסחרי') || this.extractValueByDataName($, 'degem_nm') || this.extractValueByLabel($, 'מספר דגם');
+      vehicleData.color = this.extractValueByDataName($, 'tzeva_rechev') || this.extractValueByLabel($, 'צבע רכב');
+   
       
       // Parse year
       const yearStr = this.extractValueByLabel($, 'שנת ייצור');
@@ -174,6 +176,25 @@ export class CheckCarApiClient {
     if (labelSpan.length > 0) {
       // Get the next sibling span with class="value"
       const valueSpan = labelSpan.next('span.value');
+      if (valueSpan.length > 0) {
+        return valueSpan.text().trim();
+      }
+    }
+    
+    return undefined;
+  }
+
+  /**
+   * Extract value from div with data-name attribute
+   * Looks for: <div class="table_col type-string" data-name="tozar"><span class="label">שם היצרן</span><span class="value">שברולט</span></div>
+   */
+  private extractValueByDataName($: CheerioAPI, dataName: string): string | undefined {
+    // Find the div with the specific data-name attribute
+    const containerDiv = $(`div[data-name="${dataName}"]`);
+    
+    if (containerDiv.length > 0) {
+      // Look for span with class="value" inside this div
+      const valueSpan = containerDiv.find('span.value');
       if (valueSpan.length > 0) {
         return valueSpan.text().trim();
       }

@@ -35,7 +35,6 @@ CREATE TABLE "userProfile" (
 	"updatedAt" timestamp DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
-ALTER TABLE "user" ADD COLUMN "isAdmin" boolean DEFAULT false NOT NULL;--> statement-breakpoint
 ALTER TABLE "palindrome" ADD CONSTRAINT "palindrome_userProfileId_userProfile_id_fk" FOREIGN KEY ("userProfileId") REFERENCES "public"."userProfile"("id") ON DELETE set null ON UPDATE no action;--> statement-breakpoint
 ALTER TABLE "palindrome" ADD CONSTRAINT "palindrome_brandId_brand_id_fk" FOREIGN KEY ("brandId") REFERENCES "public"."brand"("id") ON DELETE set null ON UPDATE no action;--> statement-breakpoint
 ALTER TABLE "palindrome" ADD CONSTRAINT "palindrome_categoryId_category_id_fk" FOREIGN KEY ("categoryId") REFERENCES "public"."category"("id") ON DELETE set null ON UPDATE no action;--> statement-breakpoint

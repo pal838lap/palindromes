@@ -17,7 +17,6 @@ export const users = pgTable('user', {
   email: text('email').unique(),
   emailVerified: timestamp('emailVerified', { mode: 'date' }),
   image: text('image'),
-  isAdmin: boolean('isAdmin').default(false).notNull(),
 })
 
 // Accounts table - OAuth provider accounts
@@ -69,6 +68,23 @@ export const verificationTokens = pgTable(
   })
 )
 
+// Admin users table - tracks which users have admin privileges
+export const adminUsers = pgTable('admin_user', {
+  id: text('id')
+    .primaryKey()
+    .$defaultFn(() => crypto.randomUUID()),
+  userId: text('userId')
+    .notNull()
+    .unique()
+    .references(() => users.id, { onDelete: 'cascade' }),
+  grantedAt: timestamp('grantedAt', { mode: 'date' })
+    .notNull()
+    .$defaultFn(() => new Date()),
+  grantedBy: text('grantedBy')
+    .references(() => users.id, { onDelete: 'set null' }), // Admin who granted the privileges
+  notes: text('notes'), // Optional notes about why admin access was granted
+})
+
 // Export types for TypeScript
 export type User = typeof users.$inferSelect
 export type NewUser = typeof users.$inferInsert
@@ -78,3 +94,5 @@ export type Session = typeof sessions.$inferSelect
 export type NewSession = typeof sessions.$inferInsert
 export type VerificationToken = typeof verificationTokens.$inferSelect
 export type NewVerificationToken = typeof verificationTokens.$inferInsert
+export type AdminUser = typeof adminUsers.$inferSelect
+export type NewAdminUser = typeof adminUsers.$inferInsert

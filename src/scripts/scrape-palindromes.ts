@@ -6,19 +6,23 @@
  * This script runs locally to scrape check-car.co.il for palindrome vehicle data.
  * It processes palindromes in batches with retry logic and saves found vehicles to the database.
  * 
- * Usage:
- *   npm run scrape-palindromes [options]
- * 
- * Options:
- *   --batch-size <number>    Number of palindromes to process in one batch (default: 50)
- *   --max-retries <number>   Maximum retry attempts per palindrome (default: 3)
- *   --delay <number>         Delay between requests in milliseconds (default: 1000)
- *   --concurrency <number>   Number of parallel requests per batch (default: 3)
- *   --init-only             Only initialize palindromes, don't scrape
- *   --reset                 Reset all palindromes to pending status
- *   --status                Show current progress and exit
- *   --test                  Test mode with limited palindromes
+ * Configuration:
+ * Modify the variables below before running the script
  */
+
+// ============== CONFIGURATION ==============
+// Modify these variables to control the scraping behavior
+
+const BATCH_SIZE = 4;                    // Number of palindromes to process in one batch
+const MAX_RETRIES = 3;                   // Maximum retry attempts per palindrome
+const DELAY = 800;                       // Delay between requests in milliseconds
+const CONCURRENCY = 4;                   // Number of parallel requests per batch
+const INIT_ONLY = false;                 // Only initialize palindromes, don't scrape
+const RESET = false;                     // Reset all palindromes to pending status
+const STATUS = false;                    // Show current progress and exit
+const TEST = false;                      // Test mode with limited palindromes (40)
+
+// ===============================================
 
 import { generateAllPalindromes, TOTAL_PALINDROMES } from '../lib/palindrome-generator';
 import { CheckCarApiClient } from '../lib/check-car-client';
@@ -90,12 +94,18 @@ class PalindromeScraper {
   private async initializePalindromes(): Promise<void> {
     console.log('🔧 Initializing palindromes for tracking...');
     
-    const palindromeList = this.options.test 
-      ? generateAllPalindromes({ sevenDigit: true, eightDigit: true, maxGenerate: 40 })
-      : generateAllPalindromes();
+    const existingCount = Object.keys(this.tracker.getProgress().palindromes).length;
+    if (existingCount === 0) {
+      // Initialize all palindromes if none exist
+      const palindromeList = this.options.test 
+        ? generateAllPalindromes({ sevenDigit: true, eightDigit: true, maxGenerate: 40 })
+        : generateAllPalindromes();
 
-    this.tracker.initializePalindromes(palindromeList, this.options.maxRetries);
-    console.log(`✅ Initialized ${palindromeList.length} palindromes`);
+      this.tracker.initializePalindromes(palindromeList, this.options.maxRetries);
+      console.log(`✅ Initialized ${palindromeList.length} palindromes`);
+    } else {
+      console.log(`✅ Found ${existingCount} existing palindromes in tracking.`);
+    }
   }
 
   /**
@@ -122,6 +132,7 @@ class PalindromeScraper {
       
       // Update tracking
       for (const result of results) {
+        console.log(`🔄 Updating status for ${result.plateNumber}: success=${result.success}, found=${result.data?.found}, isOffRoad=${result.data?.isOffRoad}`);
         this.tracker.updatePalindromeStatus(result);
         totalProcessed++;
         
@@ -132,6 +143,10 @@ class PalindromeScraper {
           } else {
             console.log(`🎯 Found vehicle: ${result.plateNumber} - ${result.data.manufacturer || 'Unknown'} ${result.data.model || ''} ${result.data.year || ''}`);
           }
+        } else if (result.success && !result.data?.found) {
+          console.log(`❌ Not found: ${result.plateNumber}`);
+        } else {
+          console.log(`⚠️  Error: ${result.plateNumber} - ${result.error}`);
         }
       }
 
@@ -145,8 +160,8 @@ class PalindromeScraper {
       
       // Small delay between batches
       if (palindromesToScrape.length === this.options.batchSize) {
-        console.log('⏳ Waiting 2 seconds before next batch...');
-        await this.sleep(2000);
+        console.log('⏳ Waiting 200 ms before next batch...');
+        await this.sleep(200);
       }
       
       round++;
@@ -191,7 +206,13 @@ class PalindromeScraper {
 
     for (const palindromeStatus of foundPalindromes) {
       try {
-        const vehicleData = palindromeStatus.data!;
+        const vehicleData = palindromeStatus.data;
+        
+        // Skip if no vehicle data is available
+        if (!vehicleData) {
+          console.warn(`⚠️  No vehicle data for ${palindromeStatus.plateNumber}, skipping database save`);
+          continue;
+        }
         
         // Skip off-road vehicles - don't save to database but mark as processed
         if (vehicleData.isOffRoad) {
@@ -275,87 +296,32 @@ class PalindromeScraper {
 }
 
 /**
- * Parse command line arguments
- */
-function parseArguments(): ScrapingOptions {
-  const args = process.argv.slice(2);
-  const options: ScrapingOptions = {
-    batchSize: 100,
-    maxRetries: 3,
-    delay: 800,
-    concurrency: 16,
-    initOnly: false,
-    reset: false,
-    status: false,
-    test: false,
-  };
-
-  for (let i = 0; i < args.length; i++) {
-    const arg = args[i];
-    
-    switch (arg) {
-      case '--batch-size':
-        options.batchSize = parseInt(args[++i]) || 100;
-        break;
-      case '--max-retries':
-        options.maxRetries = parseInt(args[++i]) || 3;
-        break;
-      case '--delay':
-        options.delay = parseInt(args[++i]) || 800;
-        break;
-      case '--concurrency':
-        options.concurrency = parseInt(args[++i]) || 16;
-        break;
-      case '--init-only':
-        options.initOnly = true;
-        break;
-      case '--reset':
-        options.reset = true;
-        break;
-      case '--status':
-        options.status = true;
-        break;
-      case '--test':
-        options.test = true;
-        break;
-      case '--help':
-        console.log(`
-Palindrome Scraper - Background job for scraping palindrome license plates
-
-Usage: npm run scrape-palindromes [options]
-
-Options:
-  --batch-size <number>    Number of palindromes to process in one batch (default: 100)
-  --max-retries <number>   Maximum retry attempts per palindrome (default: 3)
-  --delay <number>         Delay between requests in milliseconds (default: 800)
-  --concurrency <number>   Number of parallel requests per batch (default: 8)
-  --init-only             Only initialize palindromes, don't scrape
-  --reset                 Reset all palindromes to pending status
-  --status                Show current progress and exit
-  --test                  Test mode with limited palindromes (100)
-  --help                  Show this help message
-
-Examples:
-  npm run scrape:test                    # Test with 25 palindromes, 5 concurrent
-  npm run scrape:test-fast              # Test with 50 palindromes, 10 concurrent
-  npm run scrape:status                 # Show current progress
-  npm run scrape-palindromes --batch-size 50 --delay 1000
-        `);
-        process.exit(0);
-      default:
-        console.warn(`Unknown argument: ${arg}`);
-    }
-  }
-
-  return options;
-}
-
-/**
  * Main execution
  */
 async function main() {
   try {
-    const options = parseArguments();
+    const options: ScrapingOptions = {
+      batchSize: BATCH_SIZE,
+      maxRetries: MAX_RETRIES,
+      delay: DELAY,
+      concurrency: CONCURRENCY,
+      initOnly: INIT_ONLY,
+      reset: RESET,
+      status: STATUS,
+      test: TEST,
+    };
+    
+    console.log('🔧 Configuration:', {
+      batchSize: options.batchSize,
+      maxRetries: options.maxRetries,
+      delay: options.delay,
+      concurrency: options.concurrency,
+      test: options.test,
+      initOnly: options.initOnly,
+      reset: options.reset,
+      status: options.status,
+    });
+    
     const scraper = new PalindromeScraper(options);
     await scraper.run();
   } catch (error) {
