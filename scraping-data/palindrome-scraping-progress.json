@@ -1,13 +1,13 @@
 {
   "totalPalindromes": 9400,
-  "pending": 7883,
-  "found": 360,
-  "notFound": 608,
+  "pending": 7787,
+  "found": 369,
+  "notFound": 659,
   "errors": 3,
   "retryNeeded": 0,
-  "offRoad": 546,
-  "addedToDatabase": 906,
-  "lastUpdated": "2025-09-16T10:33:45.805Z",
+  "offRoad": 582,
+  "addedToDatabase": 951,
+  "lastUpdated": "2025-09-16T10:39:21.997Z",
   "palindromes": {
     "1000001": {
       "plateNumber": "1000001",
@@ -26346,867 +26346,1483 @@
     },
     "2517152": {
       "plateNumber": "2517152",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:33:55.696Z",
+      "lastAttempt": "2025-09-16T10:33:55.696Z",
+      "data": {
+        "plateNumber": "2517152",
+        "found": false
+      }
     },
     "2518152": {
       "plateNumber": "2518152",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:33:55.781Z",
+      "lastAttempt": "2025-09-16T10:33:55.781Z",
+      "data": {
+        "plateNumber": "2518152",
+        "found": false
+      }
     },
     "2519152": {
       "plateNumber": "2519152",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:33:55.827Z",
+      "lastAttempt": "2025-09-16T10:33:55.827Z",
+      "data": {
+        "plateNumber": "2519152",
+        "found": false
+      }
     },
     "2520252": {
       "plateNumber": "2520252",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:33:55.923Z",
+      "lastAttempt": "2025-09-16T10:33:55.874Z",
+      "data": {
+        "plateNumber": "2520252",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2521252": {
       "plateNumber": "2521252",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:20.048Z",
+      "lastAttempt": "2025-09-16T10:34:19.860Z",
+      "data": {
+        "plateNumber": "2521252",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2522252": {
       "plateNumber": "2522252",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:20.088Z",
+      "lastAttempt": "2025-09-16T10:34:19.928Z",
+      "data": {
+        "plateNumber": "2522252",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2523252": {
       "plateNumber": "2523252",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:19.970Z",
+      "lastAttempt": "2025-09-16T10:34:19.970Z",
+      "data": {
+        "plateNumber": "2523252",
+        "found": false
+      }
     },
     "2524252": {
       "plateNumber": "2524252",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:20.008Z",
+      "lastAttempt": "2025-09-16T10:34:20.008Z",
+      "data": {
+        "plateNumber": "2524252",
+        "found": false
+      }
     },
     "2525252": {
       "plateNumber": "2525252",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:38.204Z",
+      "lastAttempt": "2025-09-16T10:34:38.204Z",
+      "data": {
+        "plateNumber": "2525252",
+        "found": false
+      }
     },
     "2526252": {
       "plateNumber": "2526252",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:38.401Z",
+      "lastAttempt": "2025-09-16T10:34:38.278Z",
+      "data": {
+        "plateNumber": "2526252",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2527252": {
       "plateNumber": "2527252",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:38.319Z",
+      "lastAttempt": "2025-09-16T10:34:38.319Z",
+      "data": {
+        "plateNumber": "2527252",
+        "found": false
+      }
     },
     "2528252": {
       "plateNumber": "2528252",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:38.444Z",
+      "lastAttempt": "2025-09-16T10:34:38.358Z",
+      "data": {
+        "plateNumber": "2528252",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2529252": {
       "plateNumber": "2529252",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:47.410Z",
+      "lastAttempt": "2025-09-16T10:34:47.224Z",
+      "data": {
+        "plateNumber": "2529252",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2530352": {
       "plateNumber": "2530352",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:47.449Z",
+      "lastAttempt": "2025-09-16T10:34:47.287Z",
+      "data": {
+        "plateNumber": "2530352",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2531352": {
       "plateNumber": "2531352",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:47.501Z",
+      "lastAttempt": "2025-09-16T10:34:47.327Z",
+      "data": {
+        "plateNumber": "2531352",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2532352": {
       "plateNumber": "2532352",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:47.585Z",
+      "lastAttempt": "2025-09-16T10:34:47.368Z",
+      "data": {
+        "plateNumber": "2532352",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2533352": {
       "plateNumber": "2533352",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:58.661Z",
+      "lastAttempt": "2025-09-16T10:34:58.661Z",
+      "data": {
+        "plateNumber": "2533352",
+        "found": false
+      }
     },
     "2534352": {
       "plateNumber": "2534352",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:58.736Z",
+      "lastAttempt": "2025-09-16T10:34:58.736Z",
+      "data": {
+        "plateNumber": "2534352",
+        "found": false
+      }
     },
     "2535352": {
       "plateNumber": "2535352",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:58.865Z",
+      "lastAttempt": "2025-09-16T10:34:58.778Z",
+      "data": {
+        "plateNumber": "2535352",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2536352": {
       "plateNumber": "2536352",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:34:58.819Z",
+      "lastAttempt": "2025-09-16T10:34:58.819Z",
+      "data": {
+        "plateNumber": "2536352",
+        "found": false
+      }
     },
     "2537352": {
       "plateNumber": "2537352",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:12.589Z",
+      "lastAttempt": "2025-09-16T10:35:12.589Z",
+      "data": {
+        "plateNumber": "2537352",
+        "found": false
+      }
     },
     "2538352": {
       "plateNumber": "2538352",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:12.658Z",
+      "lastAttempt": "2025-09-16T10:35:12.658Z",
+      "data": {
+        "plateNumber": "2538352",
+        "found": false
+      }
     },
     "2539352": {
       "plateNumber": "2539352",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:12.705Z",
+      "lastAttempt": "2025-09-16T10:35:12.705Z",
+      "data": {
+        "plateNumber": "2539352",
+        "found": false
+      }
     },
     "2540452": {
       "plateNumber": "2540452",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:12.794Z",
+      "lastAttempt": "2025-09-16T10:35:12.748Z",
+      "data": {
+        "plateNumber": "2540452",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2541452": {
       "plateNumber": "2541452",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:24.346Z",
+      "lastAttempt": "2025-09-16T10:35:24.104Z",
+      "data": {
+        "plateNumber": "2541452",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "גיפ-ישראל",
+        "model": "סי גיי 6",
+        "year": 1982,
+        "engineVolume": 4229,
+        "fuelType": "בנזין",
+        "chassisNumber": "8284 018114",
+        "productionCountry": "ישראל"
+      }
     },
     "2542452": {
       "plateNumber": "2542452",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:24.388Z",
+      "lastAttempt": "2025-09-16T10:35:24.204Z",
+      "data": {
+        "plateNumber": "2542452",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2543452": {
       "plateNumber": "2543452",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:24.428Z",
+      "lastAttempt": "2025-09-16T10:35:24.246Z",
+      "data": {
+        "plateNumber": "2543452",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2544452": {
       "plateNumber": "2544452",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:24.468Z",
+      "lastAttempt": "2025-09-16T10:35:24.288Z",
+      "data": {
+        "plateNumber": "2544452",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2545452": {
       "plateNumber": "2545452",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:37.222Z",
+      "lastAttempt": "2025-09-16T10:35:37.222Z",
+      "data": {
+        "plateNumber": "2545452",
+        "found": false
+      }
     },
     "2546452": {
       "plateNumber": "2546452",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:37.279Z",
+      "lastAttempt": "2025-09-16T10:35:37.279Z",
+      "data": {
+        "plateNumber": "2546452",
+        "found": false
+      }
     },
     "2547452": {
       "plateNumber": "2547452",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:37.322Z",
+      "lastAttempt": "2025-09-16T10:35:37.322Z",
+      "data": {
+        "plateNumber": "2547452",
+        "found": false
+      }
     },
     "2548452": {
       "plateNumber": "2548452",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:37.403Z",
+      "lastAttempt": "2025-09-16T10:35:37.362Z",
+      "data": {
+        "plateNumber": "2548452",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2549452": {
       "plateNumber": "2549452",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:52.105Z",
+      "lastAttempt": "2025-09-16T10:35:51.855Z",
+      "data": {
+        "plateNumber": "2549452",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2550552": {
       "plateNumber": "2550552",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:52.147Z",
+      "lastAttempt": "2025-09-16T10:35:51.977Z",
+      "data": {
+        "plateNumber": "2550552",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2551552": {
       "plateNumber": "2551552",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:52.019Z",
+      "lastAttempt": "2025-09-16T10:35:52.019Z",
+      "data": {
+        "plateNumber": "2551552",
+        "found": false
+      }
     },
     "2552552": {
       "plateNumber": "2552552",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:35:52.063Z",
+      "lastAttempt": "2025-09-16T10:35:52.063Z",
+      "data": {
+        "plateNumber": "2552552",
+        "found": false
+      }
     },
     "2553552": {
       "plateNumber": "2553552",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:28.770Z",
+      "lastAttempt": "2025-09-16T10:36:28.770Z",
+      "data": {
+        "plateNumber": "2553552",
+        "found": false
+      }
     },
     "2554552": {
       "plateNumber": "2554552",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:29.042Z",
+      "lastAttempt": "2025-09-16T10:36:28.849Z",
+      "data": {
+        "plateNumber": "2554552",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2555552": {
       "plateNumber": "2555552",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:28.950Z",
+      "lastAttempt": "2025-09-16T10:36:28.950Z",
+      "data": {
+        "plateNumber": "2555552",
+        "found": false
+      }
     },
     "2556552": {
       "plateNumber": "2556552",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:28.999Z",
+      "lastAttempt": "2025-09-16T10:36:28.999Z",
+      "data": {
+        "plateNumber": "2556552",
+        "found": false
+      }
     },
     "2557552": {
       "plateNumber": "2557552",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:39.420Z",
+      "lastAttempt": "2025-09-16T10:36:39.420Z",
+      "data": {
+        "plateNumber": "2557552",
+        "found": false
+      }
     },
     "2558552": {
       "plateNumber": "2558552",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:39.491Z",
+      "lastAttempt": "2025-09-16T10:36:39.491Z",
+      "data": {
+        "plateNumber": "2558552",
+        "found": false
+      }
     },
     "2559552": {
       "plateNumber": "2559552",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:39.614Z",
+      "lastAttempt": "2025-09-16T10:36:39.614Z",
+      "data": {
+        "plateNumber": "2559552",
+        "found": false
+      }
     },
     "2560652": {
       "plateNumber": "2560652",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:39.734Z",
+      "lastAttempt": "2025-09-16T10:36:39.685Z",
+      "data": {
+        "plateNumber": "2560652",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2561652": {
       "plateNumber": "2561652",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:49.929Z",
+      "lastAttempt": "2025-09-16T10:36:49.704Z",
+      "data": {
+        "plateNumber": "2561652",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2562652": {
       "plateNumber": "2562652",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:49.757Z",
+      "lastAttempt": "2025-09-16T10:36:49.757Z",
+      "data": {
+        "plateNumber": "2562652",
+        "found": false
+      }
     },
     "2563652": {
       "plateNumber": "2563652",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:49.820Z",
+      "lastAttempt": "2025-09-16T10:36:49.820Z",
+      "data": {
+        "plateNumber": "2563652",
+        "found": false
+      }
     },
     "2564652": {
       "plateNumber": "2564652",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:36:49.977Z",
+      "lastAttempt": "2025-09-16T10:36:49.876Z",
+      "data": {
+        "plateNumber": "2564652",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2565652": {
       "plateNumber": "2565652",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:00.289Z",
+      "lastAttempt": "2025-09-16T10:37:00.067Z",
+      "data": {
+        "plateNumber": "2565652",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2566652": {
       "plateNumber": "2566652",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:00.346Z",
+      "lastAttempt": "2025-09-16T10:37:00.127Z",
+      "data": {
+        "plateNumber": "2566652",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "גיפ-ישראל",
+        "model": "סי טי 6",
+        "year": 1982,
+        "engineVolume": 4229,
+        "fuelType": "בנזין",
+        "chassisNumber": "82 84 021922",
+        "productionCountry": "ישראל"
+      }
     },
     "2567652": {
       "plateNumber": "2567652",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:00.392Z",
+      "lastAttempt": "2025-09-16T10:37:00.175Z",
+      "data": {
+        "plateNumber": "2567652",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2568652": {
       "plateNumber": "2568652",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:00.230Z",
+      "lastAttempt": "2025-09-16T10:37:00.230Z",
+      "data": {
+        "plateNumber": "2568652",
+        "found": false
+      }
     },
     "2569652": {
       "plateNumber": "2569652",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:09.270Z",
+      "lastAttempt": "2025-09-16T10:37:09.054Z",
+      "data": {
+        "plateNumber": "2569652",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2570752": {
       "plateNumber": "2570752",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:09.122Z",
+      "lastAttempt": "2025-09-16T10:37:09.122Z",
+      "data": {
+        "plateNumber": "2570752",
+        "found": false
+      }
     },
     "2571752": {
       "plateNumber": "2571752",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:09.173Z",
+      "lastAttempt": "2025-09-16T10:37:09.173Z",
+      "data": {
+        "plateNumber": "2571752",
+        "found": false
+      }
     },
     "2572752": {
       "plateNumber": "2572752",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:09.215Z",
+      "lastAttempt": "2025-09-16T10:37:09.215Z",
+      "data": {
+        "plateNumber": "2572752",
+        "found": false
+      }
     },
     "2573752": {
       "plateNumber": "2573752",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:20.854Z",
+      "lastAttempt": "2025-09-16T10:37:20.598Z",
+      "data": {
+        "plateNumber": "2573752",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2574752": {
       "plateNumber": "2574752",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:20.670Z",
+      "lastAttempt": "2025-09-16T10:37:20.670Z",
+      "data": {
+        "plateNumber": "2574752",
+        "found": false
+      }
     },
     "2575752": {
       "plateNumber": "2575752",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:20.900Z",
+      "lastAttempt": "2025-09-16T10:37:20.723Z",
+      "data": {
+        "plateNumber": "2575752",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2576752": {
       "plateNumber": "2576752",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:20.803Z",
+      "lastAttempt": "2025-09-16T10:37:20.803Z",
+      "data": {
+        "plateNumber": "2576752",
+        "found": false
+      }
     },
     "2577752": {
       "plateNumber": "2577752",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:32.505Z",
+      "lastAttempt": "2025-09-16T10:37:32.505Z",
+      "data": {
+        "plateNumber": "2577752",
+        "found": false
+      }
     },
     "2578752": {
       "plateNumber": "2578752",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:32.705Z",
+      "lastAttempt": "2025-09-16T10:37:32.570Z",
+      "data": {
+        "plateNumber": "2578752",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2579752": {
       "plateNumber": "2579752",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:32.614Z",
+      "lastAttempt": "2025-09-16T10:37:32.614Z",
+      "data": {
+        "plateNumber": "2579752",
+        "found": false
+      }
     },
     "2580852": {
       "plateNumber": "2580852",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:32.750Z",
+      "lastAttempt": "2025-09-16T10:37:32.662Z",
+      "data": {
+        "plateNumber": "2580852",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2581852": {
       "plateNumber": "2581852",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:47.067Z",
+      "lastAttempt": "2025-09-16T10:37:47.067Z",
+      "data": {
+        "plateNumber": "2581852",
+        "found": false
+      }
     },
     "2582852": {
       "plateNumber": "2582852",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:47.143Z",
+      "lastAttempt": "2025-09-16T10:37:47.143Z",
+      "data": {
+        "plateNumber": "2582852",
+        "found": false
+      }
     },
     "2583852": {
       "plateNumber": "2583852",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:47.237Z",
+      "lastAttempt": "2025-09-16T10:37:47.237Z",
+      "data": {
+        "plateNumber": "2583852",
+        "found": false
+      }
     },
     "2584852": {
       "plateNumber": "2584852",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:37:47.282Z",
+      "lastAttempt": "2025-09-16T10:37:47.282Z",
+      "data": {
+        "plateNumber": "2584852",
+        "found": false
+      }
     },
     "2585852": {
       "plateNumber": "2585852",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:04.885Z",
+      "lastAttempt": "2025-09-16T10:38:04.885Z",
+      "data": {
+        "plateNumber": "2585852",
+        "found": false
+      }
     },
     "2586852": {
       "plateNumber": "2586852",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:04.948Z",
+      "lastAttempt": "2025-09-16T10:38:04.948Z",
+      "data": {
+        "plateNumber": "2586852",
+        "found": false
+      }
     },
     "2587852": {
       "plateNumber": "2587852",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:05.002Z",
+      "lastAttempt": "2025-09-16T10:38:05.002Z",
+      "data": {
+        "plateNumber": "2587852",
+        "found": false
+      }
     },
     "2588852": {
       "plateNumber": "2588852",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:05.047Z",
+      "lastAttempt": "2025-09-16T10:38:05.047Z",
+      "data": {
+        "plateNumber": "2588852",
+        "found": false
+      }
     },
     "2589852": {
       "plateNumber": "2589852",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:17.477Z",
+      "lastAttempt": "2025-09-16T10:38:17.477Z",
+      "data": {
+        "plateNumber": "2589852",
+        "found": false
+      }
     },
     "2590952": {
       "plateNumber": "2590952",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:17.539Z",
+      "lastAttempt": "2025-09-16T10:38:17.539Z",
+      "data": {
+        "plateNumber": "2590952",
+        "found": false
+      }
     },
     "2591952": {
       "plateNumber": "2591952",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:17.588Z",
+      "lastAttempt": "2025-09-16T10:38:17.588Z",
+      "data": {
+        "plateNumber": "2591952",
+        "found": false
+      }
     },
     "2592952": {
       "plateNumber": "2592952",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:17.637Z",
+      "lastAttempt": "2025-09-16T10:38:17.637Z",
+      "data": {
+        "plateNumber": "2592952",
+        "found": false
+      }
     },
     "2593952": {
       "plateNumber": "2593952",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:28.320Z",
+      "lastAttempt": "2025-09-16T10:38:28.121Z",
+      "data": {
+        "plateNumber": "2593952",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2594952": {
       "plateNumber": "2594952",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:28.177Z",
+      "lastAttempt": "2025-09-16T10:38:28.177Z",
+      "data": {
+        "plateNumber": "2594952",
+        "found": false
+      }
     },
     "2595952": {
       "plateNumber": "2595952",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:28.365Z",
+      "lastAttempt": "2025-09-16T10:38:28.224Z",
+      "data": {
+        "plateNumber": "2595952",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2596952": {
       "plateNumber": "2596952",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:28.269Z",
+      "lastAttempt": "2025-09-16T10:38:28.269Z",
+      "data": {
+        "plateNumber": "2596952",
+        "found": false
+      }
     },
     "2597952": {
       "plateNumber": "2597952",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:35.753Z",
+      "lastAttempt": "2025-09-16T10:38:35.753Z",
+      "data": {
+        "plateNumber": "2597952",
+        "found": false
+      }
     },
     "2598952": {
       "plateNumber": "2598952",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:35.820Z",
+      "lastAttempt": "2025-09-16T10:38:35.820Z",
+      "data": {
+        "plateNumber": "2598952",
+        "found": false
+      }
     },
     "2599952": {
       "plateNumber": "2599952",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "not_found",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:35.862Z",
+      "lastAttempt": "2025-09-16T10:38:35.862Z",
+      "data": {
+        "plateNumber": "2599952",
+        "found": false
+      }
     },
     "2600062": {
       "plateNumber": "2600062",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:35.965Z",
+      "lastAttempt": "2025-09-16T10:38:35.903Z",
+      "data": {
+        "plateNumber": "2600062",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "סאנגיונג",
+        "model": "REXTON",
+        "color": "שחור",
+        "year": 2007,
+        "engineVolume": 2696,
+        "fuelType": "דיזל",
+        "chassisNumber": "KPTG0B1FS7P240078",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 2550,
+        "seats": 7
+      }
     },
     "2601062": {
       "plateNumber": "2601062",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:48.714Z",
+      "lastAttempt": "2025-09-16T10:38:48.400Z",
+      "data": {
+        "plateNumber": "2601062",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דייהטסו",
+        "model": "TERIOS",
+        "color": "שנהב לבן",
+        "year": 2007,
+        "engineVolume": 1495,
+        "fuelType": "בנזין",
+        "chassisNumber": "JDAJ210G071015875",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "יפן",
+        "weight": 1720,
+        "seats": 5
+      }
     },
     "2602062": {
       "plateNumber": "2602062",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:48.766Z",
+      "lastAttempt": "2025-09-16T10:38:48.537Z",
+      "data": {
+        "plateNumber": "2602062",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2603062": {
       "plateNumber": "2603062",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:48.889Z",
+      "lastAttempt": "2025-09-16T10:38:48.589Z",
+      "data": {
+        "plateNumber": "2603062",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דייהטסו",
+        "model": "TERIOS",
+        "color": "כסף מטלי",
+        "year": 2007,
+        "engineVolume": 1495,
+        "fuelType": "בנזין",
+        "chassisNumber": "JDAJ210G071012545",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "יפן",
+        "weight": 1720,
+        "seats": 5
+      }
     },
     "2604062": {
       "plateNumber": "2604062",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:38:48.949Z",
+      "lastAttempt": "2025-09-16T10:38:48.641Z",
+      "data": {
+        "plateNumber": "2604062",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דייהטסו",
+        "model": "TERIOS",
+        "color": "שנהב לבן",
+        "year": 2007,
+        "engineVolume": 1495,
+        "fuelType": "בנזין",
+        "chassisNumber": "JDAJ210G071015980",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "יפן",
+        "weight": 1720,
+        "seats": 5
+      }
     },
     "2605062": {
       "plateNumber": "2605062",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:39:09.313Z",
+      "lastAttempt": "2025-09-16T10:39:09.084Z",
+      "data": {
+        "plateNumber": "2605062",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דייהטסו",
+        "model": "TERIOS",
+        "color": "אפור",
+        "year": 2007,
+        "engineVolume": 1495,
+        "fuelType": "גפ\"מ",
+        "chassisNumber": "JDAJ210G071013240",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "יפן",
+        "weight": 1720,
+        "seats": 5
+      }
     },
     "2606062": {
       "plateNumber": "2606062",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:39:09.355Z",
+      "lastAttempt": "2025-09-16T10:39:09.163Z",
+      "data": {
+        "plateNumber": "2606062",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2607062": {
       "plateNumber": "2607062",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:39:09.404Z",
+      "lastAttempt": "2025-09-16T10:39:09.208Z",
+      "data": {
+        "plateNumber": "2607062",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2608062": {
       "plateNumber": "2608062",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:39:09.459Z",
+      "lastAttempt": "2025-09-16T10:39:09.254Z",
+      "data": {
+        "plateNumber": "2608062",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דייהטסו",
+        "model": "SIRION",
+        "color": "כסף מטלי",
+        "year": 2007,
+        "engineVolume": 1298,
+        "fuelType": "בנזין",
+        "chassisNumber": "JDAM301S071042901",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "יפן",
+        "weight": 1450,
+        "seats": 5
+      }
     },
     "2609062": {
       "plateNumber": "2609062",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:39:21.849Z",
+      "lastAttempt": "2025-09-16T10:39:21.534Z",
+      "data": {
+        "plateNumber": "2609062",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2610162": {
       "plateNumber": "2610162",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "found",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:39:21.906Z",
+      "lastAttempt": "2025-09-16T10:39:21.599Z",
+      "data": {
+        "plateNumber": "2610162",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "דייהטסו",
+        "model": "SIRION",
+        "color": "שנהב לבן",
+        "year": 2007,
+        "engineVolume": 1298,
+        "fuelType": "בנזין",
+        "chassisNumber": "JDAM301S071042673",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "יפן",
+        "weight": 1450,
+        "seats": 5
+      }
     },
     "2611162": {
       "plateNumber": "2611162",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:39:21.949Z",
+      "lastAttempt": "2025-09-16T10:39:21.664Z",
+      "data": {
+        "plateNumber": "2611162",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2612162": {
       "plateNumber": "2612162",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "off_road",
+      "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T10:39:21.994Z",
+      "lastAttempt": "2025-09-16T10:39:21.764Z",
+      "data": {
+        "plateNumber": "2612162",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "2613162": {
       "plateNumber": "2613162",

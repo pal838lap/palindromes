@@ -10,6 +10,8 @@ import { useAssignPalindromeUser } from '@/hooks/use-assign-palindrome-user'
 import { useCreateUserProfile } from '@/hooks/use-create-user-profile'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import { PalindromeCard } from '@/components/palindrome-card'
+import type { PalindromeWithDetails, UserProfile, Brand } from '@/lib/db/schema'
 
 export function PalindromeSearch() {
   const [value, setValue] = useState('')
@@ -106,11 +108,37 @@ export function PalindromeSearch() {
         )}
         {data && (
           <div className="space-y-6">
-            <div className="text-sm space-y-1 border rounded-md p-3">
-              <div><span className="font-medium">Palindrome:</span> {data.id}</div>
-              <div><span className="font-medium">Found by:</span> {data.userProfileName || '—'}</div>
-              {data.brandName && <div><span className="font-medium">Brand:</span> {data.brandName}</div>}
-            </div>
+            {(() => {
+              const userProfile: UserProfile | null = (data.userProfileName && data.userProfileId) ? {
+                id: data.userProfileId,
+                name: data.userProfileName,
+                avatar: null,
+                createdAt: new Date(),
+                updatedAt: new Date(),
+              } : null
+              const brand: Brand | null = data.brandName ? {
+                id: 'temp-brand',
+                name: data.brandName,
+                createdAt: new Date(),
+              } : null
+              const adapted: PalindromeWithDetails = {
+                id: data.id,
+                picture: data.picture ?? null,
+                userProfileId: data.userProfileId ?? null,
+                brandId: brand?.id ?? null,
+                year: null,
+                categoryId: null,
+                model: null,
+                color: null,
+                foundAt: null,
+                createdAt: new Date(),
+                updatedAt: new Date(),
+                userProfile,
+                brand,
+                category: null,
+              }
+              return <PalindromeCard palindrome={adapted} />
+            })()}
             <div className="space-y-2">
               <div className="font-medium text-sm">Image</div>
               <div className="flex items-center gap-3">
