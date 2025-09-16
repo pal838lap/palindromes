@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { db, palindromes } from '@/lib/db'
+import { db, palindromes, userProfiles, brands } from '@/lib/db'
 import { eq } from 'drizzle-orm'
 
 export async function GET(
@@ -14,7 +14,27 @@ export async function GET(
   }
 
   try {
-    const [row] = await db.select().from(palindromes).where(eq(palindromes.id, id)).limit(1)
+    const [row] = await db
+      .select({
+        id: palindromes.id,
+        userProfileId: palindromes.userProfileId,
+        picture: palindromes.picture,
+  brandId: palindromes.brandId,
+  brandName: brands.name,
+        year: palindromes.year,
+        categoryId: palindromes.categoryId,
+        model: palindromes.model,
+        color: palindromes.color,
+        foundAt: palindromes.foundAt,
+        createdAt: palindromes.createdAt,
+        updatedAt: palindromes.updatedAt,
+        userProfileName: userProfiles.name,
+      })
+      .from(palindromes)
+  .leftJoin(userProfiles, eq(userProfiles.id, palindromes.userProfileId))
+  .leftJoin(brands, eq(brands.id, palindromes.brandId))
+      .where(eq(palindromes.id, id))
+      .limit(1)
     if (!row) {
       return NextResponse.json({ error: 'Not found' }, { status: 404 })
     }

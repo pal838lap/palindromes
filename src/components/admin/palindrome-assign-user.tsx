@@ -29,7 +29,9 @@ export function PalindromeAssignUser({ palindromeId, currentUserProfileId }: Pro
     if (!newName.trim()) return
     createMutation.mutate({ name: newName.trim(), avatar: newAvatar.trim() || undefined }, {
       onSuccess: (created) => {
+        // Auto-select and immediately assign to palindrome
         setSelected(created.id)
+        mutation.mutate({ userProfileId: created.id })
         setMode('existing')
         setNewName('')
         setNewAvatar('')

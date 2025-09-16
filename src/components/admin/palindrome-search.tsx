@@ -32,7 +32,14 @@ export function PalindromeSearch() {
         {data && (
           <div className="space-y-4">
             <div className="text-sm space-y-1 border rounded-md p-3">
-              <div><span className="font-medium">ID:</span> {data.id}</div>
+              {data.userProfileId && (
+                <div>
+                  <span className="font-medium">Found by:</span> {data.userProfileName || data.userProfileId}
+                </div>
+              )}
+              {data.brandId && (
+                <div><span className="font-medium">Brand:</span> {data.brandName || data.brandId}</div>
+              )}
               {data.model && <div><span className="font-medium">Model:</span> {data.model}</div>}
               {data.color && <div><span className="font-medium">Color:</span> {data.color}</div>}
               {data.foundAt && <div><span className="font-medium">Found:</span> {new Date(data.foundAt).toLocaleString()}</div>}

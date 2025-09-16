@@ -5,8 +5,10 @@
 export type Palindrome = {
 	id: string
 	userProfileId?: string | null
+	userProfileName?: string | null
 	picture?: string | null
 	brandId?: string | null
+	brandName?: string | null
 	year?: number | null
 	categoryId?: string | null
 	model?: string | null

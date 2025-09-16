@@ -1,13 +1,13 @@
 {
   "totalPalindromes": 9400,
-  "pending": 9056,
+  "pending": 9032,
   "found": 61,
   "notFound": 61,
-  "errors": 152,
+  "errors": 176,
   "retryNeeded": 0,
   "offRoad": 70,
   "addedToDatabase": 131,
-  "lastUpdated": "2025-09-16T07:58:19.995Z",
+  "lastUpdated": "2025-09-16T08:04:26.406Z",
   "palindromes": {
     "1000001": {
       "plateNumber": "1000001",
@@ -5234,219 +5234,267 @@
     },
     "1344431": {
       "plateNumber": "1344431",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T07:59:20.923Z",
+      "lastAttempt": "2025-09-16T07:59:20.923Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1345431": {
       "plateNumber": "1345431",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T07:59:20.994Z",
+      "lastAttempt": "2025-09-16T07:59:20.994Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1346431": {
       "plateNumber": "1346431",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T07:59:21.054Z",
+      "lastAttempt": "2025-09-16T07:59:21.054Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1347431": {
       "plateNumber": "1347431",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T07:59:21.094Z",
+      "lastAttempt": "2025-09-16T07:59:21.094Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1348431": {
       "plateNumber": "1348431",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:00:21.958Z",
+      "lastAttempt": "2025-09-16T08:00:21.958Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1349431": {
       "plateNumber": "1349431",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:00:22.032Z",
+      "lastAttempt": "2025-09-16T08:00:22.032Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1350531": {
       "plateNumber": "1350531",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:00:22.123Z",
+      "lastAttempt": "2025-09-16T08:00:22.123Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1351531": {
       "plateNumber": "1351531",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:00:22.170Z",
+      "lastAttempt": "2025-09-16T08:00:22.170Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1352531": {
       "plateNumber": "1352531",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:01:23.040Z",
+      "lastAttempt": "2025-09-16T08:01:23.040Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1353531": {
       "plateNumber": "1353531",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:01:23.094Z",
+      "lastAttempt": "2025-09-16T08:01:23.094Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1354531": {
       "plateNumber": "1354531",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:01:23.141Z",
+      "lastAttempt": "2025-09-16T08:01:23.141Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1355531": {
       "plateNumber": "1355531",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:01:23.182Z",
+      "lastAttempt": "2025-09-16T08:01:23.182Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1356531": {
       "plateNumber": "1356531",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:02:24.050Z",
+      "lastAttempt": "2025-09-16T08:02:24.050Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1357531": {
       "plateNumber": "1357531",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:02:24.153Z",
+      "lastAttempt": "2025-09-16T08:02:24.153Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1358531": {
       "plateNumber": "1358531",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:02:24.230Z",
+      "lastAttempt": "2025-09-16T08:02:24.230Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1359531": {
       "plateNumber": "1359531",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:02:24.275Z",
+      "lastAttempt": "2025-09-16T08:02:24.275Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1360631": {
       "plateNumber": "1360631",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:03:25.145Z",
+      "lastAttempt": "2025-09-16T08:03:25.145Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1361631": {
       "plateNumber": "1361631",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:03:25.205Z",
+      "lastAttempt": "2025-09-16T08:03:25.205Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1362631": {
       "plateNumber": "1362631",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:03:25.297Z",
+      "lastAttempt": "2025-09-16T08:03:25.297Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1363631": {
       "plateNumber": "1363631",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:03:25.342Z",
+      "lastAttempt": "2025-09-16T08:03:25.342Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1364631": {
       "plateNumber": "1364631",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:04:26.238Z",
+      "lastAttempt": "2025-09-16T08:04:26.238Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1365631": {
       "plateNumber": "1365631",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:04:26.316Z",
+      "lastAttempt": "2025-09-16T08:04:26.316Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1366631": {
       "plateNumber": "1366631",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:04:26.365Z",
+      "lastAttempt": "2025-09-16T08:04:26.365Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1367631": {
       "plateNumber": "1367631",
-      "status": "pending",
-      "attemptCount": 0,
+      "status": "error",
+      "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T06:51:20.690Z"
+      "updatedAt": "2025-09-16T08:04:26.404Z",
+      "lastAttempt": "2025-09-16T08:04:26.404Z",
+      "lastError": "HTTP 504: Gateway Time-out"
     },
     "1368631": {
       "plateNumber": "1368631",
