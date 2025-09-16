@@ -65,6 +65,14 @@ export class ApiClient {
       this.request<typeof API_ENDPOINTS.userProfiles.list.response>(
         API_ENDPOINTS.userProfiles.list.path
       ),
+    create: (name: string, avatar?: string | null) =>
+      this.request<typeof API_ENDPOINTS.userProfiles.create.response>(
+        API_ENDPOINTS.userProfiles.create.path,
+        {
+          method: API_ENDPOINTS.userProfiles.create.method,
+          body: JSON.stringify({ name, avatar })
+        }
+      ),
   }
 }
 

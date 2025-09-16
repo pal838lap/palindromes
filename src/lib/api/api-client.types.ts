@@ -30,6 +30,12 @@ export const API_ENDPOINTS = {
       method: 'GET' as const,
       path: '/api/user-profiles' as const,
       response: {} as import('./api.types').UserProfile[],
+    },
+    create: {
+      method: 'POST' as const,
+      path: '/api/user-profiles' as const,
+      body: {} as { name: string; avatar?: string | null },
+      response: {} as import('./api.types').UserProfile,
     }
   }
 } as const
