@@ -45,19 +45,43 @@ export class ApiClient {
   //       '/api/users/profile'
   //     ),
   // }
-  palindromes = {
-    getById: (id: string) =>
-      this.request<typeof API_ENDPOINTS.palindromes.getById.response>(
-        API_ENDPOINTS.palindromes.getById.path(id)
-      ),
-    assignUser: (id: string, userProfileId: string | null) =>
-      this.request<typeof API_ENDPOINTS.palindromes.assignUser.response>(
-        API_ENDPOINTS.palindromes.assignUser.path(id),
-        {
-          method: API_ENDPOINTS.palindromes.assignUser.method,
-          body: JSON.stringify({ userProfileId }),
+  get palindromes() {
+    return {
+      getById: (id: string) =>
+        this.request<typeof API_ENDPOINTS.palindromes.getById.response>(
+          API_ENDPOINTS.palindromes.getById.path(id)
+        ),
+      assignUser: (id: string, userProfileId: string | null) =>
+        this.request<typeof API_ENDPOINTS.palindromes.assignUser.response>(
+          API_ENDPOINTS.palindromes.assignUser.path(id),
+          {
+            method: API_ENDPOINTS.palindromes.assignUser.method,
+            body: JSON.stringify({ userProfileId }),
+          }
+        ),
+      updatePicture: async (id: string, file: File) => {
+        const endpoint = API_ENDPOINTS.palindromes.updatePicture
+        const form = new FormData()
+        form.append('file', file)
+        const res = await fetch(endpoint.path(id), {
+          method: endpoint.method,
+          body: form,
+        })
+        if (!res.ok) {
+          let error: ApiError
+          try { error = await res.json() } catch { error = { error: 'Upload failed', status: res.status } }
+          throw error
         }
-      ),
+        return res.json() as Promise<{ id: string; picture: string }>
+      },
+      removePicture: (id: string) => {
+        const endpoint = API_ENDPOINTS.palindromes.removePicture
+        return this.request<typeof API_ENDPOINTS.palindromes.removePicture.response>(
+          endpoint.path(id),
+          { method: endpoint.method }
+        )
+      }
+    }
   }
 
   userProfiles = {

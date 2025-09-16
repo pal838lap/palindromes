@@ -23,6 +23,17 @@ export const API_ENDPOINTS = {
       // Accepts { userProfileId: string | null }
       body: {} as { userProfileId: string | null },
       response: {} as import('./api.types').Palindrome,
+    },
+    updatePicture: {
+      method: 'POST' as const,
+      path: (id: string) => `/api/palindromes/${id}/picture` as const,
+      // multipart/form-data upload, response returns partial { id, picture }
+      response: {} as { id: string; picture: string },
+    },
+    removePicture: {
+      method: 'DELETE' as const,
+      path: (id: string) => `/api/palindromes/${id}/picture` as const,
+      response: {} as { id: string; picture: null },
     }
   },
   userProfiles: {

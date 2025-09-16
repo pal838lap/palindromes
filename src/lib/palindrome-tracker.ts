@@ -324,7 +324,7 @@ export class PalindromeTracker {
     console.log(`Progress: ${completedPercent}%`);
     
     // Show how many active vehicles vs. total vehicles found
-    const totalVehiclesFound = progress.found + progress.offRoad;
+    const totalVehiclesFound = progress.found + progress.offRoad + progress.notFound;
     if (totalVehiclesFound > 0) {
       console.log(`Active vehicles: ${progress.found}/${totalVehiclesFound} (${Math.round((progress.found / totalVehiclesFound) * 100)}%)`);
     }

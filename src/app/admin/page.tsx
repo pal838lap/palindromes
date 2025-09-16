@@ -1,6 +1,7 @@
 import { auth } from '@/lib/auth'
 import { redirect } from 'next/navigation'
 import { PalindromeSearch } from '@/components/admin/palindrome-search'
+import { PalindromeImageTestUploader } from '@/components/admin/palindrome-image-test-uploader'
 
 export default async function AdminPage() {
   const session = await auth()
@@ -16,6 +17,7 @@ export default async function AdminPage() {
         <p className="text-sm">Welcome, {session.user.name || 'Admin'}.</p>
       </div>
       <PalindromeSearch />
+      <PalindromeImageTestUploader />
     </main>
   )
 }
