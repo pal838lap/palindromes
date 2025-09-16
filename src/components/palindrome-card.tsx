@@ -23,6 +23,7 @@ import {
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import type { PalindromeWithDetails } from '@/lib/db/schema'
+import { LicensePlate } from '@/components/license-plate'
 import Image from 'next/image'
 
 interface PalindromeCardProps {
@@ -99,12 +100,11 @@ export function PalindromeCard({
       <CardHeader>
         <div className="flex items-start justify-between">
           <div className="space-y-1">
-            <CardTitle className="text-2xl font-bold tracking-wide">
-              {palindrome.id}
+            <CardTitle className="text-2xl font-bold tracking-wide flex flex-col gap-2">
+              <span className="sr-only">Plate</span>
+              <LicensePlate value={palindrome.id} size="md" />
             </CardTitle>
-            <CardDescription>
-              Palindrome License Plate
-            </CardDescription>
+     
           </div>
           {getStatusBadge()}
         </div>
