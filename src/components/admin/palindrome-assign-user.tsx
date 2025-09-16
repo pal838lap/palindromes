@@ -42,17 +42,16 @@ export function PalindromeAssignUser({
       {mode === 'existing' && (
         <Select
           label="User Profile"
-          value={selectedUserProfileId}
+          value={selectedUserProfileId || ''}
           onChange={(val) => {
-            if (val === '') onSelectUser(null)
-            else onSelectUser(val)
+            // Disallow clearing to unassigned; keep prior value if empty selected
+            if (val) onSelectUser(val)
           }}
           disabled={loadingProfiles || disabled}
-          placeholder="(Unassigned)"
+          placeholder="Select a user"
           searchable
           searchPlaceholder="Filter users..."
         >
-          <SelectOption value="">(Unassigned)</SelectOption>
           {profiles?.map(p => (
             <SelectOption key={p.id} value={p.id}>{p.name}</SelectOption>
           ))}

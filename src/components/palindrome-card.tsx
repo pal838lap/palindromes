@@ -1,3 +1,4 @@
+"use client"
 import { 
   Card, 
   CardContent, 
@@ -15,8 +16,11 @@ import {
   Palette, 
   Tag, 
   User,
-  Package
+  Package,
+  X,
+  Undo2
 } from 'lucide-react'
+import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import type { PalindromeWithDetails } from '@/lib/db/schema'
 import Image from 'next/image'
@@ -28,6 +32,9 @@ interface PalindromeCardProps {
   onEdit?: (palindrome: PalindromeWithDetails) => void
   onDelete?: (palindrome: PalindromeWithDetails) => void
   onViewDetails?: (palindrome: PalindromeWithDetails) => void
+  mode?: 'view' | 'edit'
+  // Notify parent of image edit pending state (file to upload or removal)
+  onImageChange?: (change: { pendingFile: File | null; pendingRemove: boolean }) => void
 }
 
 export function PalindromeCard({ 
@@ -36,8 +43,33 @@ export function PalindromeCard({
   showActions = false,
   onEdit,
   onDelete,
-  onViewDetails
+  onViewDetails,
+  mode = 'view',
+  onImageChange,
 }: PalindromeCardProps) {
+  const [localPreview, setLocalPreview] = useState<string | null>(null)
+  const [pendingFile, setPendingFile] = useState<File | null>(null)
+  const [pendingRemove, setPendingRemove] = useState(false)
+
+  function handleFileSelect(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0]
+    if (!file) return
+    setPendingRemove(false)
+    setPendingFile(file)
+    setLocalPreview(URL.createObjectURL(file))
+    onImageChange?.({ pendingFile: file, pendingRemove: false })
+  }
+  function markRemove() {
+    setPendingRemove(true)
+    setPendingFile(null)
+    if (localPreview) URL.revokeObjectURL(localPreview)
+    setLocalPreview(null)
+    onImageChange?.({ pendingFile: null, pendingRemove: true })
+  }
+  function undoRemove() { 
+    setPendingRemove(false) 
+    onImageChange?.({ pendingFile, pendingRemove: false })
+  }
   const formatDate = (date: Date | null) => {
     if (!date) return null
     return new Intl.DateTimeFormat('en-US', {
@@ -79,9 +111,14 @@ export function PalindromeCard({
       </CardHeader>
 
       <CardContent className="space-y-4">
-        {/* Picture */}
-        {palindrome.picture ? (
-          <div className="relative aspect-video w-full overflow-hidden rounded-lg border">
+        {/* Picture (view or edit) */}
+        <div className="relative aspect-video w-full overflow-hidden rounded-lg border flex items-center justify-center bg-muted">
+          {pendingRemove ? (
+            <div className="text-xs text-muted-foreground">(Will remove)</div>
+          ) : localPreview ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={localPreview} alt="preview" className="object-cover w-full h-full" />
+          ) : palindrome.picture ? (
             <Image
               src={palindrome.picture}
               alt={`Palindrome ${palindrome.id}`}
@@ -90,59 +127,68 @@ export function PalindromeCard({
               onError={(e) => {
                 const target = e.target as HTMLImageElement
                 target.style.display = 'none'
-                const fallback = target.parentElement?.querySelector('.image-fallback') as HTMLElement
-                if (fallback) {
-                  fallback.style.display = 'flex'
-                }
               }}
             />
-            <div className="image-fallback absolute inset-0 items-center justify-center bg-muted" style={{ display: 'none' }}>
-              <div className="text-center text-muted-foreground">
-                <Camera className="mx-auto h-8 w-8 mb-2" />
-                <p className="text-sm">Image unavailable</p>
-              </div>
-            </div>
-          </div>
-        ) : (
-          <div className="aspect-video w-full flex items-center justify-center bg-muted rounded-lg border border-dashed">
+          ) : (
             <div className="text-center text-muted-foreground">
               <Camera className="mx-auto h-8 w-8 mb-2" />
               <p className="text-sm">No image</p>
             </div>
-          </div>
-        )}
-
-        {/* Details Grid */}
-        <div className="grid grid-cols-1 gap-3 text-sm">
-          {/* Found By */}
+          )}
+          {mode === 'edit' && (
+            <div className="absolute top-2 right-2 flex gap-2">
+              <label className="cursor-pointer bg-white/80 dark:bg-black/60 hover:bg-white text-xs px-2 py-1 rounded shadow">
+                +
+                <input type="file" accept="image/*" className="hidden" onChange={handleFileSelect} />
+              </label>
+              {(palindrome.picture || localPreview) && !pendingRemove && (
+                <button
+                  onClick={markRemove}
+                  className="bg-red-500/80 hover:bg-red-600 text-white text-xs px-2 py-1 rounded shadow flex items-center gap-1"
+                >
+                  <X className="h-3 w-3" />
+                  Remove
+                </button>
+              )}
+              {pendingRemove && (
+                <button
+                  onClick={undoRemove}
+                  className="bg-amber-500/80 hover:bg-amber-600 text-white text-xs px-2 py-1 rounded shadow flex items-center gap-1"
+                >
+                  <Undo2 className="h-3 w-3" />
+                  Undo
+                </button>
+              )}
+            </div>
+          )}
+        </div>
+        {/* Inline save/cancel removed; parent handles persistence */}
+        <div className="space-y-4">
+          {/* Ownership */}
           {palindrome.userProfile && (
             <div className="flex items-center gap-2">
               <User className="h-4 w-4 text-muted-foreground" />
-              <span className="text-muted-foreground">Found by:</span>
+              <span className="text-muted-foreground">Owner:</span>
               <span className="font-medium">{palindrome.userProfile.name}</span>
             </div>
           )}
-
           {/* Category */}
-          {palindrome.category && (
+          {palindrome.category?.name && (
             <div className="flex items-center gap-2">
               <Tag className="h-4 w-4 text-muted-foreground" />
               <span className="text-muted-foreground">Category:</span>
               <Badge variant="outline">{palindrome.category.name}</Badge>
             </div>
           )}
-
           {/* Vehicle Details */}
           <div className="space-y-2">
-            {/* Brand */}
-            {palindrome.brand && (
+            {palindrome.brand?.name && (
               <div className="flex items-center gap-2">
                 <Car className="h-4 w-4 text-muted-foreground" />
                 <span className="text-muted-foreground">Brand:</span>
                 <span className="font-medium">{palindrome.brand.name}</span>
               </div>
             )}
-            {/* Year */}
             {palindrome.year && (
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4 text-muted-foreground" />
@@ -150,7 +196,6 @@ export function PalindromeCard({
                 <span className="font-medium">{palindrome.year}</span>
               </div>
             )}
-            {/* Model */}
             {palindrome.model && (
               <div className="flex items-center gap-2">
                 <Package className="h-4 w-4 text-muted-foreground" />
@@ -158,7 +203,6 @@ export function PalindromeCard({
                 <span className="font-medium">{palindrome.model}</span>
               </div>
             )}
-            {/* Color */}
             {palindrome.color && (
               <div className="flex items-center gap-2">
                 <Palette className="h-4 w-4 text-muted-foreground" />
@@ -167,8 +211,6 @@ export function PalindromeCard({
               </div>
             )}
           </div>
-
-          {/* Found Date */}
           {palindrome.foundAt && (
             <div className="flex items-center gap-2">
               <Calendar className="h-4 w-4 text-muted-foreground" />
