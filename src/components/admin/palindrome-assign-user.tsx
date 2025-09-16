@@ -93,7 +93,7 @@ export function PalindromeAssignUser({ palindromeId, currentUserProfileId }: Pro
             />
           </div>
           <div className="flex gap-2">
-            <Button type="button" onClick={onCreate} disabled={createMutation.isPending || !newName.trim()}>Create & Select</Button>
+            <Button type="button" onClick={onCreate} disabled={createMutation.isPending || !newName.trim()}>Create & Save</Button>
             <Button type="button" variant="secondary" onClick={() => { setMode('existing'); }} disabled={createMutation.isPending}>Cancel</Button>
           </div>
           {createMutation.isError && <p className="text-xs text-red-600">Error creating user</p>}
@@ -101,10 +101,12 @@ export function PalindromeAssignUser({ palindromeId, currentUserProfileId }: Pro
       )}
       {isLoading && <p className="text-xs mt-1">Loading profiles...</p>}
       {!isLoading && profiles && profiles.length === 0 && <p className="text-xs mt-1">No profiles available</p>}
-      <div className="flex gap-2">
-        <Button type="button" variant="secondary" onClick={() => setSelected(null)} disabled={mutation.isPending}>Clear</Button>
-        <Button type="button" onClick={onAssign} disabled={mutation.isPending || selected === currentUserProfileId}>Save</Button>
-      </div>
+      {mode === 'existing' && (
+        <div className="flex gap-2">
+          <Button type="button" variant="secondary" onClick={() => setSelected(null)} disabled={mutation.isPending}>Clear</Button>
+          <Button type="button" onClick={onAssign} disabled={mutation.isPending || selected === currentUserProfileId}>Save</Button>
+        </div>
+      )}
     </div>
   )
 }

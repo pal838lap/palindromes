@@ -1,18 +1,18 @@
 {
   "totalPalindromes": 9400,
-  "pending": 9032,
-  "found": 61,
-  "notFound": 61,
-  "errors": 176,
+  "pending": 9164,
+  "found": 89,
+  "notFound": 73,
+  "errors": 0,
   "retryNeeded": 0,
-  "offRoad": 70,
-  "addedToDatabase": 131,
-  "lastUpdated": "2025-09-16T08:04:26.406Z",
+  "offRoad": 74,
+  "addedToDatabase": 163,
+  "lastUpdated": "2025-09-16T08:34:59.530Z",
   "palindromes": {
     "1000001": {
       "plateNumber": "1000001",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -27,7 +27,7 @@
     "1001001": {
       "plateNumber": "1001001",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -42,7 +42,7 @@
     "1002001": {
       "plateNumber": "1002001",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -57,7 +57,7 @@
     "1003001": {
       "plateNumber": "1003001",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -71,7 +71,7 @@
     "1004001": {
       "plateNumber": "1004001",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -85,7 +85,7 @@
     "1005001": {
       "plateNumber": "1005001",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -100,7 +100,7 @@
     "1006001": {
       "plateNumber": "1006001",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -115,7 +115,7 @@
     "1007001": {
       "plateNumber": "1007001",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -130,7 +130,7 @@
     "1008001": {
       "plateNumber": "1008001",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -145,7 +145,7 @@
     "1009001": {
       "plateNumber": "1009001",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -159,7 +159,7 @@
     "1010101": {
       "plateNumber": "1010101",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -174,7 +174,7 @@
     "1011101": {
       "plateNumber": "1011101",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -189,7 +189,7 @@
     "1012101": {
       "plateNumber": "1012101",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -204,7 +204,7 @@
     "1013101": {
       "plateNumber": "1013101",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -219,7 +219,7 @@
     "1014101": {
       "plateNumber": "1014101",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -234,7 +234,7 @@
     "1015101": {
       "plateNumber": "1015101",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -249,7 +249,7 @@
     "1016101": {
       "plateNumber": "1016101",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -264,7 +264,7 @@
     "1017101": {
       "plateNumber": "1017101",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -279,7 +279,7 @@
     "1018101": {
       "plateNumber": "1018101",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -294,7 +294,7 @@
     "1019101": {
       "plateNumber": "1019101",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -309,7 +309,7 @@
     "1020201": {
       "plateNumber": "1020201",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -324,7 +324,7 @@
     "1021201": {
       "plateNumber": "1021201",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -338,7 +338,7 @@
     "1022201": {
       "plateNumber": "1022201",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -352,7 +352,7 @@
     "1023201": {
       "plateNumber": "1023201",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -367,7 +367,7 @@
     "1024201": {
       "plateNumber": "1024201",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -382,7 +382,7 @@
     "1025201": {
       "plateNumber": "1025201",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -397,7 +397,7 @@
     "1026201": {
       "plateNumber": "1026201",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -412,7 +412,7 @@
     "1027201": {
       "plateNumber": "1027201",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -427,7 +427,7 @@
     "1028201": {
       "plateNumber": "1028201",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -442,7 +442,7 @@
     "1029201": {
       "plateNumber": "1029201",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -457,7 +457,7 @@
     "1030301": {
       "plateNumber": "1030301",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -472,7 +472,7 @@
     "1031301": {
       "plateNumber": "1031301",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -486,7 +486,7 @@
     "1032301": {
       "plateNumber": "1032301",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -501,7 +501,7 @@
     "1033301": {
       "plateNumber": "1033301",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -516,7 +516,7 @@
     "1034301": {
       "plateNumber": "1034301",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -531,7 +531,7 @@
     "1035301": {
       "plateNumber": "1035301",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -546,7 +546,7 @@
     "1036301": {
       "plateNumber": "1036301",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -560,7 +560,7 @@
     "1037301": {
       "plateNumber": "1037301",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -574,7 +574,7 @@
     "1038301": {
       "plateNumber": "1038301",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -589,7 +589,7 @@
     "1039301": {
       "plateNumber": "1039301",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -604,7 +604,7 @@
     "1040401": {
       "plateNumber": "1040401",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -618,7 +618,7 @@
     "1041401": {
       "plateNumber": "1041401",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -632,7 +632,7 @@
     "1042401": {
       "plateNumber": "1042401",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -647,7 +647,7 @@
     "1043401": {
       "plateNumber": "1043401",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -662,7 +662,7 @@
     "1044401": {
       "plateNumber": "1044401",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -676,7 +676,7 @@
     "1045401": {
       "plateNumber": "1045401",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -691,7 +691,7 @@
     "1046401": {
       "plateNumber": "1046401",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -705,7 +705,7 @@
     "1047401": {
       "plateNumber": "1047401",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -719,7 +719,7 @@
     "1048401": {
       "plateNumber": "1048401",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -734,7 +734,7 @@
     "1049401": {
       "plateNumber": "1049401",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -749,7 +749,7 @@
     "1050501": {
       "plateNumber": "1050501",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -763,7 +763,7 @@
     "1051501": {
       "plateNumber": "1051501",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -778,7 +778,7 @@
     "1052501": {
       "plateNumber": "1052501",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -792,7 +792,7 @@
     "1053501": {
       "plateNumber": "1053501",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -807,7 +807,7 @@
     "1054501": {
       "plateNumber": "1054501",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -822,7 +822,7 @@
     "1055501": {
       "plateNumber": "1055501",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -837,7 +837,7 @@
     "1056501": {
       "plateNumber": "1056501",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -851,7 +851,7 @@
     "1057501": {
       "plateNumber": "1057501",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -865,7 +865,7 @@
     "1058501": {
       "plateNumber": "1058501",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -880,7 +880,7 @@
     "1059501": {
       "plateNumber": "1059501",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -894,7 +894,7 @@
     "1060601": {
       "plateNumber": "1060601",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -908,7 +908,7 @@
     "1061601": {
       "plateNumber": "1061601",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -922,7 +922,7 @@
     "1062601": {
       "plateNumber": "1062601",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -937,7 +937,7 @@
     "1063601": {
       "plateNumber": "1063601",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -952,7 +952,7 @@
     "1064601": {
       "plateNumber": "1064601",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -966,7 +966,7 @@
     "1065601": {
       "plateNumber": "1065601",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -981,7 +981,7 @@
     "1066601": {
       "plateNumber": "1066601",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -995,7 +995,7 @@
     "1067601": {
       "plateNumber": "1067601",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1010,7 +1010,7 @@
     "1068601": {
       "plateNumber": "1068601",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1025,7 +1025,7 @@
     "1069601": {
       "plateNumber": "1069601",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1039,7 +1039,7 @@
     "1070701": {
       "plateNumber": "1070701",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1054,7 +1054,7 @@
     "1071701": {
       "plateNumber": "1071701",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1068,7 +1068,7 @@
     "1072701": {
       "plateNumber": "1072701",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1082,7 +1082,7 @@
     "1073701": {
       "plateNumber": "1073701",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1097,7 +1097,7 @@
     "1074701": {
       "plateNumber": "1074701",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1112,7 +1112,7 @@
     "1075701": {
       "plateNumber": "1075701",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1126,7 +1126,7 @@
     "1076701": {
       "plateNumber": "1076701",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1141,7 +1141,7 @@
     "1077701": {
       "plateNumber": "1077701",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1155,7 +1155,7 @@
     "1078701": {
       "plateNumber": "1078701",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1170,7 +1170,7 @@
     "1079701": {
       "plateNumber": "1079701",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1185,7 +1185,7 @@
     "1080801": {
       "plateNumber": "1080801",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1199,7 +1199,7 @@
     "1081801": {
       "plateNumber": "1081801",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1213,7 +1213,7 @@
     "1082801": {
       "plateNumber": "1082801",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1227,7 +1227,7 @@
     "1083801": {
       "plateNumber": "1083801",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1242,7 +1242,7 @@
     "1084801": {
       "plateNumber": "1084801",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1257,7 +1257,7 @@
     "1085801": {
       "plateNumber": "1085801",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1271,7 +1271,7 @@
     "1086801": {
       "plateNumber": "1086801",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1286,7 +1286,7 @@
     "1087801": {
       "plateNumber": "1087801",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1301,7 +1301,7 @@
     "1088801": {
       "plateNumber": "1088801",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1316,7 +1316,7 @@
     "1089801": {
       "plateNumber": "1089801",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1331,7 +1331,7 @@
     "1090901": {
       "plateNumber": "1090901",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1345,7 +1345,7 @@
     "1091901": {
       "plateNumber": "1091901",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1359,7 +1359,7 @@
     "1092901": {
       "plateNumber": "1092901",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1374,7 +1374,7 @@
     "1093901": {
       "plateNumber": "1093901",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1389,7 +1389,7 @@
     "1094901": {
       "plateNumber": "1094901",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1404,7 +1404,7 @@
     "1095901": {
       "plateNumber": "1095901",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1418,7 +1418,7 @@
     "1096901": {
       "plateNumber": "1096901",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1433,7 +1433,7 @@
     "1097901": {
       "plateNumber": "1097901",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1447,7 +1447,7 @@
     "1098901": {
       "plateNumber": "1098901",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1462,7 +1462,7 @@
     "1099901": {
       "plateNumber": "1099901",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1476,7 +1476,7 @@
     "1100011": {
       "plateNumber": "1100011",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1503,7 +1503,7 @@
     "1101011": {
       "plateNumber": "1101011",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1530,7 +1530,7 @@
     "1102011": {
       "plateNumber": "1102011",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1557,7 +1557,7 @@
     "1103011": {
       "plateNumber": "1103011",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1584,7 +1584,7 @@
     "1104011": {
       "plateNumber": "1104011",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1611,7 +1611,7 @@
     "1105011": {
       "plateNumber": "1105011",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1638,7 +1638,7 @@
     "1106011": {
       "plateNumber": "1106011",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1665,7 +1665,7 @@
     "1107011": {
       "plateNumber": "1107011",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1692,7 +1692,7 @@
     "1108011": {
       "plateNumber": "1108011",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1719,7 +1719,7 @@
     "1109011": {
       "plateNumber": "1109011",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1746,7 +1746,7 @@
     "1110111": {
       "plateNumber": "1110111",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1773,7 +1773,7 @@
     "1111111": {
       "plateNumber": "1111111",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1800,7 +1800,7 @@
     "1112111": {
       "plateNumber": "1112111",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1827,7 +1827,7 @@
     "1113111": {
       "plateNumber": "1113111",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1854,7 +1854,7 @@
     "1114111": {
       "plateNumber": "1114111",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1881,7 +1881,7 @@
     "1115111": {
       "plateNumber": "1115111",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1908,7 +1908,7 @@
     "1116111": {
       "plateNumber": "1116111",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1935,7 +1935,7 @@
     "1117111": {
       "plateNumber": "1117111",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1962,7 +1962,7 @@
     "1118111": {
       "plateNumber": "1118111",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -1989,7 +1989,7 @@
     "1119111": {
       "plateNumber": "1119111",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2003,7 +2003,7 @@
     "1120211": {
       "plateNumber": "1120211",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2018,7 +2018,7 @@
     "1121211": {
       "plateNumber": "1121211",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2045,7 +2045,7 @@
     "1122211": {
       "plateNumber": "1122211",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2060,7 +2060,7 @@
     "1123211": {
       "plateNumber": "1123211",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2087,7 +2087,7 @@
     "1124211": {
       "plateNumber": "1124211",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2114,7 +2114,7 @@
     "1125211": {
       "plateNumber": "1125211",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2141,7 +2141,7 @@
     "1126211": {
       "plateNumber": "1126211",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2168,7 +2168,7 @@
     "1127211": {
       "plateNumber": "1127211",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2183,7 +2183,7 @@
     "1128211": {
       "plateNumber": "1128211",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2210,7 +2210,7 @@
     "1129211": {
       "plateNumber": "1129211",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2237,7 +2237,7 @@
     "1130311": {
       "plateNumber": "1130311",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2264,7 +2264,7 @@
     "1131311": {
       "plateNumber": "1131311",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2291,7 +2291,7 @@
     "1132311": {
       "plateNumber": "1132311",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2306,7 +2306,7 @@
     "1133311": {
       "plateNumber": "1133311",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2333,7 +2333,7 @@
     "1134311": {
       "plateNumber": "1134311",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2360,7 +2360,7 @@
     "1135311": {
       "plateNumber": "1135311",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2387,7 +2387,7 @@
     "1136311": {
       "plateNumber": "1136311",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2414,7 +2414,7 @@
     "1137311": {
       "plateNumber": "1137311",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2441,7 +2441,7 @@
     "1138311": {
       "plateNumber": "1138311",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2468,7 +2468,7 @@
     "1139311": {
       "plateNumber": "1139311",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2495,7 +2495,7 @@
     "1140411": {
       "plateNumber": "1140411",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2522,7 +2522,7 @@
     "1141411": {
       "plateNumber": "1141411",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2549,7 +2549,7 @@
     "1142411": {
       "plateNumber": "1142411",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2564,7 +2564,7 @@
     "1143411": {
       "plateNumber": "1143411",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2591,7 +2591,7 @@
     "1144411": {
       "plateNumber": "1144411",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2618,7 +2618,7 @@
     "1145411": {
       "plateNumber": "1145411",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2645,7 +2645,7 @@
     "1146411": {
       "plateNumber": "1146411",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2672,7 +2672,7 @@
     "1147411": {
       "plateNumber": "1147411",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2699,7 +2699,7 @@
     "1148411": {
       "plateNumber": "1148411",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2726,7 +2726,7 @@
     "1149411": {
       "plateNumber": "1149411",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2753,7 +2753,7 @@
     "1150511": {
       "plateNumber": "1150511",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2780,7 +2780,7 @@
     "1151511": {
       "plateNumber": "1151511",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2807,7 +2807,7 @@
     "1152511": {
       "plateNumber": "1152511",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2834,7 +2834,7 @@
     "1153511": {
       "plateNumber": "1153511",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2861,7 +2861,7 @@
     "1154511": {
       "plateNumber": "1154511",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2888,7 +2888,7 @@
     "1155511": {
       "plateNumber": "1155511",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2914,41 +2914,89 @@
     },
     "1156511": {
       "plateNumber": "1156511",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:11:35.108Z",
-      "lastAttempt": "2025-09-16T07:11:35.108Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:19:39.426Z",
+      "lastAttempt": "2025-09-16T08:19:39.020Z",
+      "data": {
+        "plateNumber": "1156511",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I25",
+        "color": "כסף",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHCT41DBDU394599",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1560,
+        "seats": 5
+      }
     },
     "1157511": {
       "plateNumber": "1157511",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:11:35.182Z",
-      "lastAttempt": "2025-09-16T07:11:35.182Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:19:39.489Z",
+      "lastAttempt": "2025-09-16T08:19:39.140Z",
+      "data": {
+        "plateNumber": "1157511",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "IX35",
+        "color": "כסף",
+        "year": 2013,
+        "engineVolume": 1998,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHJT81BBDU614353",
+        "registrationDate": "01/2013",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1980,
+        "seats": 5
+      }
     },
     "1158511": {
       "plateNumber": "1158511",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:11:35.226Z",
-      "lastAttempt": "2025-09-16T07:11:35.226Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:19:39.539Z",
+      "lastAttempt": "2025-09-16T08:19:39.212Z",
+      "data": {
+        "plateNumber": "1158511",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I35",
+        "color": "כסוף כהה",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHDH41CBDU638164",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1800,
+        "seats": 5
+      }
     },
     "1159511": {
       "plateNumber": "1159511",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -2974,41 +3022,76 @@
     },
     "1160611": {
       "plateNumber": "1160611",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:12:35.972Z",
-      "lastAttempt": "2025-09-16T07:12:35.972Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:19:39.592Z",
+      "lastAttempt": "2025-09-16T08:19:39.279Z",
+      "data": {
+        "plateNumber": "1160611",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "H1",
+        "color": "כחול מטל",
+        "year": 2013,
+        "engineVolume": 2497,
+        "fuelType": "דיזל",
+        "chassisNumber": "KMHWH81KADU509799",
+        "registrationDate": "01/2013",
+        "vehicleType": "קומבי",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 3030,
+        "seats": 8
+      }
     },
     "1161611": {
       "plateNumber": "1161611",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:12:36.050Z",
-      "lastAttempt": "2025-09-16T07:12:36.050Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:19:52.616Z",
+      "lastAttempt": "2025-09-16T08:19:52.616Z",
+      "data": {
+        "plateNumber": "1161611",
+        "found": false
+      }
     },
     "1162611": {
       "plateNumber": "1162611",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:12:36.093Z",
-      "lastAttempt": "2025-09-16T07:12:36.093Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:19:52.886Z",
+      "lastAttempt": "2025-09-16T08:19:52.689Z",
+      "data": {
+        "plateNumber": "1162611",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I20",
+        "color": "ברונזה",
+        "year": 2013,
+        "engineVolume": 1396,
+        "fuelType": "בנזין",
+        "chassisNumber": "NLHBB51CBDZ171066",
+        "registrationDate": "01/2013",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "טורקיה",
+        "weight": 1565,
+        "seats": 5
+      }
     },
     "1163611": {
       "plateNumber": "1163611",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3034,41 +3117,89 @@
     },
     "1164611": {
       "plateNumber": "1164611",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:13:36.846Z",
-      "lastAttempt": "2025-09-16T07:13:36.846Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:19:52.947Z",
+      "lastAttempt": "2025-09-16T08:19:52.755Z",
+      "data": {
+        "plateNumber": "1164611",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I20",
+        "color": "כחול מטל",
+        "year": 2013,
+        "engineVolume": 1396,
+        "fuelType": "בנזין",
+        "chassisNumber": "NLHBB51CBDZ177952",
+        "registrationDate": "01/2013",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "טורקיה",
+        "weight": 1565,
+        "seats": 5
+      }
     },
     "1165611": {
       "plateNumber": "1165611",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:13:36.911Z",
-      "lastAttempt": "2025-09-16T07:13:36.911Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:19:53.085Z",
+      "lastAttempt": "2025-09-16T08:19:52.805Z",
+      "data": {
+        "plateNumber": "1165611",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I25",
+        "color": "שנהב לבן",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHCT41DBDU394482",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1560,
+        "seats": 5
+      }
     },
     "1166611": {
       "plateNumber": "1166611",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:13:36.956Z",
-      "lastAttempt": "2025-09-16T07:13:36.956Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:20:13.988Z",
+      "lastAttempt": "2025-09-16T08:20:13.725Z",
+      "data": {
+        "plateNumber": "1166611",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "VELOSTER",
+        "color": "צהוב",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHTC61DADU118626",
+        "registrationDate": "01/2013",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1700,
+        "seats": 4
+      }
     },
     "1167611": {
       "plateNumber": "1167611",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3094,41 +3225,77 @@
     },
     "1168611": {
       "plateNumber": "1168611",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:14:37.721Z",
-      "lastAttempt": "2025-09-16T07:14:37.721Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:20:14.112Z",
+      "lastAttempt": "2025-09-16T08:20:13.807Z",
+      "data": {
+        "plateNumber": "1168611",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I30",
+        "color": "אדום",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMAD251CBDJ056413",
+        "registrationDate": "01/2013",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "צ'כיה",
+        "weight": 1850,
+        "seats": 5
+      }
     },
     "1169611": {
       "plateNumber": "1169611",
-      "status": "error",
+      "status": "off_road",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:14:37.798Z",
-      "lastAttempt": "2025-09-16T07:14:37.798Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:20:14.234Z",
+      "lastAttempt": "2025-09-16T08:20:13.873Z",
+      "data": {
+        "plateNumber": "1169611",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "1170711": {
       "plateNumber": "1170711",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:14:37.843Z",
-      "lastAttempt": "2025-09-16T07:14:37.843Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:20:14.301Z",
+      "lastAttempt": "2025-09-16T08:20:13.920Z",
+      "data": {
+        "plateNumber": "1170711",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I30",
+        "color": "אפור",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMAD251CBEJ078809",
+        "registrationDate": "01/2013",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "צ'כיה",
+        "weight": 1850,
+        "seats": 5
+      }
     },
     "1171711": {
       "plateNumber": "1171711",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3154,41 +3321,89 @@
     },
     "1172711": {
       "plateNumber": "1172711",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:15:38.594Z",
-      "lastAttempt": "2025-09-16T07:15:38.594Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:22:05.718Z",
+      "lastAttempt": "2025-09-16T08:22:05.548Z",
+      "data": {
+        "plateNumber": "1172711",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I25",
+        "color": "שנהב לבן",
+        "year": 2013,
+        "engineVolume": 1396,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHCT41CBDU359111",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1560,
+        "seats": 5
+      }
     },
     "1173711": {
       "plateNumber": "1173711",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:15:38.672Z",
-      "lastAttempt": "2025-09-16T07:15:38.672Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:22:05.764Z",
+      "lastAttempt": "2025-09-16T08:22:05.597Z",
+      "data": {
+        "plateNumber": "1173711",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I25",
+        "color": "כסף",
+        "year": 2013,
+        "engineVolume": 1396,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHCT41CBDU373551",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1560,
+        "seats": 5
+      }
     },
     "1174711": {
       "plateNumber": "1174711",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:15:38.713Z",
-      "lastAttempt": "2025-09-16T07:15:38.713Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:22:05.811Z",
+      "lastAttempt": "2025-09-16T08:22:05.636Z",
+      "data": {
+        "plateNumber": "1174711",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I25",
+        "color": "כסף",
+        "year": 2013,
+        "engineVolume": 1396,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHCT41CBDU377153",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1560,
+        "seats": 5
+      }
     },
     "1175711": {
       "plateNumber": "1175711",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3214,41 +3429,89 @@
     },
     "1176711": {
       "plateNumber": "1176711",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:16:39.459Z",
-      "lastAttempt": "2025-09-16T07:16:39.459Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:22:05.857Z",
+      "lastAttempt": "2025-09-16T08:22:05.673Z",
+      "data": {
+        "plateNumber": "1176711",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I35",
+        "color": "שנהב לבן",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHDH41CBDU688291",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1800,
+        "seats": 5
+      }
     },
     "1177711": {
       "plateNumber": "1177711",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:16:39.534Z",
-      "lastAttempt": "2025-09-16T07:16:39.534Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:22:40.619Z",
+      "lastAttempt": "2025-09-16T08:22:40.438Z",
+      "data": {
+        "plateNumber": "1177711",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "VELOSTER",
+        "color": "שנהב לבן",
+        "year": 2012,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHTC61DGDU110707",
+        "registrationDate": "12/2012",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1700,
+        "seats": 4
+      }
     },
     "1178711": {
       "plateNumber": "1178711",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:16:39.581Z",
-      "lastAttempt": "2025-09-16T07:16:39.581Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:22:40.663Z",
+      "lastAttempt": "2025-09-16T08:22:40.496Z",
+      "data": {
+        "plateNumber": "1178711",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I35",
+        "color": "כסף",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHDH41CBDU688251",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1800,
+        "seats": 5
+      }
     },
     "1179711": {
       "plateNumber": "1179711",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3274,41 +3537,77 @@
     },
     "1180811": {
       "plateNumber": "1180811",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:17:40.359Z",
-      "lastAttempt": "2025-09-16T07:17:40.359Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:22:40.708Z",
+      "lastAttempt": "2025-09-16T08:22:40.533Z",
+      "data": {
+        "plateNumber": "1180811",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "IX35",
+        "color": "כסף",
+        "year": 2013,
+        "engineVolume": 1998,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHJT81BBDU614420",
+        "registrationDate": "01/2013",
+        "vehicleType": "פנאי-שטח",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1980,
+        "seats": 5
+      }
     },
     "1181811": {
       "plateNumber": "1181811",
-      "status": "error",
+      "status": "off_road",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:17:40.419Z",
-      "lastAttempt": "2025-09-16T07:17:40.419Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:22:40.748Z",
+      "lastAttempt": "2025-09-16T08:22:40.572Z",
+      "data": {
+        "plateNumber": "1181811",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "1182811": {
       "plateNumber": "1182811",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:17:40.461Z",
-      "lastAttempt": "2025-09-16T07:17:40.461Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:25:11.652Z",
+      "lastAttempt": "2025-09-16T08:25:11.474Z",
+      "data": {
+        "plateNumber": "1182811",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I25",
+        "color": "שחור",
+        "year": 2013,
+        "engineVolume": 1396,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHCT41CBDU358530",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1560,
+        "seats": 5
+      }
     },
     "1183811": {
       "plateNumber": "1183811",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3334,41 +3633,89 @@
     },
     "1184811": {
       "plateNumber": "1184811",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:18:41.218Z",
-      "lastAttempt": "2025-09-16T07:18:41.218Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:25:11.698Z",
+      "lastAttempt": "2025-09-16T08:25:11.524Z",
+      "data": {
+        "plateNumber": "1184811",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I35",
+        "color": "כחול",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHDH41CBDU675334",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1800,
+        "seats": 5
+      }
     },
     "1185811": {
       "plateNumber": "1185811",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:18:41.262Z",
-      "lastAttempt": "2025-09-16T07:18:41.262Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:25:11.741Z",
+      "lastAttempt": "2025-09-16T08:25:11.565Z",
+      "data": {
+        "plateNumber": "1185811",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I20",
+        "color": "כסף",
+        "year": 2013,
+        "engineVolume": 1248,
+        "fuelType": "בנזין",
+        "chassisNumber": "NLHBA51BADZ138963",
+        "registrationDate": "01/2013",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "טורקיה",
+        "weight": 1515,
+        "seats": 5
+      }
     },
     "1186811": {
       "plateNumber": "1186811",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:18:41.310Z",
-      "lastAttempt": "2025-09-16T07:18:41.310Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:25:11.783Z",
+      "lastAttempt": "2025-09-16T08:25:11.603Z",
+      "data": {
+        "plateNumber": "1186811",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I30",
+        "color": "כסף",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMAD251CBDJ057136",
+        "registrationDate": "01/2013",
+        "vehicleType": "הצ'בק",
+        "productionCountry": "צ'כיה",
+        "weight": 1850,
+        "seats": 5
+      }
     },
     "1187811": {
       "plateNumber": "1187811",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3394,41 +3741,89 @@
     },
     "1188811": {
       "plateNumber": "1188811",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:19:42.051Z",
-      "lastAttempt": "2025-09-16T07:19:42.051Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:27:25.997Z",
+      "lastAttempt": "2025-09-16T08:27:25.828Z",
+      "data": {
+        "plateNumber": "1188811",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "מרצדס",
+        "model": "S400 HYBRID",
+        "color": "שנהב לבן",
+        "year": 2015,
+        "engineVolume": 3498,
+        "fuelType": "בנזין",
+        "chassisNumber": "WDD2220571A154241",
+        "registrationDate": "02/2015",
+        "vehicleType": "סדאן",
+        "productionCountry": "גרמניה",
+        "weight": 2595,
+        "seats": 5
+      }
     },
     "1189811": {
       "plateNumber": "1189811",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:19:42.092Z",
-      "lastAttempt": "2025-09-16T07:19:42.092Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:27:26.041Z",
+      "lastAttempt": "2025-09-16T08:27:25.882Z",
+      "data": {
+        "plateNumber": "1189811",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I30",
+        "color": "שנהב לבן",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMAD281CBDJ012695",
+        "registrationDate": "01/2013",
+        "vehicleType": "סטיישן",
+        "productionCountry": "צ'כיה",
+        "weight": 1850,
+        "seats": 5
+      }
     },
     "1190911": {
       "plateNumber": "1190911",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:19:42.134Z",
-      "lastAttempt": "2025-09-16T07:19:42.134Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:27:26.082Z",
+      "lastAttempt": "2025-09-16T08:27:25.918Z",
+      "data": {
+        "plateNumber": "1190911",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I30",
+        "color": "כסף",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMAD281CBDJ012982",
+        "registrationDate": "01/2013",
+        "vehicleType": "סטיישן",
+        "productionCountry": "צ'כיה",
+        "weight": 1850,
+        "seats": 5
+      }
     },
     "1191911": {
       "plateNumber": "1191911",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3454,41 +3849,71 @@
     },
     "1192911": {
       "plateNumber": "1192911",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:20:42.893Z",
-      "lastAttempt": "2025-09-16T07:20:42.893Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:27:26.123Z",
+      "lastAttempt": "2025-09-16T08:27:25.953Z",
+      "data": {
+        "plateNumber": "1192911",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I30",
+        "color": "חום בהיר",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMAD281CBDJ012287",
+        "registrationDate": "01/2013",
+        "vehicleType": "סטיישן",
+        "productionCountry": "צ'כיה",
+        "weight": 1850,
+        "seats": 5
+      }
     },
     "1193911": {
       "plateNumber": "1193911",
-      "status": "error",
+      "status": "off_road",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:20:42.949Z",
-      "lastAttempt": "2025-09-16T07:20:42.949Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:29:34.348Z",
+      "lastAttempt": "2025-09-16T08:29:34.170Z",
+      "data": {
+        "plateNumber": "1193911",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "1194911": {
       "plateNumber": "1194911",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:20:42.991Z",
-      "lastAttempt": "2025-09-16T07:20:42.991Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:29:34.396Z",
+      "lastAttempt": "2025-09-16T08:29:34.228Z",
+      "data": {
+        "plateNumber": "1194911",
+        "found": true,
+        "isOffRoad": false,
+        "model": "I30",
+        "color": "נחושת מטאלי",
+        "year": 2013,
+        "fuelType": "בנזין",
+        "chassisNumber": "TMAD281CBDJ012964",
+        "registrationDate": "01/2013"
+      }
     },
     "1195911": {
       "plateNumber": "1195911",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3514,41 +3939,77 @@
     },
     "1196911": {
       "plateNumber": "1196911",
-      "status": "error",
+      "status": "off_road",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:21:43.741Z",
-      "lastAttempt": "2025-09-16T07:21:43.741Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:29:34.436Z",
+      "lastAttempt": "2025-09-16T08:29:34.270Z",
+      "data": {
+        "plateNumber": "1196911",
+        "found": true,
+        "isOffRoad": true
+      }
     },
     "1197911": {
       "plateNumber": "1197911",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:21:43.792Z",
-      "lastAttempt": "2025-09-16T07:21:43.792Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:29:34.479Z",
+      "lastAttempt": "2025-09-16T08:29:34.309Z",
+      "data": {
+        "plateNumber": "1197911",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I35",
+        "color": "כסוף כהה",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHDH41CBDU705880",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1800,
+        "seats": 5
+      }
     },
     "1198911": {
       "plateNumber": "1198911",
-      "status": "error",
+      "status": "found",
       "attemptCount": 1,
       "maxRetries": 3,
-      "addedToDatabase": false,
+      "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:21:43.834Z",
-      "lastAttempt": "2025-09-16T07:21:43.834Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:31:25.563Z",
+      "lastAttempt": "2025-09-16T08:31:25.382Z",
+      "data": {
+        "plateNumber": "1198911",
+        "found": true,
+        "isOffRoad": false,
+        "manufacturer": "יונדאי",
+        "model": "I35",
+        "color": "כסוף כהה",
+        "year": 2013,
+        "engineVolume": 1591,
+        "fuelType": "בנזין",
+        "chassisNumber": "KMHDH41CBDU705869",
+        "registrationDate": "01/2013",
+        "vehicleType": "סדאן",
+        "productionCountry": "קוריאה הדרומית",
+        "weight": 1800,
+        "seats": 5
+      }
     },
     "1199911": {
       "plateNumber": "1199911",
       "status": "found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3574,41 +4035,50 @@
     },
     "1200021": {
       "plateNumber": "1200021",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:22:44.620Z",
-      "lastAttempt": "2025-09-16T07:22:44.620Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:31:25.437Z",
+      "lastAttempt": "2025-09-16T08:31:25.437Z",
+      "data": {
+        "plateNumber": "1200021",
+        "found": false
+      }
     },
     "1201021": {
       "plateNumber": "1201021",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:22:44.668Z",
-      "lastAttempt": "2025-09-16T07:22:44.668Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:31:25.476Z",
+      "lastAttempt": "2025-09-16T08:31:25.476Z",
+      "data": {
+        "plateNumber": "1201021",
+        "found": false
+      }
     },
     "1202021": {
       "plateNumber": "1202021",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:22:44.707Z",
-      "lastAttempt": "2025-09-16T07:22:44.707Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:31:25.515Z",
+      "lastAttempt": "2025-09-16T08:31:25.515Z",
+      "data": {
+        "plateNumber": "1202021",
+        "found": false
+      }
     },
     "1203021": {
       "plateNumber": "1203021",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3621,41 +4091,50 @@
     },
     "1204021": {
       "plateNumber": "1204021",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:23:45.411Z",
-      "lastAttempt": "2025-09-16T07:23:45.411Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:33:04.085Z",
+      "lastAttempt": "2025-09-16T08:33:04.085Z",
+      "data": {
+        "plateNumber": "1204021",
+        "found": false
+      }
     },
     "1205021": {
       "plateNumber": "1205021",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:23:45.481Z",
-      "lastAttempt": "2025-09-16T07:23:45.481Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:33:04.144Z",
+      "lastAttempt": "2025-09-16T08:33:04.144Z",
+      "data": {
+        "plateNumber": "1205021",
+        "found": false
+      }
     },
     "1206021": {
       "plateNumber": "1206021",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:23:45.551Z",
-      "lastAttempt": "2025-09-16T07:23:45.550Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:33:04.182Z",
+      "lastAttempt": "2025-09-16T08:33:04.182Z",
+      "data": {
+        "plateNumber": "1206021",
+        "found": false
+      }
     },
     "1207021": {
       "plateNumber": "1207021",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3668,41 +4147,50 @@
     },
     "1208021": {
       "plateNumber": "1208021",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:24:46.268Z",
-      "lastAttempt": "2025-09-16T07:24:46.268Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:33:04.220Z",
+      "lastAttempt": "2025-09-16T08:33:04.220Z",
+      "data": {
+        "plateNumber": "1208021",
+        "found": false
+      }
     },
     "1209021": {
       "plateNumber": "1209021",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:24:46.335Z",
-      "lastAttempt": "2025-09-16T07:24:46.335Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:34:59.330Z",
+      "lastAttempt": "2025-09-16T08:34:59.330Z",
+      "data": {
+        "plateNumber": "1209021",
+        "found": false
+      }
     },
     "1210121": {
       "plateNumber": "1210121",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:24:46.395Z",
-      "lastAttempt": "2025-09-16T07:24:46.395Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:34:59.431Z",
+      "lastAttempt": "2025-09-16T08:34:59.431Z",
+      "data": {
+        "plateNumber": "1210121",
+        "found": false
+      }
     },
     "1211121": {
       "plateNumber": "1211121",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3715,41 +4203,46 @@
     },
     "1212121": {
       "plateNumber": "1212121",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:25:47.122Z",
-      "lastAttempt": "2025-09-16T07:25:47.122Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:34:59.480Z",
+      "lastAttempt": "2025-09-16T08:34:59.480Z",
+      "data": {
+        "plateNumber": "1212121",
+        "found": false
+      }
     },
     "1213121": {
       "plateNumber": "1213121",
-      "status": "error",
+      "status": "not_found",
       "attemptCount": 1,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
-      "updatedAt": "2025-09-16T07:25:47.187Z",
-      "lastAttempt": "2025-09-16T07:25:47.187Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "updatedAt": "2025-09-16T08:34:59.528Z",
+      "lastAttempt": "2025-09-16T08:34:59.528Z",
+      "data": {
+        "plateNumber": "1213121",
+        "found": false
+      }
     },
     "1214121": {
       "plateNumber": "1214121",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:25:47.249Z",
-      "lastAttempt": "2025-09-16T07:25:47.249Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:25:47.249Z"
     },
     "1215121": {
       "plateNumber": "1215121",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3762,41 +4255,38 @@
     },
     "1216121": {
       "plateNumber": "1216121",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:26:47.968Z",
-      "lastAttempt": "2025-09-16T07:26:47.968Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:26:47.968Z"
     },
     "1217121": {
       "plateNumber": "1217121",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:26:48.025Z",
-      "lastAttempt": "2025-09-16T07:26:48.025Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:26:48.025Z"
     },
     "1218121": {
       "plateNumber": "1218121",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:26:48.092Z",
-      "lastAttempt": "2025-09-16T07:26:48.092Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:26:48.092Z"
     },
     "1219121": {
       "plateNumber": "1219121",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3809,41 +4299,38 @@
     },
     "1220221": {
       "plateNumber": "1220221",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:27:48.824Z",
-      "lastAttempt": "2025-09-16T07:27:48.824Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:27:48.824Z"
     },
     "1221221": {
       "plateNumber": "1221221",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:27:48.895Z",
-      "lastAttempt": "2025-09-16T07:27:48.895Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:27:48.895Z"
     },
     "1222221": {
       "plateNumber": "1222221",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:27:48.938Z",
-      "lastAttempt": "2025-09-16T07:27:48.938Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:27:48.938Z"
     },
     "1223221": {
       "plateNumber": "1223221",
       "status": "off_road",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": true,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3857,41 +4344,38 @@
     },
     "1224221": {
       "plateNumber": "1224221",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:28:49.679Z",
-      "lastAttempt": "2025-09-16T07:28:49.679Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:28:49.679Z"
     },
     "1225221": {
       "plateNumber": "1225221",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:28:49.762Z",
-      "lastAttempt": "2025-09-16T07:28:49.762Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:28:49.762Z"
     },
     "1226221": {
       "plateNumber": "1226221",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:28:49.815Z",
-      "lastAttempt": "2025-09-16T07:28:49.815Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:28:49.815Z"
     },
     "1227221": {
       "plateNumber": "1227221",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3904,41 +4388,38 @@
     },
     "1228221": {
       "plateNumber": "1228221",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:29:50.532Z",
-      "lastAttempt": "2025-09-16T07:29:50.532Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:29:50.532Z"
     },
     "1229221": {
       "plateNumber": "1229221",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:29:50.613Z",
-      "lastAttempt": "2025-09-16T07:29:50.613Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:29:50.613Z"
     },
     "1230321": {
       "plateNumber": "1230321",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:29:50.657Z",
-      "lastAttempt": "2025-09-16T07:29:50.657Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:29:50.657Z"
     },
     "1231321": {
       "plateNumber": "1231321",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3951,41 +4432,38 @@
     },
     "1232321": {
       "plateNumber": "1232321",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:30:51.367Z",
-      "lastAttempt": "2025-09-16T07:30:51.367Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:30:51.367Z"
     },
     "1233321": {
       "plateNumber": "1233321",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:30:51.439Z",
-      "lastAttempt": "2025-09-16T07:30:51.439Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:30:51.439Z"
     },
     "1234321": {
       "plateNumber": "1234321",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:30:51.489Z",
-      "lastAttempt": "2025-09-16T07:30:51.489Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:30:51.489Z"
     },
     "1235321": {
       "plateNumber": "1235321",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -3998,41 +4476,38 @@
     },
     "1236321": {
       "plateNumber": "1236321",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:31:52.219Z",
-      "lastAttempt": "2025-09-16T07:31:52.219Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:31:52.219Z"
     },
     "1237321": {
       "plateNumber": "1237321",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:31:52.286Z",
-      "lastAttempt": "2025-09-16T07:31:52.286Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:31:52.286Z"
     },
     "1238321": {
       "plateNumber": "1238321",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:31:52.347Z",
-      "lastAttempt": "2025-09-16T07:31:52.347Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:31:52.347Z"
     },
     "1239321": {
       "plateNumber": "1239321",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4045,41 +4520,38 @@
     },
     "1240421": {
       "plateNumber": "1240421",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:32:53.048Z",
-      "lastAttempt": "2025-09-16T07:32:53.048Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:32:53.048Z"
     },
     "1241421": {
       "plateNumber": "1241421",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:32:53.111Z",
-      "lastAttempt": "2025-09-16T07:32:53.111Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:32:53.111Z"
     },
     "1242421": {
       "plateNumber": "1242421",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:32:53.160Z",
-      "lastAttempt": "2025-09-16T07:32:53.160Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:32:53.160Z"
     },
     "1243421": {
       "plateNumber": "1243421",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4092,41 +4564,38 @@
     },
     "1244421": {
       "plateNumber": "1244421",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:33:53.861Z",
-      "lastAttempt": "2025-09-16T07:33:53.861Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:33:53.861Z"
     },
     "1245421": {
       "plateNumber": "1245421",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:33:53.926Z",
-      "lastAttempt": "2025-09-16T07:33:53.926Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:33:53.926Z"
     },
     "1246421": {
       "plateNumber": "1246421",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:33:53.983Z",
-      "lastAttempt": "2025-09-16T07:33:53.983Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:33:53.983Z"
     },
     "1247421": {
       "plateNumber": "1247421",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4139,41 +4608,38 @@
     },
     "1248421": {
       "plateNumber": "1248421",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:34:54.778Z",
-      "lastAttempt": "2025-09-16T07:34:54.778Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:34:54.778Z"
     },
     "1249421": {
       "plateNumber": "1249421",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:34:54.848Z",
-      "lastAttempt": "2025-09-16T07:34:54.848Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:34:54.848Z"
     },
     "1250521": {
       "plateNumber": "1250521",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:34:54.889Z",
-      "lastAttempt": "2025-09-16T07:34:54.889Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:34:54.889Z"
     },
     "1251521": {
       "plateNumber": "1251521",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4186,41 +4652,38 @@
     },
     "1252521": {
       "plateNumber": "1252521",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:35:55.587Z",
-      "lastAttempt": "2025-09-16T07:35:55.587Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:35:55.587Z"
     },
     "1253521": {
       "plateNumber": "1253521",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:35:55.662Z",
-      "lastAttempt": "2025-09-16T07:35:55.662Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:35:55.662Z"
     },
     "1254521": {
       "plateNumber": "1254521",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:35:55.707Z",
-      "lastAttempt": "2025-09-16T07:35:55.707Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:35:55.707Z"
     },
     "1255521": {
       "plateNumber": "1255521",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4233,41 +4696,38 @@
     },
     "1256521": {
       "plateNumber": "1256521",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:36:56.401Z",
-      "lastAttempt": "2025-09-16T07:36:56.401Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:36:56.401Z"
     },
     "1257521": {
       "plateNumber": "1257521",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:36:56.474Z",
-      "lastAttempt": "2025-09-16T07:36:56.474Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:36:56.474Z"
     },
     "1258521": {
       "plateNumber": "1258521",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:36:56.523Z",
-      "lastAttempt": "2025-09-16T07:36:56.523Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:36:56.523Z"
     },
     "1259521": {
       "plateNumber": "1259521",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4280,41 +4740,38 @@
     },
     "1260621": {
       "plateNumber": "1260621",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:37:57.303Z",
-      "lastAttempt": "2025-09-16T07:37:57.303Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:37:57.303Z"
     },
     "1261621": {
       "plateNumber": "1261621",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:37:57.377Z",
-      "lastAttempt": "2025-09-16T07:37:57.377Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:37:57.377Z"
     },
     "1262621": {
       "plateNumber": "1262621",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:37:57.440Z",
-      "lastAttempt": "2025-09-16T07:37:57.440Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:37:57.440Z"
     },
     "1263621": {
       "plateNumber": "1263621",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4327,41 +4784,38 @@
     },
     "1264621": {
       "plateNumber": "1264621",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:38:58.177Z",
-      "lastAttempt": "2025-09-16T07:38:58.177Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:38:58.177Z"
     },
     "1265621": {
       "plateNumber": "1265621",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:38:58.247Z",
-      "lastAttempt": "2025-09-16T07:38:58.247Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:38:58.247Z"
     },
     "1266621": {
       "plateNumber": "1266621",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:38:58.319Z",
-      "lastAttempt": "2025-09-16T07:38:58.319Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:38:58.319Z"
     },
     "1267621": {
       "plateNumber": "1267621",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4374,41 +4828,38 @@
     },
     "1268621": {
       "plateNumber": "1268621",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:39:59.046Z",
-      "lastAttempt": "2025-09-16T07:39:59.046Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:39:59.046Z"
     },
     "1269621": {
       "plateNumber": "1269621",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:39:59.132Z",
-      "lastAttempt": "2025-09-16T07:39:59.132Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:39:59.132Z"
     },
     "1270721": {
       "plateNumber": "1270721",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:39:59.189Z",
-      "lastAttempt": "2025-09-16T07:39:59.189Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:39:59.189Z"
     },
     "1271721": {
       "plateNumber": "1271721",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4421,41 +4872,38 @@
     },
     "1272721": {
       "plateNumber": "1272721",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:40:59.908Z",
-      "lastAttempt": "2025-09-16T07:40:59.908Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:40:59.908Z"
     },
     "1273721": {
       "plateNumber": "1273721",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:40:59.971Z",
-      "lastAttempt": "2025-09-16T07:40:59.971Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:40:59.971Z"
     },
     "1274721": {
       "plateNumber": "1274721",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:41:00.062Z",
-      "lastAttempt": "2025-09-16T07:41:00.062Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:41:00.062Z"
     },
     "1275721": {
       "plateNumber": "1275721",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4468,41 +4916,38 @@
     },
     "1276721": {
       "plateNumber": "1276721",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:42:00.795Z",
-      "lastAttempt": "2025-09-16T07:42:00.795Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:42:00.795Z"
     },
     "1277721": {
       "plateNumber": "1277721",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:42:00.850Z",
-      "lastAttempt": "2025-09-16T07:42:00.850Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:42:00.850Z"
     },
     "1278721": {
       "plateNumber": "1278721",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:42:00.898Z",
-      "lastAttempt": "2025-09-16T07:42:00.898Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:42:00.898Z"
     },
     "1279721": {
       "plateNumber": "1279721",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4515,41 +4960,38 @@
     },
     "1280821": {
       "plateNumber": "1280821",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:43:01.603Z",
-      "lastAttempt": "2025-09-16T07:43:01.603Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:43:01.603Z"
     },
     "1281821": {
       "plateNumber": "1281821",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:43:01.673Z",
-      "lastAttempt": "2025-09-16T07:43:01.673Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:43:01.673Z"
     },
     "1282821": {
       "plateNumber": "1282821",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:43:01.721Z",
-      "lastAttempt": "2025-09-16T07:43:01.721Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:43:01.721Z"
     },
     "1283821": {
       "plateNumber": "1283821",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4562,41 +5004,38 @@
     },
     "1284821": {
       "plateNumber": "1284821",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:44:02.446Z",
-      "lastAttempt": "2025-09-16T07:44:02.446Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:44:02.446Z"
     },
     "1285821": {
       "plateNumber": "1285821",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:44:02.516Z",
-      "lastAttempt": "2025-09-16T07:44:02.516Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:44:02.516Z"
     },
     "1286821": {
       "plateNumber": "1286821",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:44:02.580Z",
-      "lastAttempt": "2025-09-16T07:44:02.580Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:44:02.580Z"
     },
     "1287821": {
       "plateNumber": "1287821",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4609,41 +5048,38 @@
     },
     "1288821": {
       "plateNumber": "1288821",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:45:03.299Z",
-      "lastAttempt": "2025-09-16T07:45:03.299Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:45:03.299Z"
     },
     "1289821": {
       "plateNumber": "1289821",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:45:03.367Z",
-      "lastAttempt": "2025-09-16T07:45:03.367Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:45:03.367Z"
     },
     "1290921": {
       "plateNumber": "1290921",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:45:03.405Z",
-      "lastAttempt": "2025-09-16T07:45:03.405Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:45:03.405Z"
     },
     "1291921": {
       "plateNumber": "1291921",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4656,41 +5092,38 @@
     },
     "1292921": {
       "plateNumber": "1292921",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:46:04.162Z",
-      "lastAttempt": "2025-09-16T07:46:04.162Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:46:04.162Z"
     },
     "1293921": {
       "plateNumber": "1293921",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:46:04.227Z",
-      "lastAttempt": "2025-09-16T07:46:04.227Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:46:04.227Z"
     },
     "1294921": {
       "plateNumber": "1294921",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:46:04.276Z",
-      "lastAttempt": "2025-09-16T07:46:04.276Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:46:04.276Z"
     },
     "1295921": {
       "plateNumber": "1295921",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4703,41 +5136,38 @@
     },
     "1296921": {
       "plateNumber": "1296921",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:47:04.986Z",
-      "lastAttempt": "2025-09-16T07:47:04.986Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:47:04.986Z"
     },
     "1297921": {
       "plateNumber": "1297921",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:47:05.057Z",
-      "lastAttempt": "2025-09-16T07:47:05.057Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:47:05.057Z"
     },
     "1298921": {
       "plateNumber": "1298921",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:47:05.095Z",
-      "lastAttempt": "2025-09-16T07:47:05.095Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:47:05.095Z"
     },
     "1299921": {
       "plateNumber": "1299921",
       "status": "not_found",
-      "attemptCount": 1,
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
@@ -4750,751 +5180,683 @@
     },
     "1300031": {
       "plateNumber": "1300031",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:48:08.974Z",
-      "lastAttempt": "2025-09-16T07:48:08.974Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:48:08.974Z"
     },
     "1301031": {
       "plateNumber": "1301031",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:48:09.049Z",
-      "lastAttempt": "2025-09-16T07:48:09.049Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:48:09.049Z"
     },
     "1302031": {
       "plateNumber": "1302031",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:48:09.103Z",
-      "lastAttempt": "2025-09-16T07:48:09.103Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:48:09.103Z"
     },
     "1303031": {
       "plateNumber": "1303031",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:48:09.156Z",
-      "lastAttempt": "2025-09-16T07:48:09.156Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:48:09.156Z"
     },
     "1304031": {
       "plateNumber": "1304031",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:49:10.024Z",
-      "lastAttempt": "2025-09-16T07:49:10.024Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:49:10.024Z"
     },
     "1305031": {
       "plateNumber": "1305031",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:49:10.083Z",
-      "lastAttempt": "2025-09-16T07:49:10.083Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:49:10.083Z"
     },
     "1306031": {
       "plateNumber": "1306031",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:49:10.123Z",
-      "lastAttempt": "2025-09-16T07:49:10.123Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:49:10.123Z"
     },
     "1307031": {
       "plateNumber": "1307031",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:49:10.160Z",
-      "lastAttempt": "2025-09-16T07:49:10.160Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:49:10.160Z"
     },
     "1308031": {
       "plateNumber": "1308031",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:50:11.018Z",
-      "lastAttempt": "2025-09-16T07:50:11.018Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:50:11.018Z"
     },
     "1309031": {
       "plateNumber": "1309031",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:50:11.103Z",
-      "lastAttempt": "2025-09-16T07:50:11.103Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:50:11.103Z"
     },
     "1310131": {
       "plateNumber": "1310131",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:50:11.196Z",
-      "lastAttempt": "2025-09-16T07:50:11.196Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:50:11.196Z"
     },
     "1311131": {
       "plateNumber": "1311131",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:50:11.238Z",
-      "lastAttempt": "2025-09-16T07:50:11.238Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:50:11.238Z"
     },
     "1312131": {
       "plateNumber": "1312131",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:51:12.113Z",
-      "lastAttempt": "2025-09-16T07:51:12.113Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:51:12.113Z"
     },
     "1313131": {
       "plateNumber": "1313131",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:51:12.190Z",
-      "lastAttempt": "2025-09-16T07:51:12.190Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:51:12.190Z"
     },
     "1314131": {
       "plateNumber": "1314131",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:51:12.287Z",
-      "lastAttempt": "2025-09-16T07:51:12.287Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:51:12.287Z"
     },
     "1315131": {
       "plateNumber": "1315131",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:51:12.334Z",
-      "lastAttempt": "2025-09-16T07:51:12.334Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:51:12.334Z"
     },
     "1316131": {
       "plateNumber": "1316131",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:52:13.260Z",
-      "lastAttempt": "2025-09-16T07:52:13.260Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:52:13.260Z"
     },
     "1317131": {
       "plateNumber": "1317131",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:52:13.328Z",
-      "lastAttempt": "2025-09-16T07:52:13.328Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:52:13.328Z"
     },
     "1318131": {
       "plateNumber": "1318131",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:52:13.370Z",
-      "lastAttempt": "2025-09-16T07:52:13.370Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:52:13.370Z"
     },
     "1319131": {
       "plateNumber": "1319131",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:52:13.408Z",
-      "lastAttempt": "2025-09-16T07:52:13.408Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:52:13.408Z"
     },
     "1320231": {
       "plateNumber": "1320231",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:53:14.302Z",
-      "lastAttempt": "2025-09-16T07:53:14.302Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:53:14.302Z"
     },
     "1321231": {
       "plateNumber": "1321231",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:53:14.365Z",
-      "lastAttempt": "2025-09-16T07:53:14.365Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:53:14.365Z"
     },
     "1322231": {
       "plateNumber": "1322231",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:53:14.408Z",
-      "lastAttempt": "2025-09-16T07:53:14.408Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:53:14.408Z"
     },
     "1323231": {
       "plateNumber": "1323231",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:53:14.444Z",
-      "lastAttempt": "2025-09-16T07:53:14.444Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:53:14.444Z"
     },
     "1324231": {
       "plateNumber": "1324231",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:54:15.302Z",
-      "lastAttempt": "2025-09-16T07:54:15.302Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:54:15.302Z"
     },
     "1325231": {
       "plateNumber": "1325231",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:54:15.363Z",
-      "lastAttempt": "2025-09-16T07:54:15.363Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:54:15.363Z"
     },
     "1326231": {
       "plateNumber": "1326231",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:54:15.450Z",
-      "lastAttempt": "2025-09-16T07:54:15.450Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:54:15.450Z"
     },
     "1327231": {
       "plateNumber": "1327231",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:54:15.524Z",
-      "lastAttempt": "2025-09-16T07:54:15.524Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:54:15.524Z"
     },
     "1328231": {
       "plateNumber": "1328231",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:55:16.390Z",
-      "lastAttempt": "2025-09-16T07:55:16.390Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:55:16.390Z"
     },
     "1329231": {
       "plateNumber": "1329231",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:55:16.468Z",
-      "lastAttempt": "2025-09-16T07:55:16.468Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:55:16.468Z"
     },
     "1330331": {
       "plateNumber": "1330331",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:55:16.558Z",
-      "lastAttempt": "2025-09-16T07:55:16.558Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:55:16.558Z"
     },
     "1331331": {
       "plateNumber": "1331331",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:55:16.630Z",
-      "lastAttempt": "2025-09-16T07:55:16.630Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:55:16.630Z"
     },
     "1332331": {
       "plateNumber": "1332331",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:56:17.512Z",
-      "lastAttempt": "2025-09-16T07:56:17.512Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:56:17.512Z"
     },
     "1333331": {
       "plateNumber": "1333331",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:56:17.591Z",
-      "lastAttempt": "2025-09-16T07:56:17.591Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:56:17.591Z"
     },
     "1334331": {
       "plateNumber": "1334331",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:56:17.639Z",
-      "lastAttempt": "2025-09-16T07:56:17.639Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:56:17.639Z"
     },
     "1335331": {
       "plateNumber": "1335331",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:56:17.680Z",
-      "lastAttempt": "2025-09-16T07:56:17.680Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:56:17.680Z"
     },
     "1336331": {
       "plateNumber": "1336331",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:57:18.618Z",
-      "lastAttempt": "2025-09-16T07:57:18.618Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:57:18.618Z"
     },
     "1337331": {
       "plateNumber": "1337331",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:57:18.696Z",
-      "lastAttempt": "2025-09-16T07:57:18.696Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:57:18.696Z"
     },
     "1338331": {
       "plateNumber": "1338331",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:57:18.820Z",
-      "lastAttempt": "2025-09-16T07:57:18.820Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:57:18.820Z"
     },
     "1339331": {
       "plateNumber": "1339331",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:57:18.882Z",
-      "lastAttempt": "2025-09-16T07:57:18.882Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:57:18.882Z"
     },
     "1340431": {
       "plateNumber": "1340431",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:58:19.805Z",
-      "lastAttempt": "2025-09-16T07:58:19.805Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:58:19.805Z"
     },
     "1341431": {
       "plateNumber": "1341431",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:58:19.888Z",
-      "lastAttempt": "2025-09-16T07:58:19.888Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:58:19.888Z"
     },
     "1342431": {
       "plateNumber": "1342431",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:58:19.940Z",
-      "lastAttempt": "2025-09-16T07:58:19.940Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:58:19.940Z"
     },
     "1343431": {
       "plateNumber": "1343431",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:58:19.993Z",
-      "lastAttempt": "2025-09-16T07:58:19.993Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:58:19.993Z"
     },
     "1344431": {
       "plateNumber": "1344431",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:59:20.923Z",
-      "lastAttempt": "2025-09-16T07:59:20.923Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:59:20.923Z"
     },
     "1345431": {
       "plateNumber": "1345431",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:59:20.994Z",
-      "lastAttempt": "2025-09-16T07:59:20.994Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:59:20.994Z"
     },
     "1346431": {
       "plateNumber": "1346431",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:59:21.054Z",
-      "lastAttempt": "2025-09-16T07:59:21.054Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:59:21.054Z"
     },
     "1347431": {
       "plateNumber": "1347431",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T07:59:21.094Z",
-      "lastAttempt": "2025-09-16T07:59:21.094Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T07:59:21.094Z"
     },
     "1348431": {
       "plateNumber": "1348431",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:00:21.958Z",
-      "lastAttempt": "2025-09-16T08:00:21.958Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:00:21.958Z"
     },
     "1349431": {
       "plateNumber": "1349431",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:00:22.032Z",
-      "lastAttempt": "2025-09-16T08:00:22.032Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:00:22.032Z"
     },
     "1350531": {
       "plateNumber": "1350531",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:00:22.123Z",
-      "lastAttempt": "2025-09-16T08:00:22.123Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:00:22.123Z"
     },
     "1351531": {
       "plateNumber": "1351531",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:00:22.170Z",
-      "lastAttempt": "2025-09-16T08:00:22.170Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:00:22.170Z"
     },
     "1352531": {
       "plateNumber": "1352531",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:01:23.040Z",
-      "lastAttempt": "2025-09-16T08:01:23.040Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:01:23.040Z"
     },
     "1353531": {
       "plateNumber": "1353531",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:01:23.094Z",
-      "lastAttempt": "2025-09-16T08:01:23.094Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:01:23.094Z"
     },
     "1354531": {
       "plateNumber": "1354531",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:01:23.141Z",
-      "lastAttempt": "2025-09-16T08:01:23.141Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:01:23.141Z"
     },
     "1355531": {
       "plateNumber": "1355531",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:01:23.182Z",
-      "lastAttempt": "2025-09-16T08:01:23.182Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:01:23.182Z"
     },
     "1356531": {
       "plateNumber": "1356531",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:02:24.050Z",
-      "lastAttempt": "2025-09-16T08:02:24.050Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:02:24.050Z"
     },
     "1357531": {
       "plateNumber": "1357531",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:02:24.153Z",
-      "lastAttempt": "2025-09-16T08:02:24.153Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:02:24.153Z"
     },
     "1358531": {
       "plateNumber": "1358531",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:02:24.230Z",
-      "lastAttempt": "2025-09-16T08:02:24.230Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:02:24.230Z"
     },
     "1359531": {
       "plateNumber": "1359531",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:02:24.275Z",
-      "lastAttempt": "2025-09-16T08:02:24.275Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:02:24.275Z"
     },
     "1360631": {
       "plateNumber": "1360631",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:03:25.145Z",
-      "lastAttempt": "2025-09-16T08:03:25.145Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:03:25.145Z"
     },
     "1361631": {
       "plateNumber": "1361631",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:03:25.205Z",
-      "lastAttempt": "2025-09-16T08:03:25.205Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:03:25.205Z"
     },
     "1362631": {
       "plateNumber": "1362631",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:03:25.297Z",
-      "lastAttempt": "2025-09-16T08:03:25.297Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:03:25.297Z"
     },
     "1363631": {
       "plateNumber": "1363631",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:03:25.342Z",
-      "lastAttempt": "2025-09-16T08:03:25.342Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:03:25.342Z"
     },
     "1364631": {
       "plateNumber": "1364631",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:04:26.238Z",
-      "lastAttempt": "2025-09-16T08:04:26.238Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:04:26.238Z"
     },
     "1365631": {
       "plateNumber": "1365631",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:04:26.316Z",
-      "lastAttempt": "2025-09-16T08:04:26.316Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:04:26.316Z"
     },
     "1366631": {
       "plateNumber": "1366631",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:04:26.365Z",
-      "lastAttempt": "2025-09-16T08:04:26.365Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:04:26.365Z"
     },
     "1367631": {
       "plateNumber": "1367631",
-      "status": "error",
-      "attemptCount": 1,
+      "status": "pending",
+      "attemptCount": 0,
       "maxRetries": 3,
       "addedToDatabase": false,
       "createdAt": "2025-09-16T06:51:20.690Z",
       "updatedAt": "2025-09-16T08:04:26.404Z",
-      "lastAttempt": "2025-09-16T08:04:26.404Z",
-      "lastError": "HTTP 504: Gateway Time-out"
+      "lastAttempt": "2025-09-16T08:04:26.404Z"
     },
     "1368631": {
       "plateNumber": "1368631",

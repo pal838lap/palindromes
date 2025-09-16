@@ -180,12 +180,18 @@ export class PalindromeTracker {
     } else {
       // Handle errors, capture lastError for debugging / potential inspection
       palindrome.lastError = result.error;
-      if (result.error?.includes('rate limit') || result.error?.includes('429')) {
+      const transientStatusCodes = [408, 425, 429, 500, 502, 503, 504];
+      const errorLower = result.error?.toLowerCase() || '';
+      const isRateLimit = errorLower.includes('rate limit') || errorLower.includes('429');
+      const isTransientHttp = !!result.statusCode && transientStatusCodes.includes(result.statusCode);
+      const canRetry = palindrome.attemptCount < palindrome.maxRetries;
+
+      if (canRetry && (isTransientHttp || isRateLimit)) {
         palindrome.status = 'retry_needed';
-        console.log(`⏳ Status updated to 'retry_needed' for ${result.plateNumber} (rate limit)`);
+        console.log(`⏳ Status updated to 'retry_needed' for ${result.plateNumber} (transient error: ${result.statusCode || result.error})`);
       } else {
         palindrome.status = 'error';
-        console.log(`💥 Status updated to 'error' for ${result.plateNumber}: ${result.error}`);
+        console.log(`💥 Status updated to 'error' for ${result.plateNumber}: ${result.error} (statusCode=${result.statusCode || 'n/a'})`);
       }
     }
 
