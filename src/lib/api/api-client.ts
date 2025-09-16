@@ -1,7 +1,7 @@
 // Type-safe API client for frontend requests
 // This client handles HTTP requests to our Next.js API routes
 
-import { ApiError } from './api-client.types'
+import { ApiError, API_ENDPOINTS } from './api-client.types'
 
 // Type-safe API client class
 export class ApiClient {
@@ -45,6 +45,12 @@ export class ApiClient {
   //       '/api/users/profile'
   //     ),
   // }
+  palindromes = {
+    getById: (id: string) =>
+      this.request<typeof API_ENDPOINTS.palindromes.getById.response>(
+        API_ENDPOINTS.palindromes.getById.path(id)
+      ),
+  }
 }
 
 // Export singleton instance

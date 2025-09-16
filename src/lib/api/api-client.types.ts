@@ -11,6 +11,13 @@ export const API_ENDPOINTS = {
   //     response: {} as UserProfile
   //   }
   // }
+  palindromes: {
+    getById: {
+      method: 'GET' as const,
+      path: (id: string) => `/api/palindromes/${id}` as const,
+      response: {} as import('./api.types').Palindrome,
+    }
+  }
 } as const
 
 // Extract the type from the const object

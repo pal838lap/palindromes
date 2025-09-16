@@ -35,7 +35,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
             const { eq } = await import('drizzle-orm')
             const res = await db.select({ id: adminUsers.id }).from(adminUsers).where(eq(adminUsers.userId, user.id)).limit(1)
             session.user.isAdmin = res.length > 0
-        } catch (e) {
+        } catch {
           session.user.isAdmin = false
         }
       }
