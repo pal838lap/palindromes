@@ -13,11 +13,6 @@ export default async function AdminPage() {
     <>
       <SiteHeader pageTitle="Admin" />
       <main className="container mx-auto px-4 py-8 space-y-6">
-        <h1 className="text-3xl font-bold">Admin Dashboard</h1>
-        <p className="text-muted-foreground">Only visible to admin users.</p>
-        <div className="rounded-md border p-4 bg-background">
-          <p className="text-sm">Welcome, {session.user.name || 'Admin'}.</p>
-        </div>
         <PalindromeSearch />
       </main>
     </>

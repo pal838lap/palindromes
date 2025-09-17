@@ -47,6 +47,10 @@ export class ApiClient {
   // }
   get palindromes() {
     return {
+      list: () =>
+        this.request<typeof API_ENDPOINTS.palindromes.list.response>(
+          API_ENDPOINTS.palindromes.list.path
+        ),
       getById: (id: string) =>
         this.request<typeof API_ENDPOINTS.palindromes.getById.response>(
           API_ENDPOINTS.palindromes.getById.path(id)
