@@ -51,12 +51,12 @@ export default function LeaderboardPage() {
       ),
       cell: ({ row }) => {
         const r = row.original as { name: string; avatar: string | null }
-        const initials = r.name.split(/\s+/).slice(0,2).map(s => s[0]).join('').toUpperCase()
+        // const initials = r.name.split(/\s+/).slice(0,2).map(s => s[0]).join('').toUpperCase()
         return (
           <div className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-full bg-muted flex items-center justify-center text-xs font-semibold">
+            {/* <div className="h-8 w-8 rounded-full bg-muted flex items-center justify-center text-xs font-semibold">
               {initials}
-            </div>
+            </div> */}
             <span className="font-medium">{r.name}</span>
           </div>
         )
