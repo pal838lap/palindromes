@@ -17,9 +17,16 @@ import type { PalindromeWithDetails, UserProfile, Brand } from '@/lib/db/schema'
 export function PalindromeSearch() {
   // Raw (unformatted) input value used for actual querying
   const [value, setValue] = useState('')
+  // Debounced raw value (delay API + validation reactions)
+  const [debouncedValue, setDebouncedValue] = useState('')
   // Display value with hyphen formatting (controlled separately)
   const [displayValue, setDisplayValue] = useState('')
-  const { data, isLoading, isError, error } = usePalindrome(value.trim() || undefined)
+  // Debounce effect
+  useEffect(() => {
+    const handle = setTimeout(() => setDebouncedValue(value), 600)
+    return () => clearTimeout(handle)
+  }, [value])
+  const { data, isLoading, isError, error } = usePalindrome((debouncedValue.trim() || undefined))
   const queryClient = useQueryClient()
   // Image upload/remove now handled directly inside PalindromeCard edit mode
   const { data: profiles, isLoading: loadingProfiles } = useUserProfiles()
@@ -91,33 +98,45 @@ export function PalindromeSearch() {
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
-          <Input
-            placeholder="Enter palindrome id e.g. 12321"
-            value={displayValue}
-            onChange={(e) => {
-              const raw = e.target.value.replace(/[^0-9A-Za-z]/g, '') // allow alphanum, strip separators
-              setValue(raw)
-              // Only format purely numeric strings; keep alphanumerics as-is (no hyphens)
-              const formatted = /^\d+$/.test(raw) ? formatLicensePlateId(raw) : raw
-              setDisplayValue(formatted)
-            }}
-            onBlur={() => {
-              // Re-format on blur in case user pasted something partial
-              if (/^\d+$/.test(value)) {
-                setDisplayValue(formatLicensePlateId(value))
-              }
-            }}
-            onFocus={() => {
-              // Show raw when focusing to allow easy editing
-              setDisplayValue(value)
-            }}
-          />
+          {(() => {
+            // Validation runs on debounced value to avoid flicker while typing quickly
+            const raw = debouncedValue
+            const len = raw.length
+            const isLengthValid = len === 0 || (len >= 6 && len <= 8)
+            // Palindrome check only for purely alphanumeric string (ignore case)
+            const normalized = raw.toLowerCase()
+            const isPalindrome = normalized === normalized.split('').reverse().join('')
+            const isValid = len === 0 || (isLengthValid && isPalindrome)
+            return (
+              <Input
+                placeholder="Enter palindrome id e.g. 12321"
+                value={displayValue}
+                aria-invalid={!isValid && debouncedValue.length > 0}
+                className={!isValid && debouncedValue.length > 0 ? 'border-red-500 focus-visible:ring-red-500' : undefined}
+                onChange={(e) => {
+                  const rawInput = e.target.value.replace(/[^0-9A-Za-z]/g, '') // allow alphanum, strip separators
+                  setValue(rawInput)
+                  // Only format purely numeric strings; keep alphanumerics as-is (no hyphens)
+                  const formatted = /^\d+$/.test(rawInput) ? formatLicensePlateId(rawInput) : rawInput
+                  setDisplayValue(formatted)
+                }}
+                onBlur={() => {
+                  if (/^\d+$/.test(value)) {
+                    setDisplayValue(formatLicensePlateId(value))
+                  }
+                }}
+                onFocus={() => {
+                  setDisplayValue(value)
+                }}
+              />
+            )
+          })()}
           <p className="text-xs text-muted-foreground">Search runs automatically when you type.</p>
         </div>
 
-        {isLoading && value && <p className="text-sm">Loading...</p>}
-        {isError && value && <p className="text-sm text-red-500">{error.message}</p>}
-        {!isLoading && !isError && value && !data && (
+        {isLoading && debouncedValue && <p className="text-sm">Loading...</p>}
+        {isError && debouncedValue && <p className="text-sm text-red-500">{error.message}</p>}
+        {!isLoading && !isError && debouncedValue && !data && (
           <p className="text-sm">No result.</p>
         )}
         {data && (
