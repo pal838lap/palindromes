@@ -29,12 +29,12 @@ const nextConfig: NextConfig = {
         pathname: '/storage/v1/object/public/palindromes/**',
       },
       // Add your Supabase project domain here once known (replace PROJECT_REF)
-      // {
-      //   protocol: 'https',
-      //   hostname: 'PROJECT_REF.supabase.co',
-      //   port: '',
-      //   pathname: '/storage/v1/object/public/palindromes/**',
-      // },
+      {
+        protocol: 'https',
+        hostname: 'qpkldxruujwkzwuykzvf.supabase.co',
+        port: '',
+        pathname: '/storage/v1/object/public/palindromes/**',
+      },
     ],
   },
 
