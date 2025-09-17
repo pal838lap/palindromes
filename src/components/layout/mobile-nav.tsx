@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 import Link from "next/link"
 import { useSession, signOut } from "next-auth/react"
 import { Button } from "@/components/ui/button"
@@ -13,7 +14,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { ThemeToggle } from "@/components/layout/theme-toggle"
-import { Menu, Home, LogIn, LogOut, User, Shield, Trophy } from "lucide-react"
+import { Menu, Home, LogIn, LogOut, User, Shield, Trophy, GalleryVerticalEnd } from "lucide-react"
 
 const navigationItems = [
   {
@@ -34,6 +35,7 @@ const navigationItems = [
 export function MobileNav() {
   const [open, setOpen] = useState(false)
   const { data: session } = useSession()
+  const pathname = usePathname()
 
   const closeMenu = () => setOpen(false)
 
@@ -43,13 +45,29 @@ export function MobileNav() {
   }
 
   return (
-    <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="md:hidden">
-          <Menu className="h-5 w-5" />
-          <span className="sr-only">Toggle menu</span>
-        </Button>
-      </SheetTrigger>
+    <div className="flex items-center gap-1 md:hidden">
+      {/* Quick Links (context-aware) */}
+      {pathname !== "/leaderboard" && (
+        <Link href="/leaderboard" aria-label="Go to leaderboard" className="inline-flex">
+          <Button variant="ghost" size="icon" className="relative focus-visible:ring-2 focus-visible:ring-amber-500/50 dark:focus-visible:ring-amber-400/50">
+            <Trophy className="h-5 w-5 text-amber-600 dark:text-amber-400 transition-colors hover:text-amber-700 dark:hover:text-amber-300" />
+          </Button>
+        </Link>
+      )}
+      {pathname !== "/" && (
+        <Link href="/" aria-label="Go to gallery" className="inline-flex">
+          <Button variant="ghost" size="icon" className="relative focus-visible:ring-2 focus-visible:ring-amber-500/50 dark:focus-visible:ring-amber-400/50">
+            <GalleryVerticalEnd className="h-5 w-5 text-amber-600 dark:text-amber-400 transition-colors hover:text-amber-700 dark:hover:text-amber-300" />
+          </Button>
+        </Link>
+      )}
+      <Sheet open={open} onOpenChange={setOpen}>
+        <SheetTrigger asChild>
+          <Button variant="ghost" size="icon">
+            <Menu className="h-5 w-5" />
+            <span className="sr-only">Toggle menu</span>
+          </Button>
+        </SheetTrigger>
       <SheetContent side="left" className="w-[300px] sm:w-[350px]">
         <SheetHeader>
           <SheetTitle>Navigation</SheetTitle>
@@ -128,7 +146,8 @@ export function MobileNav() {
             </div>
           </div>
         </div>
-      </SheetContent>
-    </Sheet>
+        </SheetContent>
+      </Sheet>
+    </div>
   )
 }

@@ -2,4 +2,4 @@
 - push json data to db (after clearing un-relevant data from db)
 - quick button to go to leaderboard from the home page
 - support last date found (should be in the db + reflect on the leader board under the user name)
-- progress indication
+- progress indication - when we are filtered, should indicate how many are found out of all the filtered ones. ideally - with a nice looking progress bar
