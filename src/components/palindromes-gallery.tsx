@@ -3,6 +3,7 @@ import { usePalindromes } from '@/hooks/use-palindromes'
 // (Old standard card removed in gallery; using specialized gallery card)
 import { PalindromeGalleryCard } from '@/components/palindromes/palindrome-gallery-card'
 import { useMemo, useState, useDeferredValue, useEffect, useRef, useCallback } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { PalindromesFilters, PalindromesFiltersState } from '@/components/palindromes/palindromes-filters'
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetFooter, SheetDescription } from '@/components/ui/sheet'
 import { Filter, SlidersHorizontal } from 'lucide-react'
@@ -12,6 +13,7 @@ import { type PalindromeSort } from '@/lib/palindromes/filter-sort'
 
 export function PalindromesGallery() {
   const { data, isLoading, isError, error } = usePalindromes()
+  const searchParams = useSearchParams()
 
   // Unified filter state
   const [filters, setFilters] = useState<PalindromesFiltersState>({
@@ -22,6 +24,14 @@ export function PalindromesGallery() {
     found: 'found',
     sort: 'idAsc'
   })
+  // Apply ?user= query param once (or whenever it changes) to seed the user filter.
+  useEffect(() => {
+    const userParam = searchParams?.get('user') || ''
+    if (userParam && userParam !== filters.user) {
+      setFilters(prev => ({ ...prev, user: userParam }))
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams])
   // Debounce text filters to reduce recomputation during fast typing
   const debounced = {
     prefix: useDebouncedValue(filters.prefix, 200),

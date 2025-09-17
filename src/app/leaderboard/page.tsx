@@ -5,9 +5,10 @@ import { useLeaderboard } from '@/hooks/use-leaderboard'
 import { ColumnDef, flexRender, getCoreRowModel, getSortedRowModel, SortingState, useReactTable } from '@tanstack/react-table'
 import type { LeaderboardRow } from '@/lib/api/api.types'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { ArrowUpDown } from 'lucide-react'
+import { ArrowUpDown, Eye } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { SiteHeader } from '@/components/layout/site-header'
+import Link from 'next/link'
 
 export default function LeaderboardPage() {
   const { data, isLoading, error } = useLeaderboard()
@@ -44,12 +45,45 @@ export default function LeaderboardPage() {
     {
       accessorKey: 'count',
       header: ({ column }) => (
-        <Button variant="ghost" size="sm" onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')} className="-ml-2">
-          Palindromes
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
+          className="-ml-2 whitespace-nowrap"
+        >
+          <span className="hidden xs:inline">Palindromes</span>
+          <span className="inline xs:hidden">Pals</span>
           <ArrowUpDown className="h-4 w-4 ml-1" />
         </Button>
       ),
-      cell: ({ row }) => <span className="tabular-nums font-semibold">{row.original.count}</span>,
+      cell: ({ row }) => (
+        <span className="tabular-nums font-semibold w-full block">
+          {row.original.count}
+        </span>
+      ),
+      size: 110,
+    }
+    ,
+    {
+      id: 'actions',
+      header: () => <span className="sr-only">Actions</span>,
+      cell: ({ row }) => {
+        const name = encodeURIComponent(row.original.name)
+        return (
+          <Button
+            variant="outline"
+            size="sm"
+            asChild
+            className="gap-1"
+          >
+            <Link href={`/?user=${name}`} prefetch aria-label={`See palindromes by ${row.original.name}`}>
+              <Eye className="h-4 w-4" />
+              <span className="hidden md:inline">See palindromes</span>
+            </Link>
+          </Button>
+        )
+      },
+      size: 56
     }
   ], [])
 
