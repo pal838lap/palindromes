@@ -1,5 +1,5 @@
 import { drizzle } from 'drizzle-orm/postgres-js'
-import { eq } from 'drizzle-orm'
+import { eq, desc, count } from 'drizzle-orm'
 import postgres from 'postgres'
 import { env } from '../env'
 import * as schema from './schema'
@@ -49,6 +49,39 @@ export const dbOperations = {
       return await db.select().from(schema.users)
     } catch (error) {
       console.error('Database error:', error)
+      return []
+    }
+  },
+
+  // Leaderboard: count palindromes found per userProfile
+  async getLeaderboard(limit?: number) {
+    // Returns rows: { userProfileId, name, avatar, count }
+    try {
+      const countExpr = count(schema.palindromes.id).as('count')
+  const qb = db
+        .select({
+          userProfileId: schema.userProfiles.id,
+            name: schema.userProfiles.name,
+            avatar: schema.userProfiles.avatar,
+            count: countExpr,
+        })
+        .from(schema.userProfiles)
+        .leftJoin(
+          schema.palindromes,
+          eq(schema.palindromes.userProfileId, schema.userProfiles.id)
+        )
+        .groupBy(
+          schema.userProfiles.id,
+          schema.userProfiles.name,
+          schema.userProfiles.avatar,
+        )
+        .orderBy(desc(countExpr), schema.userProfiles.name)
+
+      const rows = await (limit ? qb.limit(limit) : qb)
+      // Ensure numeric 'count'
+      return rows.map(r => ({ ...r, count: Number(r.count) }))
+    } catch (error) {
+      console.error('Database error (leaderboard):', error)
       return []
     }
   },

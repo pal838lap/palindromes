@@ -1,3 +1,15 @@
+## Leaderboard Future Enhancements
+
+- Pagination / infinite scroll when userProfiles grow large
+- Timeframe filters (daily / weekly / monthly / all-time) using a materialized view or windowed aggregation
+- Tie handling: display same rank numbers for equal counts (current implementation assigns sequential ranks)
+- Show change indicators (▲ / ▼) compared to previous period snapshot table
+- Include avatars (re-introduce Radix Avatar or Next Image with stored avatar URLs)
+- Add a “My Position” highlight even if user is off the first page
+- Export / share functionality (copy table as markdown / CSV)
+- Server-driven sorting & pagination to reduce payload size
+- Caching layer (e.g., incremental regeneration or Redis) for heavy aggregation once dataset is large
+
 # Development Progress Tracker
 
 Track the implementation progress of the Next.js Golden Template.

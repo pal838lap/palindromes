@@ -53,6 +53,13 @@ export const API_ENDPOINTS = {
       body: {} as { name: string; avatar?: string | null },
       response: {} as import('./api.types').UserProfile,
     }
+  },
+  leaderboard: {
+    list: {
+      method: 'GET' as const,
+      path: '/api/leaderboard' as const,
+      response: {} as import('./api.types').LeaderboardRow[],
+    }
   }
 } as const
 

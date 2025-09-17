@@ -25,6 +25,15 @@ export type UserProfile = {
 	createdAt: string
 	updatedAt: string
 }
+
+// Leaderboard row returned from /api/leaderboard
+export type LeaderboardRow = {
+  rank: number
+  userProfileId: string
+  name: string
+  avatar: string | null
+  count: number
+}
 // export type UserProfile = {
 //   id: string
 //   name: string

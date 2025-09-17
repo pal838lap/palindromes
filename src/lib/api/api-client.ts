@@ -102,6 +102,13 @@ export class ApiClient {
         }
       ),
   }
+
+  leaderboard = {
+    list: () =>
+      this.request<typeof API_ENDPOINTS.leaderboard.list.response>(
+        API_ENDPOINTS.leaderboard.list.path
+      )
+  }
 }
 
 // Export singleton instance

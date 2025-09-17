@@ -153,7 +153,7 @@ export function PalindromesGallery() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-3">
       {/* Mobile filter/sort launcher */}
       <div className="flex items-center justify-between md:hidden">
         <div className="text-xs text-muted-foreground">Showing {filtered.length} of {data.length}</div>

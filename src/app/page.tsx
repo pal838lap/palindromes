@@ -5,8 +5,8 @@ import { PalindromesGallery } from '@/components/palindromes-gallery'
 export default async function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <SiteHeader pageTitle="Palindromes Gallery" />
-      <main className="container mx-auto px-4 py-8 space-y-6">
+      <SiteHeader pageTitle="Gallery" />
+      <main className="container mx-auto px-4 py-4 space-y-6">
         <Suspense fallback={<p className="text-sm text-muted-foreground">Loading...</p>}>
           <PalindromesGallery />
         </Suspense>
