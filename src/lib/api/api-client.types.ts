@@ -39,7 +39,22 @@ export const API_ENDPOINTS = {
       method: 'DELETE' as const,
       path: (id: string) => `/api/palindromes/${id}/picture` as const,
       response: {} as { id: string; picture: null },
-    }
+    },
+    create: {
+      method: 'POST' as const,
+      path: '/api/palindromes' as const,
+      body: {} as {
+        id: string
+        model?: string | null
+        color?: string | null
+        picture?: string | null
+        brandId?: string | null
+        categoryId?: string | null
+        year?: number | null
+        foundAt?: string | null
+      },
+      response: {} as import('./api.types').Palindrome,
+    },
   },
   userProfiles: {
     list: {

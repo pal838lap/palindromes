@@ -51,6 +51,14 @@ export class ApiClient {
         this.request<typeof API_ENDPOINTS.palindromes.list.response>(
           API_ENDPOINTS.palindromes.list.path
         ),
+      create: (body: typeof API_ENDPOINTS.palindromes.create.body) =>
+        this.request<typeof API_ENDPOINTS.palindromes.create.response>(
+          API_ENDPOINTS.palindromes.create.path,
+          {
+            method: API_ENDPOINTS.palindromes.create.method,
+            body: JSON.stringify(body)
+          }
+        ),
       getById: (id: string) =>
         this.request<typeof API_ENDPOINTS.palindromes.getById.response>(
           API_ENDPOINTS.palindromes.getById.path(id)
