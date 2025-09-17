@@ -13,19 +13,13 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { ThemeToggle } from "@/components/layout/theme-toggle"
-import { Menu, Home, LogIn, LogOut, User, Layout, Shield } from "lucide-react"
+import { Menu, Home, LogIn, LogOut, User, Shield } from "lucide-react"
 
 const navigationItems = [
   {
     title: "Home",
     href: "/",
     icon: Home,
-    public: true,
-  },
-  {
-    title: "Showcase",
-    href: "/showcase",
-    icon: Layout,
     public: true,
   },
   // Admin link appended below when user is admin

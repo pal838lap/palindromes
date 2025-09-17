@@ -5,19 +5,13 @@ import { useSession } from "next-auth/react"
 import { Button } from "@/components/ui/button"
 import { UserNav } from "@/components/auth/user-nav"
 import { ThemeToggle } from "@/components/layout/theme-toggle"
-import { Home, Layout, Shield } from "lucide-react"
+import { Home, Shield } from "lucide-react"
 
 const navigationItems = [
   {
     title: "Home",
     href: "/",
     icon: Home,
-    public: true,
-  },
-  {
-    title: "Showcase",
-    href: "/showcase",
-    icon: Layout,
     public: true,
   },
   // Admin link injected separately when session.user.isAdmin is true

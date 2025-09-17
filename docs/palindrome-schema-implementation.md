@@ -34,11 +34,8 @@
 - **Location**: `src/components/ui/badge.tsx`
 - Created missing shadcn/ui Badge component with variants
 
-## Showcase Page
-- **Location**: `src/app/showcase/page.tsx`
-- **Purpose**: Demo both card variants with comprehensive dummy data
-- **Navigation**: Added to both mobile and desktop nav menus
-- **Features**: Tests all data scenarios (found/unfound, missing images, optional fields)
+## (Removed) Showcase Page
+The temporary `showcase` route used for visually exercising `PalindromeCard` variants during initial development has been removed as part of repository cleanup. The card components remain available for use in feature pages and admin tools. If you need example usage, refer to the story-like dummy data pattern previously in `showcase/page.tsx` (see git history) or create a proper Storybook/MDX story in future.
 
 ## Configuration Updates
 - **next.config.ts**: Added image domains for Unsplash (`images.unsplash.com`) and placeholder images
@@ -61,6 +58,6 @@ SELECT * FROM palindromes WHERE id LIKE '12%'
 - `src/lib/db/schema/auth.ts` - Added isAdmin field
 - `src/components/palindrome-card.tsx` - New component
 - `src/components/ui/badge.tsx` - New UI component
-- `src/app/showcase/page.tsx` - New demo page
-- Navigation components - Added showcase link
+- (Removed) `src/app/showcase/page.tsx` - Temporary demo page
+- Navigation components cleaned (removed showcase link)
 - `next.config.ts` - Image domain configuration
