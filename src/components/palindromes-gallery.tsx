@@ -21,7 +21,7 @@ export function PalindromesGallery() {
     user: '',
     brand: '',
     color: '',
-    found: 'all',
+    found: 'found',
     sort: 'idAsc'
   })
   // Apply ?user= query param once (or whenever it changes) to seed the user filter.
