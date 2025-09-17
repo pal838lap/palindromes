@@ -221,3 +221,13 @@ Implemented amber accent theming across interactive icons:
 - User/auth related icons (User, LogIn, LogOut, Shield, Trophy) aligned with accent while retaining semantic red/warning colors elsewhere (alert components untouched).
 
 Rationale: Strengthen brand cohesion and visual affordance for interactive elements without overwhelming neutral UI surfaces.
+
+### Background Gradient (September 17, 2025)
+Added a subtle amber-infused background gradient:
+- Implemented utility `.bg-app-gradient` (radial + linear layered) with light and dark variants.
+- Applied globally to `<body>` in `layout.tsx`.
+- Removed solid `bg-background` from top-level page wrappers so gradient is visible on Home & Leaderboard.
+Design Goals:
+- Keep primary surfaces (cards, tables) readable with existing tokens
+- Provide gentle brand tone without high-contrast distraction
+- Fixed attachment for smooth scroll experience

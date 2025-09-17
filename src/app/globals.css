@@ -120,3 +120,37 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  /* Subtle app-wide background gradient blending base background with amber accent */
+  .bg-app-gradient {
+    background-color: var(--background);
+    /* Strategy: very subtle top, dual corner emphasis bottom-left & bottom-right */
+    background-image:
+      /* Soft haze at top center (barely visible) */
+      radial-gradient(circle at 50% -20%, rgba(251 191 36 / 0.06) 0%, rgba(251 191 36 / 0) 55%),
+      /* Bottom-left glow */
+  radial-gradient(ellipse at 0% 100%, rgba(251 191 36 / 0.20) 0%, rgba(251 191 36 / 0.06) 22%, rgba(251 191 36 / 0) 55%),
+      /* Bottom-right glow */
+  radial-gradient(ellipse at 100% 100%, rgba(251 191 36 / 0.18) 0%, rgba(251 191 36 / 0.06) 24%, rgba(251 191 36 / 0) 55%),
+      /* Gentle vertical fade to keep middle neutral */
+  linear-gradient(to top, rgba(251 191 36 / 0.06) 0%, rgba(251 191 36 / 0.025) 28%, rgba(251 191 36 / 0) 55%),
+      /* Base background fallback */
+      linear-gradient(var(--background), var(--background));
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: normal, screen, screen, normal, normal;
+  }
+  .dark .bg-app-gradient {
+    background-color: var(--background);
+    background-image:
+      radial-gradient(circle at 50% -25%, rgba(217 119 6 / 0.05) 0%, rgba(217 119 6 / 0) 55%),
+  radial-gradient(ellipse at 0% 100%, rgba(217 119 6 / 0.16) 0%, rgba(217 119 6 / 0.06) 22%, rgba(217 119 6 / 0) 55%),
+  radial-gradient(ellipse at 100% 100%, rgba(217 119 6 / 0.15) 0%, rgba(217 119 6 / 0.06) 24%, rgba(217 119 6 / 0) 55%),
+  linear-gradient(to top, rgba(217 119 6 / 0.07) 0%, rgba(217 119 6 / 0.03) 30%, rgba(217 119 6 / 0) 58%),
+      linear-gradient(var(--background), var(--background));
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: normal, screen, screen, normal, normal;
+  }
+}

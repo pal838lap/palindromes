@@ -18,7 +18,7 @@ function PalindromeGalleryCardBase({ palindrome, className, onClick }: Palindrom
   return (
     <div
       className={cn(
-        'group  relative flex flex-col overflow-hidden rounded-md border border-amber-500/70 dark:border-amber-400/60 bg-gray-950 shadow-sm transition hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40 dark:focus-visible:ring-amber-400/40',
+        'group relative flex flex-col overflow-hidden rounded-md border border-amber-500/70 dark:border-amber-400/60 dark:bg-gray-950 shadow-sm transition hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40 dark:focus-visible:ring-amber-400/40',
         className
       )}
       tabIndex={0}
