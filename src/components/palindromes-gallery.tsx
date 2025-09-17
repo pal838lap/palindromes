@@ -165,7 +165,7 @@ export function PalindromesGallery() {
   return (
     <div className="space-y-3">
       {/* Mobile filter/sort launcher */}
-      <div className="flex items-center justify-between md:hidden">
+      <div className="flex items-center justify-between md:hidden px-2">
         <div className="text-xs text-muted-foreground">Showing {filtered.length} of {data.length}</div>
         <Sheet>
           <SheetTrigger asChild>
@@ -211,7 +211,7 @@ export function PalindromesGallery() {
           onReset={resetFilters}
         />
       </div>
-  <div className="grid gap-4 sm:gap-6 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+  <div className="grid gap-2 sm:gap-3 md:gap-3 lg:gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map(p => (
           <PalindromeGalleryCard
             key={p.id}
