@@ -125,7 +125,7 @@ export default function LeaderboardPage() {
         {isLoading && <p>Loading...</p>}
         {error && <p className="text-destructive">Error loading leaderboard</p>}
         {!isLoading && !error && (
-          <div className="rounded-lg border border-amber-500/70 dark:border-amber-400/60 shadow-sm max-w-3xl bg-background">
+          <div className="rounded-lg border border-amber-500/70 dark:border-amber-400/60 shadow-sm max-w-3xl mx-auto bg-background">
             <Table>
               <TableHeader>
                 {table.getHeaderGroups().map(hg => (
