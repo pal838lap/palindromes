@@ -73,7 +73,7 @@ export async function POST(req: Request) {
     // See if already exists
     const existing = await db.query.palindromes.findFirst({ where: (p, { eq }) => eq(p.id, id) })
     if (existing) {
-      return NextResponse.json(existing, { status: 200 }) // return existing silently
+      return NextResponse.json({ error: 'Palindrome already exists' }, { status: 409 })
     }
 
     const now = new Date()

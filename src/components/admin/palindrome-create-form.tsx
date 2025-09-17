@@ -18,7 +18,9 @@ export function PalindromeCreateForm() {
   const cleaned = raw.replace(/[^0-9A-Za-z]/g,'')
   const isPalindrome = cleaned.length > 0 && cleaned.toUpperCase() === cleaned.toUpperCase().split('').reverse().join('')
   const formatted = /^\d+$/.test(cleaned) ? formatLicensePlateId(cleaned) : cleaned
-  const canSubmit = isPalindrome && !mutation.isPending
+  const errorObj = mutation.error as { error?: string; status?: number } | null
+  const duplicate = Boolean(mutation.isError && (errorObj?.status === 409 || errorObj?.error === 'Palindrome already exists'))
+  const canSubmit = isPalindrome && !mutation.isPending && !duplicate
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -67,8 +69,11 @@ export function PalindromeCreateForm() {
             <Input type="number" placeholder="Year" value={year} onChange={e=>setYear(e.target.value)} />
             <Input type="date" placeholder="Found at" value={foundAt} onChange={e=>setFoundAt(e.target.value)} />
           </div>
-          {mutation.isError && (
+          {mutation.isError && !duplicate && (
             <p className="text-xs text-red-500">{(mutation.error as { error?: string })?.error || 'Error creating palindrome'}</p>
+          )}
+          {duplicate && (
+            <p className="text-xs text-red-500">Palindrome already exists</p>
           )}
           {mutation.isSuccess && (
             <p className="text-xs text-green-600">Created!</p>

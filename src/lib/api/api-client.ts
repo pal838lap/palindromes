@@ -31,11 +31,11 @@ export class ApiClient {
         error: response.statusText,
         status: response.status,
       }))
-      
-      throw new Error(errorData.error || `Request failed: ${response.statusText}`)
+      // Throw the raw structured errorData so react-query's error is an object we can inspect
+      throw errorData
     }
 
-    return response.json()
+    return response.json() as Promise<T>
   }
 
   // Add endpoint groups here as you create them
