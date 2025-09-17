@@ -3,6 +3,9 @@ import { usePalindromes } from '@/hooks/use-palindromes'
 import { PalindromeCard } from '@/components/palindrome-card'
 import { useMemo, useState, useDeferredValue, useEffect, useRef, useCallback } from 'react'
 import { PalindromesFilters, PalindromesFiltersState } from '@/components/palindromes/palindromes-filters'
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetFooter, SheetDescription } from '@/components/ui/sheet'
+import { Filter, SlidersHorizontal } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import { useDebouncedValue } from '@/hooks/use-debounced-value'
 import { type PalindromeSort } from '@/lib/palindromes/filter-sort'
 
@@ -150,14 +153,53 @@ export function PalindromesGallery() {
 
   return (
     <div className="space-y-6">
-      <PalindromesFilters
-        state={filters}
-        onChange={(partial) => setFilters(prev => ({ ...prev, ...partial }))}
-        brandOptions={uniqueBrands}
-        total={data.length}
-        showing={filtered.length}
-        onReset={resetFilters}
-      />
+      {/* Mobile filter/sort launcher */}
+      <div className="flex items-center justify-between md:hidden">
+        <div className="text-xs text-muted-foreground">Showing {filtered.length} of {data.length}</div>
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button variant="outline" size="sm" className="flex items-center gap-1">
+              <Filter className="h-4 w-4" />
+              <span>Filters</span>
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="right" className="p-0 flex flex-col">
+            <SheetHeader className="p-4 pb-2 border-b">
+              <SheetTitle className="flex items-center gap-2 text-base">
+                <SlidersHorizontal className="h-4 w-4" /> Filter & Sort
+              </SheetTitle>
+              <SheetDescription className="text-xs">Refine the palindrome list</SheetDescription>
+            </SheetHeader>
+            <div className="overflow-y-auto p-4 pb-24">
+              <PalindromesFilters
+                state={filters}
+                onChange={(partial) => setFilters(prev => ({ ...prev, ...partial }))}
+                brandOptions={uniqueBrands}
+                total={data.length}
+                showing={filtered.length}
+                onReset={resetFilters}
+              />
+            </div>
+            <SheetFooter className="border-t bg-background/80 backdrop-blur p-3 sticky bottom-0">
+              <div className="flex w-full gap-2">
+                <Button variant="secondary" className="flex-1" onClick={resetFilters}>Reset</Button>
+              </div>
+            </SheetFooter>
+          </SheetContent>
+        </Sheet>
+      </div>
+
+      {/* Desktop / wider screens inline filters */}
+      <div className="hidden md:block">
+        <PalindromesFilters
+          state={filters}
+          onChange={(partial) => setFilters(prev => ({ ...prev, ...partial }))}
+          brandOptions={uniqueBrands}
+          total={data.length}
+          showing={filtered.length}
+          onReset={resetFilters}
+        />
+      </div>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map(p => (
           <PalindromeCard
