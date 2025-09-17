@@ -46,7 +46,7 @@ export default function LeaderboardPage() {
       header: ({ column }) => (
         <Button variant="ghost" size="sm" onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')} className="-ml-2">
           User
-          <ArrowUpDown className="h-4 w-4 ml-1" />
+          <ArrowUpDown className="h-4 w-4 ml-1 text-amber-600 dark:text-amber-400 opacity-70 group-hover:opacity-100 transition-opacity" />
         </Button>
       ),
       cell: ({ row }) => {
@@ -73,7 +73,7 @@ export default function LeaderboardPage() {
         >
           <span className="hidden xs:inline">Palindromes</span>
           <span className="inline xs:hidden">Pals</span>
-          <ArrowUpDown className="h-4 w-4 ml-1" />
+          <ArrowUpDown className="h-4 w-4 ml-1 text-amber-600 dark:text-amber-400 opacity-70 group-hover:opacity-100 transition-opacity" />
         </Button>
       ),
       cell: ({ row }) => (
@@ -97,7 +97,7 @@ export default function LeaderboardPage() {
             className="gap-1"
           >
             <Link href={`/?user=${name}`} prefetch aria-label={`See palindromes by ${row.original.name}`}>
-              <Eye className="h-4 w-4" />
+              <Eye className="h-4 w-4 text-amber-600 dark:text-amber-400" />
               <span className="hidden md:inline">See palindromes</span>
             </Link>
           </Button>
@@ -153,7 +153,7 @@ export default function LeaderboardPage() {
                     className="hover:bg-amber-50/60 dark:hover:bg-amber-400/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40 dark:focus-visible:ring-amber-400/40"
                   >
                     {row.getVisibleCells().map(cell => (
-                      <TableCell key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
+                      <TableCell className='px-2' key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
                     ))}
                   </TableRow>
                 ))}

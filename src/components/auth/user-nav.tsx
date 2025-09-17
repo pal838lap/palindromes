@@ -14,7 +14,7 @@ export function UserNav() {
   return (
     <div className="flex items-center gap-2">
       <div className="flex items-center gap-2 text-sm">
-        <User className="w-4 h-4" />
+        <User className="w-4 h-4 text-amber-600 dark:text-amber-400" />
         <span className="hidden lg:inline">
           {session.user.name || session.user.email}
         </span>
@@ -24,7 +24,7 @@ export function UserNav() {
         size="sm"
         onClick={() => signOut({ callbackUrl: "/" })}
       >
-        <LogOut className="w-4 h-4" />
+  <LogOut className="w-4 h-4 text-amber-600 dark:text-amber-400" />
         <span className="hidden lg:ml-2 lg:inline">Sign out</span>
       </Button>
     </div>

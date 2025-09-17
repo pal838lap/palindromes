@@ -30,13 +30,17 @@ export function DesktopNav() {
     <div className="hidden md:flex items-center gap-4">
       {/* Navigation Links */}
       <nav className="flex items-center gap-2">
-        {navigationItems.map((item) => (
-          <Link key={item.href} href={item.href}>
-            <Button variant="ghost" size="sm">
-              {item.title}
-            </Button>
-          </Link>
-        ))}
+        {navigationItems.map((item) => {
+          const Icon = item.icon
+          return (
+            <Link key={item.href} href={item.href}>
+              <Button variant="ghost" size="sm" className="group gap-1">
+                <Icon className="h-4 w-4 text-amber-600 dark:text-amber-400 opacity-80 group-hover:opacity-100" />
+                {item.title}
+              </Button>
+            </Link>
+          )
+        })}
         {session?.user?.isAdmin && (
           <Link href="/admin">
             <Button variant="ghost" size="sm" className="text-amber-600 dark:text-amber-400">

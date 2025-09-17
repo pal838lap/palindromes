@@ -69,9 +69,9 @@ export function MobileNav() {
                   key={item.href}
                   href={item.href}
                   onClick={closeMenu}
-                  className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                  className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors group"
                 >
-                  <Icon className="h-4 w-4" />
+                  <Icon className="h-4 w-4 text-amber-600 dark:text-amber-400 transition-colors group-hover:text-amber-700 dark:group-hover:text-amber-300" />
                   <span>{item.title}</span>
                 </Link>
               )
@@ -80,9 +80,9 @@ export function MobileNav() {
               <Link
                 href="/admin"
                 onClick={closeMenu}
-                className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors text-amber-600 dark:text-amber-400"
+                className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors group text-amber-600 dark:text-amber-400"
               >
-                <Shield className="h-4 w-4" />
+                <Shield className="h-4 w-4 text-amber-600 dark:text-amber-400 transition-colors group-hover:text-amber-700 dark:group-hover:text-amber-300" />
                 <span>Admin</span>
               </Link>
             )}
@@ -94,7 +94,7 @@ export function MobileNav() {
               <>
                 {/* User Info */}
                 <div className="flex items-center gap-3 px-3 py-2 text-sm text-muted-foreground">
-                  <User className="h-4 w-4" />
+                  <User className="h-4 w-4 text-amber-600 dark:text-amber-400" />
                   <span className="truncate">
                     {session.user.name || session.user.email}
                   </span>
@@ -106,14 +106,14 @@ export function MobileNav() {
                   onClick={handleSignOut}
                   className="w-full justify-start gap-3"
                 >
-                  <LogOut className="h-4 w-4" />
+                  <LogOut className="h-4 w-4 text-amber-600 dark:text-amber-400" />
                   Sign out
                 </Button>
               </>
             ) : (
               <Link href="/auth/signin" onClick={closeMenu}>
                 <Button variant="ghost" className="w-full justify-start gap-3">
-                  <LogIn className="h-4 w-4" />
+                  <LogIn className="h-4 w-4 text-amber-600 dark:text-amber-400" />
                   Sign in
                 </Button>
               </Link>

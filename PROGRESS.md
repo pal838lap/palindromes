@@ -212,3 +212,12 @@ Track the implementation progress of the Next.js Golden Template.
 4. Plan testing framework implementation for future release
 
 *Last Updated: January 5, 2025*
+
+### UI Accent Consistency (September 17, 2025)
+Implemented amber accent theming across interactive icons:
+- Navigation (mobile & desktop) icons now use `text-amber-600 dark:text-amber-400` with subtle hover emphasis.
+- Leaderboard sorting arrows and action Eye icon accented; medal colors preserved (gold/silver/bronze differentiation).
+- Theme toggle (sun/moon) icons updated for consistent branding.
+- User/auth related icons (User, LogIn, LogOut, Shield, Trophy) aligned with accent while retaining semantic red/warning colors elsewhere (alert components untouched).
+
+Rationale: Strengthen brand cohesion and visual affordance for interactive elements without overwhelming neutral UI surfaces.
