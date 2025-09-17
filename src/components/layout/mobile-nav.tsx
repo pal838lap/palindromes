@@ -13,7 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { ThemeToggle } from "@/components/layout/theme-toggle"
-import { Menu, Home, LogIn, LogOut, User, Layout } from "lucide-react"
+import { Menu, Home, LogIn, LogOut, User, Layout, Shield } from "lucide-react"
 
 const navigationItems = [
   {
@@ -28,6 +28,7 @@ const navigationItems = [
     icon: Layout,
     public: true,
   },
+  // Admin link appended below when user is admin
 ]
 
 export function MobileNav() {
@@ -75,6 +76,16 @@ export function MobileNav() {
                 </Link>
               )
             })}
+            {session?.user?.isAdmin && (
+              <Link
+                href="/admin"
+                onClick={closeMenu}
+                className="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors text-amber-600 dark:text-amber-400"
+              >
+                <Shield className="h-4 w-4" />
+                <span>Admin</span>
+              </Link>
+            )}
           </nav>
 
           {/* Authentication Section */}
