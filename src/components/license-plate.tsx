@@ -53,7 +53,7 @@ export function LicensePlate({ value, className, country = 'IL', size = 'md', di
       )}
       <div
         className={cn(
-          'flex items-center font-bold tracking-wider text-black',
+          'flex items-center font-bold tracking-wider text-black min-w-[152px]',
           paddingX,
           textSize,
         )}
