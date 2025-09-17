@@ -18,7 +18,7 @@ function PalindromeGalleryCardBase({ palindrome, className, onClick }: Palindrom
   return (
     <div
       className={cn(
-        'group relative flex flex-col overflow-hidden rounded-lg border bg-background shadow-sm transition hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+        'group relative flex flex-col overflow-hidden rounded-lg border border-amber-500/70 dark:border-amber-400/60 bg-background shadow-sm transition hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/40 dark:focus-visible:ring-amber-400/40',
         className
       )}
       tabIndex={0}
@@ -26,18 +26,17 @@ function PalindromeGalleryCardBase({ palindrome, className, onClick }: Palindrom
       onClick={() => onClick?.(palindrome)}
       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick?.(palindrome) } }}
     >
-      {/* Full-width plate header */}
-      <div className="px-2 pt-2">
-        {/* Responsive plate: smaller base on mobile to avoid oversized text, scales up on larger screens */}
+      {/* Centered intrinsic-width plate header */}
+      <div className="pt-2 flex justify-center">
         <LicensePlate
           value={palindrome.id}
           size="sm"
-          fullWidth
           compact
-          className="w-full text-[15px] xs:text-[16px] sm:text-[17px] md:text-[19px] lg:text-[21px]"
+          tight
+          textClassName="text-[12px] xs:text-[13px] sm:text-[15px] md:text-[17px] lg:text-[18px]"
         />
       </div>
-      <div className="relative mt-1 aspect-[4/3] w-full bg-muted">
+      <div className="relative mt-1 aspect-[4/3] w-full bg-muted mt-2">
         {palindrome.picture ? (
           <Image
             src={palindrome.picture}

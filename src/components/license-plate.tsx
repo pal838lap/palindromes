@@ -11,6 +11,12 @@ interface LicensePlateProps {
   compact?: boolean
   /** Full width mode expands plate to fill parent container width */
   fullWidth?: boolean
+  /** Tight mode aggressively reduces side padding (overrides compact) */
+  tight?: boolean
+  /** Align text when fullWidth: default center, or start */
+  align?: 'center' | 'start'
+  /** Override text size classes (applied after default) */
+  textClassName?: string
   /**
    * If true, forces showing the raw value (no hyphen formatting) even if length matches.
    */
@@ -35,11 +41,14 @@ export function formatLicensePlateId(raw: string): string {
 }
 
 // Simple Israeli-style plate: blue left bar (from svg) + yellow body + bold digits
-export function LicensePlate({ value, className, country = 'IL', size = 'md', compact = false, fullWidth = false, disableFormat }: LicensePlateProps) {
+export function LicensePlate({ value, className, country = 'IL', size = 'md', compact = false, fullWidth = false, tight = false, align = 'center', textClassName, disableFormat }: LicensePlateProps) {
   const height = size === 'sm' ? 28 : size === 'lg' ? 52 : 40
-  const paddingX = compact
-    ? (size === 'sm' ? 'px-2' : size === 'lg' ? 'px-4' : 'px-3')
-    : (size === 'sm' ? 'px-3' : size === 'lg' ? 'px-6' : 'px-4')
+  // Tight padding is consistently 8px (px-2) on both sides regardless of size.
+  const paddingX = tight
+    ? 'px-2'
+    : compact
+      ? (size === 'sm' ? 'px-2' : size === 'lg' ? 'px-4' : 'px-3')
+      : (size === 'sm' ? 'px-3' : size === 'lg' ? 'px-6' : 'px-4')
   const textSize = size === 'sm' ? 'text-base' : size === 'lg' ? 'text-2xl' : 'text-xl'
   const display = disableFormat ? value : formatLicensePlateId(value)
   return (
@@ -60,10 +69,12 @@ export function LicensePlate({ value, className, country = 'IL', size = 'md', co
       <div
         className={cn(
           'flex items-center font-bold tracking-wider text-black',
-          compact ? 'min-w-0' : 'min-w-[152px]',
-          fullWidth && 'w-full justify-center',
+          (compact || tight) ? 'min-w-0' : 'min-w-[152px]',
+          fullWidth && 'w-full',
+          fullWidth ? (align === 'start' ? 'justify-start' : 'justify-center') : 'justify-center',
           paddingX,
           textSize,
+          textClassName,
         )}
         style={{ fontFamily: 'ui-monospace, monospace' }}
       >
