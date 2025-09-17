@@ -45,6 +45,7 @@ export function generateSevenDigitPalindromes(): string[] {
   return palindromes;
 }
 
+
 /**
  * Generate all valid 8-digit palindromes
  * Format: ABCDDCBA where AB must be 10, 20, 30, or 40

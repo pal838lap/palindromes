@@ -1,6 +1,7 @@
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { DesktopNav } from "@/components/layout/desktop-nav";
 import Link from "next/link";
+import Image from "next/image";
 
 interface SiteHeaderProps {
   pageTitle?: string;
@@ -9,17 +10,21 @@ interface SiteHeaderProps {
 export function SiteHeader({ 
   pageTitle
 }: SiteHeaderProps) {
-  const appName = "Palindromes";
-  
   return (
     <header className="border-b">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-baseline gap-2 transition-colors group">
-          <span className="text-2xl font-bold text-amber-600 dark:text-amber-400 group-hover:text-amber-700 dark:group-hover:text-amber-300">
-            {appName}
-          </span>
+      <div className="container mx-auto px-4 py-1 flex justify-between items-center">
+        <Link href="/" className="flex items-center gap-2 transition-colors group">
+          <div className="relative p-2 rounded-full transition-colors ">
+            <Image
+              src="/icons/383new.png"
+              alt="Palindromes"
+              width={50}
+              height={40}
+              className="h-8 w-auto"
+            />
+          </div>
           {pageTitle && (
-            <span className="text-sm text-muted-foreground font-medium  text-amber-600 dark:text-amber-400 group-hover:text-amber-700 dark:group-hover:text-amber-300">
+            <span className="text-sm font-medium text-amber-600 dark:text-amber-400 group-hover:text-amber-700 dark:group-hover:text-amber-300">
               {pageTitle}
             </span>
           )}

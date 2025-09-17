@@ -27,6 +27,14 @@ export const metadata: Metadata = {
   title: "Palindromes",
   description: "A palindrome detection and analysis application built with Next.js and TypeScript.",
   manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/icons/383new.png", sizes: "32x32", type: "image/png" },
+      { url: "/icons/383new.png", sizes: "16x16", type: "image/png" }
+    ],
+    apple: "/icons/383new.png",
+    shortcut: "/icons/383new.png"
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
