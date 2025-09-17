@@ -7,6 +7,10 @@ interface LicensePlateProps {
   className?: string
   country?: 'IL'
   size?: 'sm' | 'md' | 'lg'
+  /** Compact mode removes extra horizontal padding & min-width for tight layouts */
+  compact?: boolean
+  /** Full width mode expands plate to fill parent container width */
+  fullWidth?: boolean
   /**
    * If true, forces showing the raw value (no hyphen formatting) even if length matches.
    */
@@ -31,9 +35,11 @@ export function formatLicensePlateId(raw: string): string {
 }
 
 // Simple Israeli-style plate: blue left bar (from svg) + yellow body + bold digits
-export function LicensePlate({ value, className, country = 'IL', size = 'md', disableFormat }: LicensePlateProps) {
+export function LicensePlate({ value, className, country = 'IL', size = 'md', compact = false, fullWidth = false, disableFormat }: LicensePlateProps) {
   const height = size === 'sm' ? 28 : size === 'lg' ? 52 : 40
-  const paddingX = size === 'sm' ? 'px-3' : size === 'lg' ? 'px-6' : 'px-4'
+  const paddingX = compact
+    ? (size === 'sm' ? 'px-2' : size === 'lg' ? 'px-4' : 'px-3')
+    : (size === 'sm' ? 'px-3' : size === 'lg' ? 'px-6' : 'px-4')
   const textSize = size === 'sm' ? 'text-base' : size === 'lg' ? 'text-2xl' : 'text-xl'
   const display = disableFormat ? value : formatLicensePlateId(value)
   return (
@@ -53,7 +59,9 @@ export function LicensePlate({ value, className, country = 'IL', size = 'md', di
       )}
       <div
         className={cn(
-          'flex items-center font-bold tracking-wider text-black min-w-[152px]',
+          'flex items-center font-bold tracking-wider text-black',
+          compact ? 'min-w-0' : 'min-w-[152px]',
+          fullWidth && 'w-full justify-center',
           paddingX,
           textSize,
         )}

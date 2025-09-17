@@ -1,6 +1,7 @@
 'use client'
 import { usePalindromes } from '@/hooks/use-palindromes'
-import { PalindromeCard } from '@/components/palindrome-card'
+// (Old standard card removed in gallery; using specialized gallery card)
+import { PalindromeGalleryCard } from '@/components/palindromes/palindrome-gallery-card'
 import { useMemo, useState, useDeferredValue, useEffect, useRef, useCallback } from 'react'
 import { PalindromesFilters, PalindromesFiltersState } from '@/components/palindromes/palindromes-filters'
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetFooter, SheetDescription } from '@/components/ui/sheet'
@@ -200,9 +201,9 @@ export function PalindromesGallery() {
           onReset={resetFilters}
         />
       </div>
-      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+  <div className="grid gap-4 sm:gap-6 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map(p => (
-          <PalindromeCard
+          <PalindromeGalleryCard
             key={p.id}
             palindrome={{
               id: p.id,
@@ -220,7 +221,6 @@ export function PalindromesGallery() {
               brand: p.brandName ? { id: p.brandId || 'temp-brand', name: p.brandName, createdAt: new Date() } : null,
               category: p.categoryId ? { id: p.categoryId, name: p.categoryId, description: null, createdAt: new Date() } : null,
             }}
-            showActions={false}
           />
         ))}
       </div>
