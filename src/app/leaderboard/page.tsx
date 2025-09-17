@@ -5,7 +5,7 @@ import { useLeaderboard } from '@/hooks/use-leaderboard'
 import { ColumnDef, flexRender, getCoreRowModel, getSortedRowModel, SortingState, useReactTable } from '@tanstack/react-table'
 import type { LeaderboardRow } from '@/lib/api/api.types'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { ArrowUpDown, Eye } from 'lucide-react'
+import { ArrowUpDown, Eye, Medal } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { SiteHeader } from '@/components/layout/site-header'
 import Link from 'next/link'
@@ -18,8 +18,28 @@ export default function LeaderboardPage() {
     {
       accessorKey: 'rank',
       header: '#',
-      cell: ({ row }) => <span className="font-medium">{row.original.rank}</span>,
-      size: 40,
+      cell: ({ row }) => {
+        const rank = row.original.rank
+        const medalClass = rank === 1
+          ? 'text-amber-500 dark:text-amber-400'
+          : rank === 2
+            ? 'text-slate-400 dark:text-slate-300'
+            : rank === 3
+              ? 'text-orange-700 dark:text-orange-500'
+              : ''
+        return (
+          <span className="flex items-center font-medium tabular-nums">
+            {rank <= 3 && (
+              <Medal
+                className={`h-4 w-4 mr-1 ${medalClass}`}
+                aria-label={rank === 1 ? 'Gold medal' : rank === 2 ? 'Silver medal' : 'Bronze medal'}
+              />
+            )}
+            {rank}
+          </span>
+        )
+      },
+      size: 70,
     },
     {
       accessorKey: 'name',
