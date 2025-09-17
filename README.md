@@ -1,6 +1,6 @@
 # Palindromes �
 
-A palindrome detection and analysis application built with Next.js, TypeScript, and modern web technologies.
+A good palindrome detection and analysis application built with Next.js, TypeScript, and modern web technologies.
 
 ## 🎯 Purpose
 
