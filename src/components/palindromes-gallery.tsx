@@ -1,10 +1,10 @@
 'use client'
 import { usePalindromes } from '@/hooks/use-palindromes'
 import { PalindromeCard } from '@/components/palindrome-card'
-import { useMemo, useState } from 'react'
+import { useMemo, useState, useDeferredValue } from 'react'
 import { PalindromesFilters, PalindromesFiltersState } from '@/components/palindromes/palindromes-filters'
 import { useDebouncedValue } from '@/hooks/use-debounced-value'
-import { filterAndSortPalindromes } from '@/lib/palindromes/filter-sort'
+import { type PalindromeSort } from '@/lib/palindromes/filter-sort'
 
 export function PalindromesGallery() {
   const { data, isLoading, isError, error } = usePalindromes()
@@ -18,11 +18,17 @@ export function PalindromesGallery() {
     found: 'found',
     sort: 'idAsc'
   })
+  // Debounce text filters to reduce recomputation during fast typing
   const debounced = {
-    prefix: useDebouncedValue(filters.prefix, 250),
-    user: useDebouncedValue(filters.user, 250),
-    color: useDebouncedValue(filters.color, 250)
+    prefix: useDebouncedValue(filters.prefix, 200),
+    user: useDebouncedValue(filters.user, 200),
+    color: useDebouncedValue(filters.color, 200)
   }
+
+  // Defer the whole (debounced) filter object so React can keep input responsive under load
+  const deferredSort: PalindromeSort = useDeferredValue(filters.sort)
+  const deferredFound = useDeferredValue(filters.found)
+  const deferredBrand = useDeferredValue(filters.brand)
 
   const uniqueBrands = useMemo(() => {
     if (!data) return [] as string[]
@@ -32,17 +38,74 @@ export function PalindromesGallery() {
   }, [data])
   // (Future) Could use uniqueUsers & uniqueColors for dropdowns if desired
 
-  const filtered = useMemo(() => {
-    if (!data) return []
-    return filterAndSortPalindromes(data, {
-      prefix: debounced.prefix,
-      user: debounced.user,
-      brand: filters.brand,
-      color: debounced.color,
-      found: filters.found,
-      sort: filters.sort
+  // Precompute all base sorted arrays once per data load to avoid re-sorting every keystroke
+  const sortedBases = useMemo(() => {
+    if (!data) return null
+    const byIdAsc = [...data].sort((a,b) => {
+      if (a.id.length !== b.id.length) return a.id.length - b.id.length
+      return a.id.localeCompare(b.id)
     })
-  }, [data, debounced.prefix, debounced.user, filters.brand, debounced.color, filters.found, filters.sort])
+    const byIdDesc = [...byIdAsc].slice().reverse()
+    const byFoundAtDesc = [...data].sort((a,b) => {
+      const da = a.foundAt ? new Date(a.foundAt).getTime() : 0
+      const db = b.foundAt ? new Date(b.foundAt).getTime() : 0
+      return db - da
+    })
+    const byFoundAtAsc = [...byFoundAtDesc].slice().reverse()
+    const byCreatedDesc = [...data].sort((a,b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+    const byCreatedAsc = [...byCreatedDesc].slice().reverse()
+    const byBrandAsc = [...data].sort((a,b) => (a.brandName||'').localeCompare(b.brandName||''))
+    const byBrandDesc = [...byBrandAsc].slice().reverse()
+    const byUserAsc = [...data].sort((a,b) => (a.userProfileName||'').localeCompare(b.userProfileName||''))
+    const byUserDesc = [...byUserAsc].slice().reverse()
+    return { byIdAsc, byIdDesc, byFoundAtDesc, byFoundAtAsc, byCreatedDesc, byCreatedAsc, byBrandAsc, byBrandDesc, byUserAsc, byUserDesc }
+  }, [data])
+
+  const filtered = useMemo(() => {
+    if (!sortedBases) return []
+    const prefix = debounced.prefix.trim()
+    const user = debounced.user.trim().toLowerCase()
+    const color = debounced.color.trim().toLowerCase()
+    const brand = deferredBrand
+    const found = deferredFound
+
+    let base: typeof sortedBases.byIdAsc
+    switch (deferredSort) {
+      case 'foundAtDesc': base = sortedBases.byFoundAtDesc; break
+      case 'foundAtAsc': base = sortedBases.byFoundAtAsc; break
+      case 'createdDesc': base = sortedBases.byCreatedDesc; break
+      case 'createdAsc': base = sortedBases.byCreatedAsc; break
+      case 'idAsc': base = sortedBases.byIdAsc; break
+      case 'idDesc': base = sortedBases.byIdDesc; break
+      case 'brandAsc': base = sortedBases.byBrandAsc; break
+      case 'brandDesc': base = sortedBases.byBrandDesc; break
+      case 'userAsc': base = sortedBases.byUserAsc; break
+      case 'userDesc': base = sortedBases.byUserDesc; break
+    }
+
+    // Single pass filter (already sorted)
+    const out: typeof base = []
+    for (let i=0;i<base.length;i++) {
+      const p = base[i]
+      if (prefix && !p.id.startsWith(prefix)) continue
+      if (brand && (p.brandName || '') !== brand) continue
+      if (found !== 'all') {
+        const isFound = !!p.userProfileId
+        if (found === 'found' && !isFound) continue
+        if (found === 'unfound' && isFound) continue
+      }
+      if (color) {
+        const c = (p.color || '').toLowerCase()
+        if (!c.includes(color)) continue
+      }
+      if (user) {
+        const n = (p.userProfileName || '').toLowerCase()
+        if (!n.includes(user)) continue
+      }
+      out.push(p)
+    }
+    return out
+  }, [sortedBases, debounced.prefix, debounced.user, debounced.color, deferredBrand, deferredFound, deferredSort])
 
   if (isLoading) return <p className="text-sm text-muted-foreground">Loading palindromes...</p>
   if (isError) return <p className="text-sm text-red-500">{error.message}</p>

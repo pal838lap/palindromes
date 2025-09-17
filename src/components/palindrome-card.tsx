@@ -19,7 +19,7 @@ import {
   X,
   Undo2
 } from 'lucide-react'
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, memo } from 'react'
 import { cn } from '@/lib/utils'
 import type { PalindromeWithDetails } from '@/lib/db/schema'
 import { LicensePlate } from '@/components/license-plate'
@@ -37,7 +37,7 @@ interface PalindromeCardProps {
   onImageChange?: (change: { pendingFile: File | null; pendingRemove: boolean }) => void
 }
 
-export function PalindromeCard({ 
+function PalindromeCardBase({ 
   palindrome, 
   className,
   showActions = false,
@@ -294,8 +294,10 @@ export function PalindromeCard({
   )
 }
 
+export const PalindromeCard = memo(PalindromeCardBase)
+
 // Compact version for lists
-export function PalindromeCardCompact({ 
+function PalindromeCardCompactBase({ 
   palindrome, 
   className,
   onClick
@@ -340,3 +342,5 @@ export function PalindromeCardCompact({
     </Card>
   )
 }
+
+export const PalindromeCardCompact = memo(PalindromeCardCompactBase)
