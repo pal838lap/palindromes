@@ -1,7 +1,7 @@
 'use client'
 import { usePalindromes } from '@/hooks/use-palindromes'
 import { PalindromeCard } from '@/components/palindrome-card'
-import { useMemo, useState, useDeferredValue } from 'react'
+import { useMemo, useState, useDeferredValue, useEffect, useRef, useCallback } from 'react'
 import { PalindromesFilters, PalindromesFiltersState } from '@/components/palindromes/palindromes-filters'
 import { useDebouncedValue } from '@/hooks/use-debounced-value'
 import { type PalindromeSort } from '@/lib/palindromes/filter-sort'
@@ -107,6 +107,39 @@ export function PalindromesGallery() {
     return out
   }, [sortedBases, debounced.prefix, debounced.user, debounced.color, deferredBrand, deferredFound, deferredSort])
 
+  // Infinite scroll state (defined before any return to satisfy hooks rules)
+  const BATCH_SIZE = 50
+  const [visibleCount, setVisibleCount] = useState(BATCH_SIZE)
+  const sentinelRef = useRef<HTMLDivElement | null>(null)
+
+  // Reset visible count when filters (effective ones) change
+  useEffect(() => {
+    setVisibleCount(BATCH_SIZE)
+  }, [debounced.prefix, debounced.user, debounced.color, deferredBrand, deferredFound, deferredSort])
+
+  const loadMore = useCallback(() => {
+    setVisibleCount(c => Math.min(c + BATCH_SIZE, filtered.length))
+  }, [filtered.length])
+
+  // Intersection Observer to trigger load more
+  useEffect(() => {
+    if (!sentinelRef.current) return
+    if (visibleCount >= filtered.length) return
+    const el = sentinelRef.current
+    const observer = new IntersectionObserver(entries => {
+      for (const e of entries) {
+        if (e.isIntersecting) {
+          loadMore()
+        }
+      }
+    }, { rootMargin: '200px' })
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [visibleCount, filtered.length, loadMore])
+
+  const visible = filtered.slice(0, visibleCount)
+
+  // Early return UI states AFTER hooks definitions
   if (isLoading) return <p className="text-sm text-muted-foreground">Loading palindromes...</p>
   if (isError) return <p className="text-sm text-red-500">{error.message}</p>
   if (!data || data.length === 0) return <p className="text-sm text-muted-foreground">No palindromes yet.</p>
@@ -126,7 +159,7 @@ export function PalindromesGallery() {
         onReset={resetFilters}
       />
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {filtered.map(p => (
+        {visible.map(p => (
           <PalindromeCard
             key={p.id}
             palindrome={{
@@ -148,6 +181,23 @@ export function PalindromesGallery() {
             showActions={false}
           />
         ))}
+      </div>
+      {/* Status / Loader */}
+      <div className="flex flex-col items-center justify-center gap-2 py-4">
+        {visibleCount < filtered.length && (
+          <>
+            <div ref={sentinelRef} className="h-4" />
+            <p className="text-xs text-muted-foreground">
+              Showing {visible.length} / {filtered.length} &mdash; scrolling loads more
+            </p>
+          </>
+        )}
+        {visibleCount >= filtered.length && filtered.length > BATCH_SIZE && (
+          <p className="text-xs text-muted-foreground">All {filtered.length} loaded</p>
+        )}
+        {filtered.length === 0 && (
+          <p className="text-sm text-muted-foreground">No matches for current filters.</p>
+        )}
       </div>
     </div>
   )
