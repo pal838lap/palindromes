@@ -162,18 +162,66 @@ export function PalindromesGallery() {
     setFilters({ prefix: '', user: '', brand: '', color: '', found: 'found', sort: 'idAsc' })
   }
 
+  const getFoundStatusIcon = (status: 'all' | 'found' | 'unfound') => {
+    switch (status) {
+      case 'found': return '✓'
+      case 'unfound': return '✗'
+      case 'all': return '•'
+    }
+  }
+
+  const getFoundStatusLabel = (status: 'all' | 'found' | 'unfound') => {
+    switch (status) {
+      case 'found': return 'Found'
+      case 'unfound': return 'Not Found'
+      case 'all': return 'All'
+    }
+  }
+
+  const cycleFoundStatus = () => {
+    const cycle: ('all' | 'found' | 'unfound')[] = ['all', 'found', 'unfound']
+    const currentIndex = cycle.indexOf(filters.found)
+    const nextIndex = (currentIndex + 1) % cycle.length
+    setFilters(prev => ({ ...prev, found: cycle[nextIndex] }))
+  }
+
   return (
     <div className="space-y-3">
       {/* Mobile filter/sort launcher */}
-      <div className="flex items-center justify-between md:hidden px-2">
-        <div className="text-xs text-muted-foreground">Showing {filtered.length} of {data.length}</div>
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="outline" size="sm" className="flex items-center gap-1">
-              <Filter className="h-4 w-4" />
-              <span>Filters</span>
+      <div className="flex items-center justify-between md:hidden px-2 gap-2">
+        <div className="flex flex-col gap-1">
+          <div className="text-[10px] text-muted-foreground">Search</div>
+          <input
+            type="text"
+            placeholder="search by prefix (e.g. 43)"
+            value={filters.prefix}
+            onChange={(e) => setFilters(prev => ({ ...prev, prefix: e.target.value }))}
+            className="min-w-[172px] h-8 px-2 text-xs border border-input bg-background rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+          />
+          {/* <div className="text-xs text-muted-foreground">Showing {filtered.length} of {data.length}</div> */}
+        </div>
+        <div className="flex items-center gap-1">
+          <div className="flex flex-col gap-1">
+            <div className="text-[10px] text-muted-foreground">Found status</div>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="px-2 min-w-[102px] text-xs"
+              onClick={cycleFoundStatus}
+            >
+              <span className="mr-1">{getFoundStatusIcon(filters.found)}</span>
+              {getFoundStatusLabel(filters.found)}
             </Button>
-          </SheetTrigger>
+          </div>
+          <div className="flex flex-col items-center gap-1">
+            <div className="text-[10px] text-muted-foreground">Filters</div>
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="outline" size="sm" className="p-2">
+                  <Filter className="h-4 w-4" />
+                  <span className="sr-only">Filters</span>
+                </Button>
+              </SheetTrigger>
           <SheetContent side="right" className="p-0 flex flex-col">
             <SheetHeader className="p-4 pb-2 border-b">
               <SheetTitle className="flex items-center gap-2 text-base">
@@ -198,6 +246,8 @@ export function PalindromesGallery() {
             </SheetFooter>
           </SheetContent>
         </Sheet>
+          </div>
+        </div>
       </div>
 
       {/* Desktop / wider screens inline filters */}
@@ -211,7 +261,7 @@ export function PalindromesGallery() {
           onReset={resetFilters}
         />
       </div>
-  <div className="grid gap-2 sm:gap-3 md:gap-3 lg:gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid gap-2 sm:gap-3 md:gap-3 lg:gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map(p => (
           <PalindromeGalleryCard
             key={p.id}
