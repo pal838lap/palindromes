@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button'
 import { PalindromeCard } from '@/components/palindrome-card'
 import { formatLicensePlateId } from '@/components/license-plate'
 import { useUploadPalindromeImage, useRemovePalindromeImage } from '@/hooks/use-palindrome-image'
+import { X } from 'lucide-react'
 import type { PalindromeWithDetails, UserProfile, Brand } from '@/lib/db/schema'
 
 export function PalindromeSearch() {
@@ -108,27 +109,44 @@ export function PalindromeSearch() {
             const isPalindrome = normalized === normalized.split('').reverse().join('')
             const isValid = len === 0 || (isLengthValid && isPalindrome)
             return (
-              <Input
-                placeholder="Enter palindrome id e.g. 12321"
-                value={displayValue}
-                aria-invalid={!isValid && debouncedValue.length > 0}
-                className={!isValid && debouncedValue.length > 0 ? 'border-red-500 focus-visible:ring-red-500' : undefined}
-                onChange={(e) => {
-                  const rawInput = e.target.value.replace(/[^0-9A-Za-z]/g, '') // allow alphanum, strip separators
-                  setValue(rawInput)
-                  // Only format purely numeric strings; keep alphanumerics as-is (no hyphens)
-                  const formatted = /^\d+$/.test(rawInput) ? formatLicensePlateId(rawInput) : rawInput
-                  setDisplayValue(formatted)
-                }}
-                onBlur={() => {
-                  if (/^\d+$/.test(value)) {
-                    setDisplayValue(formatLicensePlateId(value))
-                  }
-                }}
-                onFocus={() => {
-                  setDisplayValue(value)
-                }}
-              />
+              <div className="relative">
+                <Input
+                  placeholder="Enter palindrome id e.g. 12321"
+                  value={displayValue}
+                  aria-invalid={!isValid && debouncedValue.length > 0}
+                  className={!isValid && debouncedValue.length > 0 ? 'border-red-500 focus-visible:ring-red-500 pr-8' : 'pr-8'}
+                  onChange={(e) => {
+                    const rawInput = e.target.value.replace(/[^0-9A-Za-z]/g, '') // allow alphanum, strip separators
+                    setValue(rawInput)
+                    // Only format purely numeric strings; keep alphanumerics as-is (no hyphens)
+                    const formatted = /^\d+$/.test(rawInput) ? formatLicensePlateId(rawInput) : rawInput
+                    setDisplayValue(formatted)
+                  }}
+                  onBlur={() => {
+                    if (/^\d+$/.test(value)) {
+                      setDisplayValue(formatLicensePlateId(value))
+                    }
+                  }}
+                  onFocus={() => {
+                    setDisplayValue(value)
+                  }}
+                />
+                {displayValue && (
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    size="sm"
+                    className="absolute right-1 top-1/2 -translate-y-1/2 h-6 w-6 p-0 hover:bg-transparent"
+                    onClick={() => {
+                      setValue('')
+                      setDisplayValue('')
+                      setDebouncedValue('')
+                    }}
+                  >
+                    <X className="h-3 w-3" />
+                  </Button>
+                )}
+              </div>
             )
           })()}
           <p className="text-xs text-muted-foreground">Search runs automatically when you type.</p>

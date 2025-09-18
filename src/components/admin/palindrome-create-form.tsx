@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { useCreatePalindrome } from '@/hooks/use-create-palindrome'
 import { formatLicensePlateId } from '@/components/license-plate'
+import { X } from 'lucide-react'
 
 export function PalindromeCreateForm() {
   const [raw, setRaw] = useState('')
@@ -52,22 +53,128 @@ export function PalindromeCreateForm() {
       <form onSubmit={handleSubmit}>
         <CardContent className="space-y-4">
           <div className="space-y-1">
-            <Input
-              placeholder="Palindrome (e.g. 12321)"
-              value={formatted}
-              onChange={(e) => setRaw(e.target.value)}
-              aria-invalid={cleaned.length > 0 && !isPalindrome}
-            />
+            <div className="relative">
+              <Input
+                placeholder="Palindrome (e.g. 12321)"
+                value={formatted}
+                className="pr-8"
+                onChange={(e) => setRaw(e.target.value)}
+                aria-invalid={cleaned.length > 0 && !isPalindrome}
+              />
+              {raw && (
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="absolute right-1 top-1/2 -translate-y-1/2 h-6 w-6 p-0 hover:bg-transparent"
+                  onClick={() => setRaw('')}
+                >
+                  <X className="h-3 w-3" />
+                </Button>
+              )}
+            </div>
             {cleaned.length > 0 && !isPalindrome && (
               <p className="text-xs text-red-500">Not a palindrome</p>
             )}
           </div>
-          <Input placeholder="Model (optional)" value={model} onChange={e=>setModel(e.target.value)} />
-          <Input placeholder="Color (optional)" value={color} onChange={e=>setColor(e.target.value)} />
-          <Input placeholder="Picture URL (optional)" value={picture} onChange={e=>setPicture(e.target.value)} />
+          <div className="relative">
+            <Input 
+              placeholder="Model (optional)" 
+              value={model} 
+              className="pr-8"
+              onChange={e=>setModel(e.target.value)} 
+            />
+            {model && (
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                className="absolute right-1 top-1/2 -translate-y-1/2 h-6 w-6 p-0 hover:bg-transparent"
+                onClick={() => setModel('')}
+              >
+                <X className="h-3 w-3" />
+              </Button>
+            )}
+          </div>
+          <div className="relative">
+            <Input 
+              placeholder="Color (optional)" 
+              value={color} 
+              className="pr-8"
+              onChange={e=>setColor(e.target.value)} 
+            />
+            {color && (
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                className="absolute right-1 top-1/2 -translate-y-1/2 h-6 w-6 p-0 hover:bg-transparent"
+                onClick={() => setColor('')}
+              >
+                <X className="h-3 w-3" />
+              </Button>
+            )}
+          </div>
+          <div className="relative">
+            <Input 
+              placeholder="Picture URL (optional)" 
+              value={picture} 
+              className="pr-8"
+              onChange={e=>setPicture(e.target.value)} 
+            />
+            {picture && (
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                className="absolute right-1 top-1/2 -translate-y-1/2 h-6 w-6 p-0 hover:bg-transparent"
+                onClick={() => setPicture('')}
+              >
+                <X className="h-3 w-3" />
+              </Button>
+            )}
+          </div>
           <div className="grid grid-cols-2 gap-4">
-            <Input type="number" placeholder="Year" value={year} onChange={e=>setYear(e.target.value)} />
-            <Input type="date" placeholder="Found at" value={foundAt} onChange={e=>setFoundAt(e.target.value)} />
+            <div className="relative">
+              <Input 
+                type="number" 
+                placeholder="Year" 
+                value={year} 
+                className="pr-8"
+                onChange={e=>setYear(e.target.value)} 
+              />
+              {year && (
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="absolute right-1 top-1/2 -translate-y-1/2 h-6 w-6 p-0 hover:bg-transparent"
+                  onClick={() => setYear('')}
+                >
+                  <X className="h-3 w-3" />
+                </Button>
+              )}
+            </div>
+            <div className="relative">
+              <Input 
+                type="date" 
+                placeholder="Found at" 
+                value={foundAt} 
+                className="pr-8"
+                onChange={e=>setFoundAt(e.target.value)} 
+              />
+              {foundAt && (
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="absolute right-1 top-1/2 -translate-y-1/2 h-6 w-6 p-0 hover:bg-transparent"
+                  onClick={() => setFoundAt('')}
+                >
+                  <X className="h-3 w-3" />
+                </Button>
+              )}
+            </div>
           </div>
           {mutation.isError && !duplicate && (
             <p className="text-xs text-red-500">{(mutation.error as { error?: string })?.error || 'Error creating palindrome'}</p>
