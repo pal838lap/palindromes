@@ -188,34 +188,47 @@ export function PalindromesGallery() {
   return (
     <div className="space-y-3">
       {/* Mobile filter/sort launcher */}
-      <div className="flex items-center justify-between md:hidden px-2 gap-2">
-        <div className="flex flex-col gap-1">
-          <div className="text-[10px] text-muted-foreground">Search</div>
-          <input
-            type="text"
-            placeholder="search by prefix (e.g. 43)"
-            value={filters.prefix}
-            onChange={(e) => setFilters(prev => ({ ...prev, prefix: e.target.value }))}
-            className="min-w-[172px] h-8 px-2 text-xs border border-input bg-background rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
-          />
-          {/* <div className="text-xs text-muted-foreground">Showing {filtered.length} of {data.length}</div> */}
-        </div>
-        <div className="flex items-center gap-1">
-          <div className="flex flex-col gap-1">
-            <div className="text-[10px] text-muted-foreground">Found status</div>
-            <Button 
-              variant="outline" 
-              size="sm" 
-              className="px-2 min-w-[102px] text-xs"
-              onClick={cycleFoundStatus}
-            >
-              <span className="mr-1">{getFoundStatusIcon(filters.found)}</span>
-              {getFoundStatusLabel(filters.found)}
-            </Button>
+      <div className="md:hidden px-2 space-y-2">
+        {/* Progress bar */}
+        <div className="flex justify-center items-center gap-2">
+          <div className="text-xs text-muted-foreground">
+            Found {filtered.filter(p => p.userProfileId).length}/{filtered.length}
           </div>
-          <div className="flex flex-col items-center gap-1">
-            <div className="text-[10px] text-muted-foreground">Filters</div>
-            <Sheet>
+          <div className="w-40 h-1.5 bg-muted rounded-full overflow-hidden">
+            <div 
+              className="h-full bg-amber-500 transition-all duration-300 ease-out"
+              style={{ width: `${filtered.length > 0 ? (filtered.filter(p => p.userProfileId).length / filtered.length) * 100 : 0}%` }}
+            />
+          </div>
+        </div>
+        {/* Controls */}
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex flex-col gap-1">
+            <div className="text-[10px] text-muted-foreground">Search</div>
+            <input
+              type="text"
+              placeholder="search by prefix (e.g. 43)"
+              value={filters.prefix}
+              onChange={(e) => setFilters(prev => ({ ...prev, prefix: e.target.value }))}
+              className="min-w-[172px] h-8 px-2 text-xs border border-input bg-background rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+            />
+          </div>
+          <div className="flex items-center gap-1">
+            <div className="flex flex-col gap-1">
+              <div className="text-[10px] text-muted-foreground">Found status</div>
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="px-2 min-w-[102px] text-xs"
+                onClick={cycleFoundStatus}
+              >
+                <span className="mr-1">{getFoundStatusIcon(filters.found)}</span>
+                {getFoundStatusLabel(filters.found)}
+              </Button>
+            </div>
+            <div className="flex flex-col items-center gap-1">
+              <div className="text-[10px] text-muted-foreground">Filters</div>
+              <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline" size="sm" className="p-2">
                   <Filter className="h-4 w-4" />
@@ -246,6 +259,7 @@ export function PalindromesGallery() {
             </SheetFooter>
           </SheetContent>
         </Sheet>
+            </div>
           </div>
         </div>
       </div>
