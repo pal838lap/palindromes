@@ -117,11 +117,28 @@ export default function LeaderboardPage() {
     initialState: { sorting: [{ id: 'count', desc: true }] },
   })
 
+  // Calculate total palindromes found
+  const totalPalindromes = useMemo(() => {
+    return data?.reduce((sum, row) => sum + row.count, 0) || 0
+  }, [data])
+
   return (
   <div className="min-h-screen text-foreground">
       <SiteHeader pageTitle="Leaderboard" />
       <main className="container mx-auto px-4 py-8">
         <h1 className="sr-only">Leaderboard</h1>
+        
+        {/* Total palindromes summary */}
+        {!isLoading && !error && totalPalindromes > 0 && (
+          <div className="text-center mb-4">
+            <div className="inline-flex items-center gap-2 px-2 py-1 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-500 rounded-lg">
+              <span className="text-sm text-muted-foreground">Palindromes found:</span>
+              <span className="text-lg font-semibold text-amber-700 dark:text-amber-300 tabular-nums">
+                {totalPalindromes.toLocaleString()}
+              </span>
+            </div>
+          </div>
+        )}
         {isLoading && <p>Loading...</p>}
         {error && <p className="text-destructive">Error loading leaderboard</p>}
         {!isLoading && !error && (
