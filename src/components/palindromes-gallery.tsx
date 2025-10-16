@@ -2,6 +2,7 @@
 import { usePalindromes } from '@/hooks/use-palindromes'
 // (Old standard card removed in gallery; using specialized gallery card)
 import { PalindromeGalleryCard } from '@/components/palindromes/palindrome-gallery-card'
+import { PalindromeDetailDialog } from '@/components/palindromes/palindrome-detail-dialog'
 import { useMemo, useState, useDeferredValue, useEffect, useRef, useCallback } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { PalindromesFilters, PalindromesFiltersState } from '@/components/palindromes/palindromes-filters'
@@ -10,10 +11,15 @@ import { Filter, SlidersHorizontal } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useDebouncedValue } from '@/hooks/use-debounced-value'
 import { type PalindromeSort } from '@/lib/palindromes/filter-sort'
+import type { PalindromeWithDetails } from '@/lib/db/schema'
 
 export function PalindromesGallery() {
   const { data, isLoading, isError, error } = usePalindromes()
   const searchParams = useSearchParams()
+
+  // Dialog state for full-screen view
+  const [selectedPalindrome, setSelectedPalindrome] = useState<PalindromeWithDetails | null>(null)
+  const [dialogOpen, setDialogOpen] = useState(false)
 
   // Unified filter state
   const [filters, setFilters] = useState<PalindromesFiltersState>({
@@ -153,6 +159,12 @@ export function PalindromesGallery() {
 
   const visible = filtered.slice(0, visibleCount)
 
+  // Handler for card click
+  const handleCardClick = useCallback((palindrome: PalindromeWithDetails) => {
+    setSelectedPalindrome(palindrome)
+    setDialogOpen(true)
+  }, [])
+
   // Early return UI states AFTER hooks definitions
   if (isLoading) return <p className="text-sm text-muted-foreground">Loading palindromes...</p>
   if (isError) return <p className="text-sm text-red-500">{error.message}</p>
@@ -279,6 +291,7 @@ export function PalindromesGallery() {
         {visible.map(p => (
           <PalindromeGalleryCard
             key={p.id}
+            onClick={handleCardClick}
             palindrome={{
               id: p.id,
               picture: p.picture ?? null,
@@ -298,6 +311,14 @@ export function PalindromesGallery() {
           />
         ))}
       </div>
+      
+      {/* Full-screen detail dialog */}
+      <PalindromeDetailDialog
+        palindrome={selectedPalindrome}
+        open={dialogOpen}
+        onOpenChange={setDialogOpen}
+      />
+      
       {/* Status / Loader */}
       <div className="flex flex-col items-center justify-center gap-2 py-4">
         {visibleCount < filtered.length && (
