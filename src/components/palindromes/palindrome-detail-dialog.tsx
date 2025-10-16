@@ -20,6 +20,8 @@ export function PalindromeDetailDialog({ palindrome, open, onOpenChange }: Palin
   const [pan, setPan] = useState({ x: 0, y: 0 })
   const [isDragging, setIsDragging] = useState(false)
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 })
+  const [initialPinchDistance, setInitialPinchDistance] = useState<number | null>(null)
+  const [initialPinchZoom, setInitialPinchZoom] = useState(1)
   const containerRef = useRef<HTMLDivElement>(null)
   
   // Reset zoom and pan when dialog opens or palindrome changes
@@ -62,6 +64,12 @@ export function PalindromeDetailDialog({ palindrome, open, onOpenChange }: Palin
     setPan({ x: 0, y: 0 })
   }
 
+  const getDistance = (touch1: React.Touch, touch2: React.Touch) => {
+    const dx = touch1.clientX - touch2.clientX
+    const dy = touch1.clientY - touch2.clientY
+    return Math.sqrt(dx * dx + dy * dy)
+  }
+
   const handleMouseDown = (e: React.MouseEvent) => {
     if (zoom > 1) {
       setIsDragging(true)
@@ -80,20 +88,36 @@ export function PalindromeDetailDialog({ palindrome, open, onOpenChange }: Palin
   }
 
   const handleTouchStart = (e: React.TouchEvent) => {
-    if (zoom > 1 && e.touches.length === 1) {
+    if (e.touches.length === 2) {
+      // Two-finger pinch
+      const distance = getDistance(e.touches[0], e.touches[1])
+      setInitialPinchDistance(distance)
+      setInitialPinchZoom(zoom)
+      setIsDragging(false)
+    } else if (e.touches.length === 1 && zoom > 1) {
+      // Single-finger pan
       setIsDragging(true)
       setDragStart({ x: e.touches[0].clientX - pan.x, y: e.touches[0].clientY - pan.y })
     }
   }
 
   const handleTouchMove = (e: React.TouchEvent) => {
-    if (isDragging && zoom > 1 && e.touches.length === 1) {
+    if (e.touches.length === 2 && initialPinchDistance !== null) {
+      // Pinch zoom
+      e.preventDefault()
+      const distance = getDistance(e.touches[0], e.touches[1])
+      const scale = distance / initialPinchDistance
+      const newZoom = Math.min(Math.max(initialPinchZoom * scale, 0.5), 3)
+      setZoom(newZoom)
+    } else if (isDragging && zoom > 1 && e.touches.length === 1) {
+      // Pan
       setPan({ x: e.touches[0].clientX - dragStart.x, y: e.touches[0].clientY - dragStart.y })
     }
   }
 
   const handleTouchEnd = () => {
     setIsDragging(false)
+    setInitialPinchDistance(null)
   }
 
   return (
@@ -176,7 +200,10 @@ export function PalindromeDetailDialog({ palindrome, open, onOpenChange }: Palin
           <div 
             ref={containerRef}
             className="relative w-full h-full flex items-center justify-center overflow-hidden"
-            style={{ cursor: zoom > 1 ? (isDragging ? 'grabbing' : 'grab') : 'default' }}
+            style={{ 
+              cursor: zoom > 1 ? (isDragging ? 'grabbing' : 'grab') : 'default',
+              touchAction: 'none' // Prevent default touch behaviors
+            }}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
