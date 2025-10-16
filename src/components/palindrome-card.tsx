@@ -159,6 +159,7 @@ function PalindromeCardBase({
                 const target = e.target as HTMLImageElement
                 target.style.display = 'none'
               }}
+              unoptimized
             />
           ) : (
             <div className="text-center text-muted-foreground">

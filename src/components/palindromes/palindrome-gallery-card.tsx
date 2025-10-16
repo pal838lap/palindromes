@@ -44,6 +44,7 @@ function PalindromeGalleryCardBase({ palindrome, className, onClick }: Palindrom
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+            unoptimized
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center text-muted-foreground text-xs">

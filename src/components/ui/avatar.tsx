@@ -18,7 +18,7 @@ const Avatar = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElem
 Avatar.displayName = 'Avatar'
 
 const AvatarImage: React.FC<React.ComponentProps<typeof Image>> = ({ className, alt = '', ...props }) => (
-  <Image alt={alt} className={cn("aspect-square h-full w-full object-cover", className)} {...props} />
+  <Image unoptimized alt={alt} className={cn("aspect-square h-full w-full object-cover", className)} {...props} />
 )
 
 const AvatarFallback: React.FC<React.HTMLAttributes<HTMLSpanElement>> = ({ className, children, ...props }) => (
