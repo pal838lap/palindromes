@@ -216,9 +216,10 @@ export class PalindromeTracker {
   /**
    * Get palindromes that need to be scraped (pending + retry_needed)
    */
-  getPalindromesToScrape(limit?: number): string[] {
+  getPalindromesToScrape(limit?: number, startFrom?: string): string[] {
+    const startNum = startFrom ? parseInt(startFrom) : 0;
     const toScrape = Object.values(this.progress.palindromes)
-      .filter(p => p.status === 'pending' || p.status === 'retry_needed')
+      .filter(p => (p.status === 'pending' || p.status === 'retry_needed') && parseInt(p.plateNumber) >= startNum)
       .sort((a, b) => {
         // Sort by plate number numerically to start from the beginning
         return parseInt(a.plateNumber) - parseInt(b.plateNumber);
@@ -329,6 +330,31 @@ export class PalindromeTracker {
       console.log(`Active vehicles: ${progress.found}/${totalVehiclesFound} (${Math.round((progress.found / totalVehiclesFound) * 100)}%)`);
     }
     console.log('=====================================\n');
+  }
+
+  /**
+   * Reset specific palindromes to pending status by plate number
+   */
+  resetSpecificToPending(plateNumbers: string[]): void {
+    const now = new Date();
+    let resetCount = 0;
+
+    for (const plateNumber of plateNumbers) {
+      const palindrome = this.progress.palindromes[plateNumber];
+      if (palindrome) {
+        palindrome.status = 'pending';
+        palindrome.attemptCount = 0;
+        palindrome.lastAttempt = undefined;
+        palindrome.lastError = undefined;
+        palindrome.addedToDatabase = false;
+        palindrome.updatedAt = now;
+        resetCount++;
+      }
+    }
+
+    this.updateCounts();
+    this.saveProgress();
+    console.log(`Reset ${resetCount} specific palindromes to pending status`);
   }
 
   /**

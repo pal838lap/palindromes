@@ -25,12 +25,13 @@ const TEST = false;                      // Test mode with limited palindromes (
 
 // ===============================================
 
+import { existsSync, unlinkSync } from 'fs';
 import { generateAllPalindromes, TOTAL_PALINDROMES } from '../lib/palindrome-generator';
 import { CheckCarApiClient } from '../lib/check-car-client';
 import { PalindromeTracker } from '../lib/palindrome-tracker';
 import { db } from '../lib/db';
 import { palindromes, brands } from '../lib/db/schema/palindromes';
-import { eq } from 'drizzle-orm';
+import { eq, inArray, and, isNotNull } from 'drizzle-orm';
 
 interface ScrapingOptions {
   batchSize: number;
@@ -56,6 +57,14 @@ class PalindromeScraper {
       concurrency: options.concurrency,
       batchDelay: 1500 // 1.5 second delay between batches
     });
+
+    // Remove previous run's tracking file so each run starts fresh
+    const progressFile = './scraping-data/palindrome-scraping-progress.json';
+    if (existsSync(progressFile)) {
+      console.log('🗑️  Removing previous tracking file for fresh run...');
+      unlinkSync(progressFile);
+    }
+
     this.tracker = new PalindromeTracker();
   }
 
@@ -127,10 +136,22 @@ class PalindromeScraper {
         break;
       }
 
-      console.log(`\n📦 Round ${round}: Processing batch of ${palindromesToScrape.length} palindromes`);
+      // Filter out palindromes already assigned to a user in the DB
+      const filteredPalindromes = await this.filterOutAssignedInDb(palindromesToScrape);
+      if (filteredPalindromes.length === 0) {
+        console.log(`⏭️  All ${palindromesToScrape.length} palindromes in this batch are already assigned — skipping`);
+        // Mark them as processed in the tracker so we don't keep re-fetching them
+        for (const p of palindromesToScrape) {
+          this.tracker.markAddedToDatabase(p);
+        }
+        round++;
+        continue;
+      }
+
+      console.log(`\n📦 Round ${round}: Processing batch of ${filteredPalindromes.length} palindromes (${palindromesToScrape.length - filteredPalindromes.length} skipped — already assigned)`);
       
       // Scrape batch
-      const results = await this.client.queryBatch(palindromesToScrape);
+      const results = await this.client.queryBatch(filteredPalindromes);
       
       // Update tracking
       for (const result of results) {
@@ -161,7 +182,7 @@ class PalindromeScraper {
       console.log(`✅ Batch ${round} complete. Total processed: ${totalProcessed}`);
       
       // Small delay between batches
-      if (palindromesToScrape.length === this.options.batchSize) {
+      if (filteredPalindromes.length > 0) {
         console.log('⏳ Waiting 200 ms before next batch...');
         await this.sleep(200);
       }
@@ -192,7 +213,10 @@ class PalindromeScraper {
   }
 
   /**
-   * Save found palindromes to the database
+   * Save found palindromes to the database.
+   * - Skips palindromes already assigned to a user (userProfileId set).
+   * - Updates existing unassigned records with fresh vehicle data.
+   * - Inserts new records for palindromes not yet in the DB.
    */
   private async savePalindromesToDatabase(): Promise<void> {
     const foundPalindromes = this.tracker.getFoundNotInDatabase();
@@ -203,7 +227,9 @@ class PalindromeScraper {
 
     console.log(`💾 Processing ${foundPalindromes.length} found vehicles for database...`);
 
-    let savedCount = 0;
+    let insertedCount = 0;
+    let updatedCount = 0;
+    let skippedAssignedCount = 0;
     let skippedOffRoadCount = 0;
 
     for (const palindromeStatus of foundPalindromes) {
@@ -229,34 +255,113 @@ class PalindromeScraper {
           brandId = await this.getOrCreateBrand(vehicleData.manufacturer);
         }
 
-        // Insert palindrome record
-        await db.insert(palindromes).values({
-          id: palindromeStatus.plateNumber,
-          brandId,
-          model: vehicleData.model,
-          year: vehicleData.year,
-          color: vehicleData.color,
-          // Note: We're not fetching images yet as per requirements
-          picture: null,
-          userProfileId: null, // Not found by a user yet
-          categoryId: null, // No category system yet
-          foundAt: null, // Not found by a user yet
-        });
+        // Check if palindrome already exists in the DB
+        const existing = await db
+          .select({
+            id: palindromes.id,
+            userProfileId: palindromes.userProfileId,
+          })
+          .from(palindromes)
+          .where(eq(palindromes.id, palindromeStatus.plateNumber))
+          .limit(1);
 
-        this.tracker.markAddedToDatabase(palindromeStatus.plateNumber);
-        savedCount++;
-        console.log(`✅ Saved ${palindromeStatus.plateNumber} to database`);
+        if (existing.length > 0) {
+          // Already assigned to a user — do not overwrite
+          if (existing[0].userProfileId) {
+            console.log(`🔒 ${palindromeStatus.plateNumber} already assigned to user — skipping`);
+            this.tracker.markAddedToDatabase(palindromeStatus.plateNumber);
+            skippedAssignedCount++;
+            continue;
+          }
+
+          // Exists but unassigned — update with fresh vehicle data
+          await db
+            .update(palindromes)
+            .set({
+              brandId,
+              model: vehicleData.model ?? null,
+              year: vehicleData.year ?? null,
+              color: vehicleData.color ?? null,
+              updatedAt: new Date(),
+            })
+            .where(eq(palindromes.id, palindromeStatus.plateNumber));
+
+          this.tracker.markAddedToDatabase(palindromeStatus.plateNumber);
+          updatedCount++;
+          console.log(`🔄 Updated ${palindromeStatus.plateNumber} in database`);
+        } else {
+          // New palindrome — insert
+          await db.insert(palindromes).values({
+            id: palindromeStatus.plateNumber,
+            brandId,
+            model: vehicleData.model ?? null,
+            year: vehicleData.year ?? null,
+            color: vehicleData.color ?? null,
+            picture: null,
+            userProfileId: null,
+            categoryId: null,
+            foundAt: null,
+          });
+
+          this.tracker.markAddedToDatabase(palindromeStatus.plateNumber);
+          insertedCount++;
+          console.log(`✅ Saved ${palindromeStatus.plateNumber} to database`);
+        }
         
       } catch (error) {
         console.error(`❌ Error saving ${palindromeStatus.plateNumber} to database:`, error);
       }
     }
 
-    if (savedCount > 0) {
-      console.log(`💾 Saved ${savedCount} active vehicles to database`);
+    if (insertedCount > 0) {
+      console.log(`💾 Inserted ${insertedCount} new vehicles to database`);
+    }
+    if (updatedCount > 0) {
+      console.log(`🔄 Updated ${updatedCount} existing vehicles in database`);
+    }
+    if (skippedAssignedCount > 0) {
+      console.log(`🔒 Skipped ${skippedAssignedCount} palindromes already assigned to users`);
     }
     if (skippedOffRoadCount > 0) {
       console.log(`🚫 Skipped ${skippedOffRoadCount} off-road vehicles (marked as processed)`);
+    }
+  }
+
+  /**
+   * Filter out palindromes that already exist in the DB with an assigned userProfileId.
+   * Returns only the plate numbers that are safe to scrape & write.
+   */
+  private async filterOutAssignedInDb(plateNumbers: string[]): Promise<string[]> {
+    if (plateNumbers.length === 0) return [];
+
+    try {
+      const CHUNK_SIZE = 500;
+      const assignedIds = new Set<string>();
+
+      for (let i = 0; i < plateNumbers.length; i += CHUNK_SIZE) {
+        const chunk = plateNumbers.slice(i, i + CHUNK_SIZE);
+        const rows = await db
+          .select({ id: palindromes.id })
+          .from(palindromes)
+          .where(
+            and(
+              inArray(palindromes.id, chunk),
+              isNotNull(palindromes.userProfileId)
+            )
+          );
+        rows.forEach(r => assignedIds.add(r.id));
+      }
+
+      const filtered = plateNumbers.filter(p => !assignedIds.has(p));
+
+      if (assignedIds.size > 0) {
+        console.log(`🔒 Filtered out ${assignedIds.size} palindromes already assigned to users in DB`);
+      }
+
+      return filtered;
+    } catch (error) {
+      console.error('❌ Error checking DB for assigned palindromes:', error);
+      return plateNumbers; // On error, don't filter — safe fallback
     }
   }
 

@@ -21,6 +21,7 @@
     "supabase:reset": "supabase db reset",
     "supabase:status": "supabase status",
     "scrape-palindromes": "dotenv -e .env.local tsx src/scripts/scrape-palindromes.ts",
+    "scrape-palindromes:override": "dotenv -e .env.local tsx src/scripts/scrape-palindromes-override.ts",
     "scrape:test": "npm run scrape-palindromes -- --test --batch-size 3 --concurrency 3",
     "scrape:test-fast": "npm run scrape-palindromes -- --test --batch-size 50 --concurrency 10",
     "scrape:status": "npm run scrape-palindromes -- --status",
