@@ -214,6 +214,31 @@ export class PalindromeTracker {
   }
 
   /**
+   * Mark palindromes as already existing in the database (e.g. assigned to a user).
+   * Sets status to 'found' and addedToDatabase to true so they leave the pending pool.
+   */
+  markAsAlreadyInDatabase(plateNumbers: string[]): void {
+    const now = new Date();
+    let count = 0;
+
+    for (const plateNumber of plateNumbers) {
+      const palindrome = this.progress.palindromes[plateNumber];
+      if (palindrome) {
+        palindrome.status = 'found';
+        palindrome.addedToDatabase = true;
+        palindrome.updatedAt = now;
+        count++;
+      }
+    }
+
+    if (count > 0) {
+      this.updateCounts();
+      this.saveProgress();
+      console.log(`🔒 Marked ${count} palindromes as already in database (skipped from scraping)`);
+    }
+  }
+
+  /**
    * Get palindromes that need to be scraped (pending + retry_needed)
    */
   getPalindromesToScrape(limit?: number, startFrom?: string): string[] {
