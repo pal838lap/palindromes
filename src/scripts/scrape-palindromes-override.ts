@@ -138,12 +138,15 @@ class PalindromeScraper {
 
       // Filter out palindromes already assigned to a user in the DB
       const filteredPalindromes = await this.filterOutAssignedInDb(palindromesToScrape);
+      const skippedPalindromes = palindromesToScrape.filter(p => !filteredPalindromes.includes(p));
+      
+      // Mark skipped palindromes as found + addedToDatabase so they exit the pending pool
+      if (skippedPalindromes.length > 0) {
+        this.tracker.markAsAlreadyInDatabase(skippedPalindromes);
+      }
+      
       if (filteredPalindromes.length === 0) {
         console.log(`⏭️  All ${palindromesToScrape.length} palindromes in this batch are already assigned — skipping`);
-        // Mark them as processed in the tracker so we don't keep re-fetching them
-        for (const p of palindromesToScrape) {
-          this.tracker.markAddedToDatabase(p);
-        }
         round++;
         continue;
       }
