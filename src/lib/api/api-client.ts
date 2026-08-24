@@ -92,6 +92,13 @@ export class ApiClient {
           endpoint.path(id),
           { method: endpoint.method }
         )
+      },
+      delete: (id: string) => {
+        const endpoint = API_ENDPOINTS.palindromes.delete
+        return this.request<typeof API_ENDPOINTS.palindromes.delete.response>(
+          endpoint.path(id),
+          { method: endpoint.method }
+        )
       }
     }
   }

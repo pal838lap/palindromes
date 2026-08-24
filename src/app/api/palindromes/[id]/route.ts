@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
+import { auth } from '@/lib/auth'
 import { db, palindromes, userProfiles, brands } from '@/lib/db'
 import { eq } from 'drizzle-orm'
+import { removePalindromeImages } from '@/lib/storage'
 
 export async function GET(
   _req: Request,
@@ -75,5 +77,35 @@ export async function PATCH(
     return NextResponse.json(updated)
   } catch {
     return NextResponse.json({ error: 'Server error' }, { status: 500 })
+  }
+}
+
+export async function DELETE(
+  _req: Request,
+  context: { params: Promise<{ id: string }> } | { params: { id: string } }
+) {
+  const resolved = 'then' in context.params ? await context.params : context.params
+  const id = resolved.id
+  if (!id) {
+    return NextResponse.json({ error: 'Missing id' }, { status: 400 })
+  }
+
+  const session = await auth()
+  if (!session?.user?.isAdmin) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  }
+
+  try {
+    const existing = await db.select({ id: palindromes.id }).from(palindromes).where(eq(palindromes.id, id)).limit(1)
+    if (!existing.length) {
+      return NextResponse.json({ error: 'Not found' }, { status: 404 })
+    }
+
+    await removePalindromeImages(id)
+    const [deleted] = await db.delete(palindromes).where(eq(palindromes.id, id)).returning({ id: palindromes.id })
+    return NextResponse.json(deleted)
+  } catch (error) {
+    console.error('Palindrome delete error', error)
+    return NextResponse.json({ error: 'Delete failed' }, { status: 500 })
   }
 }

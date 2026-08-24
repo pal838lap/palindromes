@@ -40,6 +40,11 @@ export const API_ENDPOINTS = {
       path: (id: string) => `/api/palindromes/${id}/picture` as const,
       response: {} as { id: string; picture: null },
     },
+    delete: {
+      method: 'DELETE' as const,
+      path: (id: string) => `/api/palindromes/${id}` as const,
+      response: {} as { id: string },
+    },
     create: {
       method: 'POST' as const,
       path: '/api/palindromes' as const,

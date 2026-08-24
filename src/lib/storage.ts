@@ -60,6 +60,19 @@ export async function uploadPalindromeImage(palindromeId: string, file: File | B
   return { path, publicUrl: data.publicUrl }
 }
 
+export async function removePalindromeImages(palindromeId: string) {
+  await initSupabaseAdmin()
+  const supabase = getSupabaseAdminClient()
+  const { data, error: listError } = await supabase.storage.from(BUCKET).list(palindromeId, { limit: 1000 })
+  if (listError) throw listError
+
+  const paths = (data ?? []).map((object: { name: string }) => `${palindromeId}/${object.name}`)
+  if (!paths.length) return
+
+  const { error: removeError } = await supabase.storage.from(BUCKET).remove(paths)
+  if (removeError) throw removeError
+}
+
 export function getPublicUrl(path: string) {
   const supabase = getSupabaseAdminClient()
   const { data } = supabase.storage.from(BUCKET).getPublicUrl(path)

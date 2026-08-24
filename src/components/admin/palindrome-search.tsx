@@ -8,11 +8,12 @@ import { PalindromeAssignUser } from '@/components/admin/palindrome-assign-user'
 import { useUserProfiles } from '@/hooks/use-user-profiles'
 import { useAssignPalindromeUser } from '@/hooks/use-assign-palindrome-user'
 import { useCreateUserProfile } from '@/hooks/use-create-user-profile'
+import { useDeletePalindrome } from '@/hooks/use-delete-palindrome'
 import { Button } from '@/components/ui/button'
 import { PalindromeCard } from '@/components/palindrome-card'
 import { formatLicensePlateId } from '@/components/license-plate'
 import { useUploadPalindromeImage, useRemovePalindromeImage } from '@/hooks/use-palindrome-image'
-import { X } from 'lucide-react'
+import { Trash2, X } from 'lucide-react'
 import type { PalindromeWithDetails, UserProfile, Brand } from '@/lib/db/schema'
 
 export function PalindromeSearch() {
@@ -43,6 +44,8 @@ export function PalindromeSearch() {
   const [pendingImageRemove, setPendingImageRemove] = useState(false)
   const uploadMutation = useUploadPalindromeImage(data?.id)
   const removeMutation = useRemovePalindromeImage(data?.id)
+  const deleteMutation = useDeletePalindrome(data?.id)
+  const [confirmDelete, setConfirmDelete] = useState(false)
   // hasImage should reflect the FINAL state after applying pending changes.
   // If pendingImageRemove is true, the image will be removed, so treat as false.
   const hasImage = pendingImageRemove ? false : Boolean(pendingImageFile || data?.picture)
@@ -67,6 +70,15 @@ export function PalindromeSearch() {
     setNewUserAvatar('')
     setPendingImageFile(null)
     setPendingImageRemove(false)
+    setConfirmDelete(false)
+  }
+
+  async function handleDelete() {
+    await deleteMutation.mutateAsync()
+    setValue('')
+    setDisplayValue('')
+    setDebouncedValue('')
+    setConfirmDelete(false)
   }
 
   async function handleSave() {
@@ -212,23 +224,55 @@ export function PalindromeSearch() {
               loadingProfiles={loadingProfiles}
               disabled={assignMutation.isPending || createProfileMutation.isPending}
             />
-            <div className="flex gap-2 pt-2">
+            <div className="flex flex-wrap gap-2 pt-2">
               <Button
                 type="button"
                 variant="secondary"
                 onClick={clearEdits}
-                disabled={assignMutation.isPending || createProfileMutation.isPending || uploadMutation.isPending || removeMutation.isPending}
+                disabled={assignMutation.isPending || createProfileMutation.isPending || uploadMutation.isPending || removeMutation.isPending || deleteMutation.isPending}
               >
                 Clear
               </Button>
               <Button
                 type="button"
                 onClick={handleSave}
-                disabled={!hasImage || !hasUser || assignMutation.isPending || createProfileMutation.isPending || uploadMutation.isPending || removeMutation.isPending}
+                disabled={!hasImage || !hasUser || assignMutation.isPending || createProfileMutation.isPending || uploadMutation.isPending || removeMutation.isPending || deleteMutation.isPending}
               >
                 Save
               </Button>
+              {!confirmDelete && (
+                <Button
+                  type="button"
+                  variant="destructive"
+                  className="ml-auto"
+                  onClick={() => setConfirmDelete(true)}
+                  disabled={assignMutation.isPending || createProfileMutation.isPending || uploadMutation.isPending || removeMutation.isPending || deleteMutation.isPending}
+                  title="Delete palindrome"
+                >
+                  <Trash2 />
+                  Delete
+                </Button>
+              )}
             </div>
+            {confirmDelete && (
+              <div className="space-y-3 border border-destructive/40 bg-destructive/5 p-3">
+                <p className="text-sm font-medium">Delete {formatLicensePlateId(data.id)} and its picture permanently?</p>
+                <div className="flex gap-2">
+                  <Button type="button" variant="outline" onClick={() => setConfirmDelete(false)} disabled={deleteMutation.isPending}>
+                    Cancel
+                  </Button>
+                  <Button type="button" variant="destructive" onClick={handleDelete} disabled={deleteMutation.isPending}>
+                    <Trash2 />
+                    {deleteMutation.isPending ? 'Deleting...' : 'Delete permanently'}
+                  </Button>
+                </div>
+                {deleteMutation.isError && (
+                  <p className="text-sm text-destructive">
+                    {(deleteMutation.error as unknown as { error?: string }).error || 'Delete failed'}
+                  </p>
+                )}
+              </div>
+            )}
           </div>
         )}
       </CardContent>
